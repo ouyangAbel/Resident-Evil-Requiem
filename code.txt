@@ -1,0 +1,6 @@
+re-guide/
+├── index.html          # 首页
+├── leon-scene.html     # 文章1: Leon场景解析
+├── beginner-guide.html # 文章2: 新手指南
+├── endings.html        # 文章3: 结局解析
+└── assets/             # 图片目录（后续放截图）
