@@ -1,0 +1,47 @@
+﻿<svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d0d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a0808;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b0000;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e4e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c41e1e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="320" fill="url(#bg)"/>
+  
+  <!-- Subtle glow effect -->
+  <circle cx="450" cy="160" r="150" fill="url(#glow)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="450" cy="160" r="100" fill="none" stroke="#8b0000" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="450" cy="160" r="80" fill="none" stroke="#8b0000" stroke-width="0.3" opacity="0.2"/>
+  <circle cx="450" cy="160" r="60" fill="none" stroke="#8b0000" stroke-width="0.2" opacity="0.1"/>
+  
+  <!-- Cross lines -->
+  <line x1="450" y1="60" x2="450" y2="260" stroke="#8b0000" stroke-width="0.3" opacity="0.2"/>
+  <line x1="350" y1="160" x2="550" y2="160" stroke="#8b0000" stroke-width="0.3" opacity="0.2"/>
+  
+  <!-- REQUIEM text -->
+  <text x="450" y="170" font-family="Bebas Neue, Arial Black, sans-serif" font-size="120" fill="url(#text)" text-anchor="middle" opacity="0.12">REQUIEM</text>
+  
+  <!-- Subtitle text -->
+  <text x="450" y="280" font-family="DM Mono, monospace" font-size="12" fill="#5a5550" text-anchor="middle" letter-spacing="0.2em">CHAPTER I &mdash; XII &bull; ALL BOSSES &bull; 100%25 COLLECTIBLES</text>
+  
+  <!-- Subtle border -->
+  <rect x="1" y="1" width="898" height="318" fill="none" stroke="#2a2520" stroke-width="1"/>
+  
+  <!-- Scan lines effect -->
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="4" y2="0" stroke="#8b0000" stroke-width="0.5" opacity="0.03"/>
+  </pattern>
+  <rect width="900" height="320" fill="url(#scanlines)"/>
+</svg>
