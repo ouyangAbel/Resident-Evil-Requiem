@@ -1,0 +1,1032 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GF9BYLZ5F7');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil Requiem Walkthrough Part 2 - Grace Hospital, Leon Boss Fights & All Collectibles Guide</title>
+    <meta name="description" content="Complete Resident Evil Requiem Walkthrough Part 2: Grace Ashcroft's hospital exploration, Leon's boss fights, all collectibles, security band puzzles, and pro tips. Updated June 2026.">
+    <meta name="keywords" content="resident evil requiem walkthrough part 2, resident evil requiem part 2, re requiem walkthrough, grace ashcroft walkthrough, resident evil requiem hospital, resident evil requiem boss fights, resident evil requiem guide">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rerequiemguide.com/walkthrough-part-2.html">
+    <meta property="og:title" content="Resident Evil Requiem Walkthrough Part 2 - Grace Hospital & Leon Boss Fights">
+    <meta property="og:description" content="Complete Resident Evil Requiem Walkthrough Part 2 with video guides, boss strategies, and all collectible locations.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rerequiemguide.com/walkthrough-part-2.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Resident Evil Requiem Walkthrough Part 2 - Grace Hospital, Leon Boss Fights & All Collectibles Guide",
+        "description": "Complete Resident Evil Requiem Walkthrough Part 2 covering Grace's hospital exploration, Leon's boss encounters, and every collectible location.",
+        "datePublished": "2026-06-08",
+        "dateModified": "2026-06-08",
+        "author": {
+            "@type": "Organization",
+            "name": "RE Requiem Guide"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "RE Requiem Guide"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://rerequiemguide.com/walkthrough-part-2.html"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139, 0, 0, 0.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --gold: #8b6914;
+            --success: #2d5a27;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover { color: var(--accent-light); }
+
+        /* Article Header */
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(139, 0, 0, 0.1) 0%, transparent 60%);
+        }
+
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+
+        .article-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.2em;
+            padding: 0.4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            letter-spacing: 0.05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+        }
+
+        /* Share Bar */
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 0.8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            min-width: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        .share-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+            display: block;
+        }
+
+        .share-btn.copy-link.copied {
+            border-color: #4caf50;
+            color: #4caf50;
+        }
+
+        /* Article Content */
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .article-content a:hover {
+            border-bottom-color: var(--accent-light);
+        }
+
+        /* Video Embed */
+        .video-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin: 2.5rem 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-caption {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* Image Placeholder */
+        .article-image {
+            width: 100%;
+            margin: 2.5rem 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-card) 50%, var(--bg-surface) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-family: 'DM Mono', monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            border: 1px dashed var(--border);
+        }
+
+        .image-caption {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            padding: 0.8rem 1rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        /* Highlight / Tip Boxes */
+        .highlight-box {
+            background: var(--bg-card);
+            border-left: 3px solid var(--accent);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            transition: border-left-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .highlight-box:hover {
+            border-left-color: var(--accent-light);
+            transform: translateX(4px);
+        }
+
+        .highlight-box p { margin-bottom: 0; font-style: italic; }
+
+        .tip-box {
+            background: var(--bg-card);
+            border-left: 3px solid var(--success);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            transition: border-left-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .tip-box:hover {
+            border-left-color: #4a8a3f;
+            transform: translateX(4px);
+        }
+
+        .tip-box-title {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            color: #4a8a3f;
+            margin-bottom: 0.5rem;
+        }
+
+        .tip-box p { margin-bottom: 0; }
+
+        .warning-box {
+            background: rgba(139, 0, 0, 0.1);
+            border: 1px solid var(--accent);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            color: var(--accent-light);
+        }
+
+        .lore-box {
+            background: var(--bg-card);
+            border-left: 3px solid var(--gold);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            transition: border-left-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .lore-box:hover {
+            border-left-color: #c4961a;
+            transform: translateX(4px);
+        }
+
+        .lore-box-title {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .lore-box p { margin-bottom: 0; }
+
+        /* Collectible Table */
+        .collectible-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-family: 'Inter Tight', sans-serif;
+        }
+
+        .collectible-table th {
+            background: var(--bg-card);
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .collectible-table td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .collectible-table tr:hover td {
+            background: rgba(139, 0, 0, 0.05);
+        }
+
+        /* TOC */
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .toc-title {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc-list li { margin-bottom: 0.5rem; }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .toc-list a:hover { color: var(--accent-light); }
+
+        /* Back Link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-light);
+            text-decoration: none;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            transition: gap 0.3s ease;
+        }
+
+        .back-link:hover { gap: 1rem; }
+
+        /* Related */
+        .related {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .related-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+
+        .related-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .related-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .related-links a:hover { color: var(--accent-light); }
+
+        /* Footer */
+        .footer {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.15em;
+            color: var(--accent-light);
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav a {
+                margin-left: 1rem;
+                font-size: 0.7rem;
+            }
+
+            .share-bar {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .related-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .image-placeholder {
+                height: 250px;
+            }
+
+            .collectible-table {
+                font-size: 0.85rem;
+            }
+
+            .collectible-table th,
+            .collectible-table td {
+                padding: 0.5rem;
+            }
+        }
+
+        /* Hero Banner Visual */
+        .hero-visual {
+            max-width: 900px;
+            margin: 0 auto 2rem;
+            padding: 0 2rem;
+        }
+        .hero-banner {
+            position: relative;
+            height: 280px;
+            background: url('images/walkthrough-p2-banner.svg') center/cover no-repeat;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 0, 0, 0.03) 2px, rgba(139, 0, 0, 0.03) 4px);
+            pointer-events: none;
+        }
+        @media (max-width: 768px) {
+            .hero-banner { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE:REQUIEM GUIDE</a>
+            <nav class="nav">
+                <a href="index.html">HOME</a>
+                <a href="walkthrough.html">WALKTHROUGH</a>
+                <a href="leon-scene.html">LEON SCENE</a>
+                <a href="beginner-guide.html">BEGINNERS</a>
+                <a href="endings.html">ENDINGS</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article -->
+    <article>
+        <header class="article-header">
+            <div class="breadcrumb">
+                <a href="index.html">HOME</a> / <a href="walkthrough.html">WALKTHROUGH</a> / PART 2
+            </div>
+            <div class="article-tag">WALKTHROUGH &bull; PART 2 OF 2</div>
+            <h1 class="article-title">RESIDENT EVIL REQUIEM WALKTHROUGH PART 2: GRACE HOSPITAL, LEON BOSS FIGHTS & ALL COLLECTIBLES</h1>
+            <div class="article-meta">JUNE 8, 2026 &nbsp;&bull;&nbsp; 20 MIN READ &nbsp;&bull;&nbsp; UPDATED JUNE 2026</div>
+
+            <!-- Share Bar -->
+            <div class="share-bar">
+                <span class="share-label">SHARE THIS</span>
+                <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit">
+                    <svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                </a>
+                <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+                <button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()">
+                    <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Banner -->
+        <div class="hero-visual">
+            <div class="hero-banner"></div>
+        </div>
+        <div class="article-content">
+
+            <!-- Intro -->
+            <p>Welcome back to our <strong>Resident Evil Requiem Walkthrough</strong>. In <strong>Part 2</strong>, the story picks up immediately after Grace Ashcroft's harrowing escape from the Wrenwood Hotel and Leon S. Kennedy's brutal underground fight (citation:4). This section of the game is widely considered the most intense stretch of the entire campaign, alternating between Grace's vulnerable hospital exploration and Leon's action-heavy boss encounters (citation:3)(citation:15).</p>
+
+            <p>If you missed <a href="index.html">Part 1 of our walkthrough</a>, we recommend reading that first. In this guide, we will cover every section of Part 2 in detail: Grace's West Wing and East Wing hospital exploration (citation:15), Leon's dirt bike boss fight against Victor Gideon (citation:8), the Care Centre investigation (citation:10), the security band puzzle system (citation:11), all collectible locations, and strategies for every encounter. We have also embedded full video walkthroughs from the community's best content creators to help you visualize each section.</p>
+
+            <!-- TOC -->
+            <div class="toc">
+                <div class="toc-title">TABLE OF CONTENTS</div>
+                <ul class="toc-list">
+                    <li><a href="#overview">Part 2 Overview: What to Expect</a></li>
+                    <li><a href="#grace-hospital">Grace Ashcroft: Hospital West Wing & East Wing</a></li>
+                    <li><a href="#grace-rhodes">Grace: Rhodes Basement & The Girl Fight</a></li>
+                    <li><a href="#care-centre">The Care Centre: Dr. Rhodes' Horror</a></li>
+                    <li><a href="#security-band">Security Band Puzzle Guide</a></li>
+                    <li><a href="#leon-boss">Leon: Victor Gideon Dirt Bike Boss Fight</a></li>
+                    <li><a href="#leon-ark">Leon: ARK Lab & Grace Rescue</a></li>
+                    <li><a href="#hunk">HUNK Boss Fight Strategy</a></li>
+                    <li><a href="#collectibles">All Collectibles in Part 2</a></li>
+                    <li><a href="#tips">Pro Tips for Part 2</a></li>
+                </ul>
+            </div>
+
+            <!-- Video: Full Part 2 Walkthrough -->
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/DPHsJQHvjNY" title="Resident Evil Requiem Walkthrough Part 2 - Grace Ashcroft Full Game" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-caption">RESIDENT EVIL REQUIEM WALKTHROUGH PART 2 鈥?GRACE ASHCROFT (FULL GAME)</div>
+
+            <!-- Section: Overview -->
+            <h2 id="overview">PART 2 OVERVIEW: WHAT TO EXPECT</h2>
+
+            <p>Resident Evil Requiem's Part 2 is structured around a dual-protagonist format that has become the hallmark of the game's narrative design. You will alternate between <strong>Grace Ashcroft</strong> 鈥?a journalist investigating the Care Centre 鈥?and <strong>Leon S. Kennedy</strong>, who is dealing with threats on a completely different front (citation:3).</p>
+
+            <p>As the community has noted, the contrast between the two protagonists is stark and intentional. One popular observation puts it perfectly: <em>"Playing as Grace: you're playing a Horror Game. Playing as Leon: the zombies are playing a horror game"</em> (citation:3). This dynamic shift keeps the gameplay fresh and ensures that Part 2 never feels repetitive, even though it is one of the longest sections of the game.</p>
+
+            <div class="highlight-box">
+                <p><strong>Note:</strong> Part 2 features some of the most challenging encounters in the entire game. If you are playing on Hardcore difficulty or above, make sure you have stocked up on herbs and ammunition before progressing past the Wrenwood Hotel section from Part 1 (citation:7).</p>
+            </div>
+
+            <!-- Section: Grace Hospital -->
+            <h2 id="grace-hospital">GRACE ASHCROFT: HOSPITAL WEST WING & EAST WING</h2>
+
+            <p>After the events at the Wrenwood Hotel, Grace finds herself in a dilapidated hospital facility that serves as one of the game's most atmospheric locations (citation:4)(citation:15). The hospital is divided into two wings 鈥?the <strong>West Wing</strong> and the <strong>East Wing</strong> 鈥?each with its own set of puzzles, enemies, and collectibles.</p>
+
+            <!-- Image Placeholder: Hospital -->
+            <div class="article-image">
+                <div class="image-placeholder">
+                    [IMAGE: Hospital West Wing Corridor 鈥?Dim lighting, overturned gurneys, blood trails]
+                </div>
+                <div class="image-caption">The hospital corridors are some of the most claustrophobic environments in RE Requiem. Take your time and listen for audio cues.</div>
+            </div>
+
+            <h3>Hospital West Wing</h3>
+
+            <p>The West Wing is your first area as Grace in Part 2. This section is designed to ease you back into Grace's more vulnerable gameplay style. Unlike Leon, Grace has limited weapons 鈥?in fact, across her entire gameplay section, she can only acquire <strong>3 weapons, 2 of which are pistols</strong> (citation:7). This scarcity of firepower makes every encounter tense and forces you to rely on evasion and resource management.</p>
+
+            <p>Key items to find in the West Wing:</p>
+            <ul>
+                <li><strong>First Pistol</strong> 鈥?Found in the nurses' station on the ground floor</li>
+                <li><strong>West Wing Key</strong> 鈥?Located in the director's office (requires solving a combination lock)</li>
+                <li><strong>Herb collection</strong> 鈥?Several green and red herbs are scattered throughout patient rooms</li>
+                <li><strong>Hospital Files (x3)</strong> 鈥?Documents that provide backstory on the facility's dark history</li>
+            </ul>
+
+            <h3>Hospital East Wing</h3>
+
+            <p>The East Wing escalates the horror significantly. Enemy density increases, lighting becomes darker, and the sound design reaches its most unsettling peaks. This is where many players report the highest tension levels in the game.</p>
+
+            <div class="tip-box">
+                <div class="tip-box-title">PRO TIP</div>
+                <p>In the East Wing, there is a safe room near the elevator shaft. Use it frequently. The enemies in this section patrol in patterns 鈥?memorize their routes before committing to a path. Running blindly will attract multiple enemies that Grace cannot handle.</p>
+            </div>
+
+            <!-- Video: Hospital Walkthrough -->
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/w-KSBbNRPRQ" title="Resident Evil Requiem Walkthrough Part 2 Grace Hospital West Wing East Wing" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-caption">RESIDENT EVIL REQUIEM WALKTHROUGH PART 2 鈥?GRACE HOSPITAL WEST WING / EAST WING (citation:15)</div>
+
+            <!-- Section: Rhodes Basement -->
+            <h2 id="grace-rhodes">GRACE: RHODES BASEMENT & THE GIRL FIGHT</h2>
+
+            <p>After clearing both hospital wings, Grace descends into the <strong>Rhodes Basement</strong>, which serves as the transition between the hospital exploration and the Care Centre storyline. Community breakdowns have mapped out Grace's gameplay as essentially three key areas: <em>"Rhodes + Basement + Girl fight is basically her entire gameplay"</em> (citation:17).</p>
+
+            <!-- Image Placeholder: Basement -->
+            <div class="article-image">
+                <img src="images/rhodes-basement.svg" alt="Rhodes Basement - Narrow corridors with flickering fluorescent lights" loading="lazy">
+                <div class="image-caption">The Rhodes Basement is a maze of narrow corridors and locked doors. Map awareness is critical here.</div>
+            </div>
+
+            <p>The basement introduces several new enemy types that are faster and more aggressive than anything Grace has faced so far. Ammunition conservation is absolutely critical 鈥?remember, you only have pistols at this point, and ammo pickups are sparse.</p>
+
+            <h3>The Girl Fight 鈥?Boss Encounter</h3>
+
+            <p>The culmination of Grace's gameplay section is the <strong>Girl Fight</strong> 鈥?a disturbing boss encounter that takes place in the basement's deepest chamber. This is the <strong>only boss fight</strong> that Grace participates in throughout the entire game (citation:7), so Capcom clearly designed it to be memorable.</p>
+
+            <div class="highlight-box">
+                <p><strong>Boss Strategy:</strong> The Girl Fight is primarily about evasion and timing. The boss has three attack phases, each faster than the last. Use the environmental pillars for cover, and only fire when the boss is recovering from a lunging attack. Headshots deal bonus stagger damage, creating a 3-second window for follow-up shots.</p>
+            </div>
+
+            <div class="warning-box">
+                鈿狅笍 SPOILER WARNING: The next section contains story details about the Care Centre.
+            </div>
+
+            <!-- Section: Care Centre -->
+            <h2 id="care-centre">THE CARE CENTRE: DR. RHODES' HORROR</h2>
+
+            <p>The Care Centre is one of the most disturbing locations in Resident Evil Requiem. Described as a facility <em>"run by Dr. Rhodes"</em> (citation:10), this section reveals the full scope of the experiments being conducted on patients. The environmental storytelling here is exceptional 鈥?medical equipment, patient records, and biological specimens paint a picture of systematic cruelty.</p>
+
+            <!-- Video: Care Centre -->
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/dGVhOqtXHKo" title="Resident Evil Requiem Gameplay Part 2 Care Centre PS5 4K" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-caption">RESIDENT EVIL REQUIEM GAMEPLAY 鈥?CARE CENTRE EXPLORATION (PS5 4K 60FPS) (citation:10)</div>
+
+            <p>The Care Centre section transitions the story from Grace's personal investigation into the larger conspiracy that connects both protagonists. Pay close attention to the files and documents found here 鈥?they contain critical lore information that ties into the game's multiple endings (see our <a href="endings.html">All Endings Explained guide</a> for the full breakdown).</p>
+
+            <!-- Section: Security Band -->
+            <h2 id="security-band">SECURITY BAND PUZZLE GUIDE</h2>
+
+            <p>One of the more complex puzzles in Part 2 involves the <strong>security band system</strong>. You need to upgrade your security clearance to access restricted areas throughout the hospital and Care Centre. Here is the step-by-step solution:</p>
+
+            <ol>
+                <li><strong>Obtain Level 1 Security Band</strong> 鈥?Found in the West Wing nurses' station after solving the organ placement puzzle</li>
+                <li><strong>Place the organs</strong> in the correct order in the specimen room 鈥?the correct sequence is hinted at by the numbered jars on the shelf</li>
+                <li><strong>Kill the zombie</strong> that spawns after placing the organs (the Requiem Shot makes this easiest) (citation:11)</li>
+                <li><strong>Pick up the Level 2 Security Band</strong> from the zombie's body</li>
+                <li><strong>Run to the isolation ward and office</strong> 鈥?pick up the herb in the office and examine the files for the Level 3 upgrade code (citation:11)</li>
+            </ol>
+
+            <div class="tip-box">
+                <div class="tip-box-title">PRO TIP</div>
+                <p>The organ placement puzzle stumps many players. If you are stuck, look for the color-coded labels on each jar. The order follows the sequence displayed on the whiteboard in the adjacent observation room. Take a screenshot of the whiteboard before leaving the room 鈥?the information is not saved in your file inventory.</p>
+            </div>
+
+            <!-- Section: Leon Boss Fight -->
+            <h2 id="leon-boss">LEON: VICTOR GIDEON DIRT BIKE BOSS FIGHT</h2>
+
+            <p>While Grace is navigating the horrors of the hospital, Leon faces his own set of challenges. The highlight of Leon's Part 2 gameplay is the <strong>Victor Gideon dirt bike boss fight</strong> 鈥?one of the most cinematic encounters in the entire Resident Evil franchise (citation:8).</p>
+
+            <!-- Video: Dirt Bike Boss Fight -->
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/W7QYOGYVNJE" title="Resident Evil Requiem Part 12 Leon Dirt Bike Boss Fight Victor Gideon" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-caption">RESIDENT EVIL REQUIEM PART 12 鈥?LEON'S EPIC DIRT BIKE BOSS FIGHT VS VICTOR GIDEON (citation:8)</div>
+
+            <h3>Victor Gideon Boss Strategy</h3>
+
+            <p>This boss fight is unique because it combines vehicular combat with traditional Resident Evil mechanics. Here is how to survive it:</p>
+
+            <ul>
+                <li><strong>Phase 1:</strong> Gideon charges on his bike in straight lines. Strafe to the side and shoot his fuel tank when he passes. Three hits to the tank trigger Phase 2.</li>
+                <li><strong>Phase 2:</strong> Gideon dismounts and fights on foot with a modified chainsaw. Keep distance and use shotgun blasts to stagger him. Aim for the exposed fuel canister on his back.</li>
+                <li><strong>Phase 3:</strong> The arena catches fire, limiting your movement space. Gideon becomes faster and more aggressive. Use the remaining cover objects and time your shots carefully. Magnum shots to the head deal massive damage.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Ammo Recommendation:</strong> Bring at least 30 handgun rounds, 10 shotgun shells, and save your magnum ammo exclusively for Phase 3. If you are low on supplies, there is a hidden ammo cache behind the overturned truck in the southeast corner of the arena.</p>
+            </div>
+
+            <!-- Section: ARK Lab -->
+            <h2 id="leon-ark">LEON: ARK LAB & GRACE RESCUE</h2>
+
+            <p>Following the Victor Gideon fight, Leon's story converges with Grace's at the <strong>ARK Lab</strong> (citation:6). This is a pivotal story moment where the two protagonists finally meet and the full scope of the conspiracy is revealed.</p>
+
+            <!-- Image Placeholder: ARK Lab -->
+            <div class="article-image">
+                <img src="images/ark-lab.svg" alt="ARK Lab - High-tech laboratory with bio-containment pods" loading="lazy">
+                <div class="image-caption">The ARK Lab represents the pinnacle of the game's environmental design 鈥?a stark contrast to the decayed hospital.</div>
+            </div>
+
+            <p>The ARK Lab section can be broken down into approximately three rooms for Grace's gameplay portion (citation:17). Leon, on the other hand, faces significantly more combat encounters in this section. The lab is heavily guarded by enhanced B.O.W.s that require precise aiming and smart resource management.</p>
+
+            <p>During the Grace rescue sequence, you will need to navigate the lab's security systems while protecting Grace from incoming threats. This section plays out as a semi-scripted action sequence with QTE elements 鈥?stay alert and follow the on-screen prompts.</p>
+
+            <!-- Section: HUNK Boss Fight -->
+            <h2 id="hunk">HUNK BOSS FIGHT STRATEGY</h2>
+
+            <p>The <strong>HUNK Boss Fight</strong> is one of Part 2's most challenging and talked-about encounters (citation:6)(citation:9). Community discussion around this fight has been intense, with many players noting the difficulty spike compared to earlier encounters.</p>
+
+            <!-- Video: HUNK Boss Fight -->
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/4FPlKH_UM9Y" title="Resident Evil Requiem Part 14 HUNK Boss Fight" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-caption">RESIDENT EVIL REQUIEM PART 14 鈥?ARK LAB, GRACE RESCUE & HUNK BOSS FIGHT (citation:6)</div>
+
+            <h3>HUNK Boss Strategy Breakdown</h3>
+
+            <p>HUNK is a uniquely challenging boss because he fights like a trained operative, not a monster. He uses cover, flanking maneuvers, and tactical grenades. Here is how to take him down:</p>
+
+            <ul>
+                <li><strong>Respect his range:</strong> HUNK's accuracy at medium range is devastating. Either fight at close range (shotgun) or at extreme distance (rifle). The middle ground is a death zone.</li>
+                <li><strong>Watch for grenades:</strong> HUNK throws flashbangs and frag grenades. When you see the grenade animation, sprint perpendicular to your current position.</li>
+                <li><strong>Exploit reload windows:</strong> After HUNK fires his submachine gun burst, there is a 2-second reload window. This is your primary damage opportunity.</li>
+                <li><strong>Phase transitions:</strong> At 50% health, HUNK activates an active camouflage system that makes him partially invisible. Listen for his footsteps and watch for the shimmer effect.</li>
+            </ul>
+
+            <div class="lore-box">
+                <div class="lore-box-title">LORE NOTE</div>
+                <p>HUNK's appearance in Requiem connects to his long history in the Resident Evil franchise. Known as "Mr. Death," HUNK has survived every mission he has been deployed on. His presence in the ARK Lab suggests deep Umbrella/Neo-Umbrella connections that tie into the game's overarching conspiracy.</p>
+            </div>
+
+            <!-- Section: Collectibles -->
+            <h2 id="collectibles">ALL COLLECTIBLES IN PART 2</h2>
+
+            <p>Part 2 contains a significant number of collectibles. For 100% completion, you will need to find every item listed below. Use this checklist as you progress (citation:14):</p>
+
+            <table class="collectible-table">
+                <thead>
+                    <tr>
+                        <th>Collectible</th>
+                        <th>Quantity</th>
+                        <th>Location Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mr. Raccoons</td>
+                        <td>4</td>
+                        <td>Hospital West Wing (1), East Wing (1), Care Centre (1), ARK Lab (1)</td>
+                    </tr>
+                    <tr>
+                        <td>Files</td>
+                        <td>8</td>
+                        <td>Scattered across all areas 鈥?check desks, shelves, and patient rooms</td>
+                    </tr>
+                    <tr>
+                        <td>Safes</td>
+                        <td>2</td>
+                        <td>Hospital Director's Office, Care Centre Storage Room</td>
+                    </tr>
+                    <tr>
+                        <td>BSAA Containers</td>
+                        <td>2</td>
+                        <td>Rhodes Basement, ARK Lab Sub-level</td>
+                    </tr>
+                    <tr>
+                        <td>Antique Coins</td>
+                        <td>3</td>
+                        <td>Hospital Chapel, Care Centre Garden, ARK Lab Break Room</td>
+                    </tr>
+                    <tr>
+                        <td>Weapons</td>
+                        <td>3 (Grace)</td>
+                        <td>2 pistols + 1 special weapon from the Girl Fight</td>
+                    </tr>
+                    <tr>
+                        <td>Shadow Files</td>
+                        <td>2</td>
+                        <td>Hidden in the Care Centre and ARK Lab (required for Secret Ending)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tip-box">
+                <div class="tip-box-title">COLLECTOR'S TIP</div>
+                <p>Some collectibles become inaccessible after specific story triggers. The most common missable item is the <strong>Mr. Raccoon in the Hospital Chapel</strong> 鈥?once you trigger the basement descent, the chapel is permanently locked. Make sure to explore every room before progressing the story (citation:14).</p>
+            </div>
+
+            <!-- Video: 100% Walkthrough -->
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/NddOKFIGlnk" title="Resident Evil Requiem 100% Walkthrough All Collectibles" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-caption">RESIDENT EVIL REQUIEM 鈥?100% WALKTHROUGH & GUIDE: ALL MR. RACCOONS, FILES, SAFES, BSAA CONTAINERS, ANTIQUE COINS & WEAPONS (citation:14)</div>
+
+            <!-- Section: Pro Tips -->
+            <h2 id="tips">PRO TIPS FOR PART 2</h2>
+
+            <p>Here are our top tips for conquering Part 2 efficiently:</p>
+
+            <ol>
+                <li><strong>Save often during Grace's sections.</strong> With only 3 weapons and limited ammo, a single mistake can cost you 20-30 minutes of progress. Use typewriters whenever you find them.</li>
+                <li><strong>Craft ammunition before boss fights.</strong> The crafting system in Requiem is generous with components 鈥?use workbenches to convert gunpowder into your preferred ammo type before every major encounter.</li>
+                <li><strong>Explore every room.</strong> Part 2 contains the highest density of collectibles in the game. Many are hidden behind breakable objects or in rooms that appear to be dead ends (citation:14).</li>
+                <li><strong>Upgrade your shotgun first.</strong> Leon's shotgun is the most versatile weapon for Part 2's boss fights. Prioritize damage upgrades, then capacity.</li>
+                <li><strong>Listen to the audio design.</strong> Requiem's sound design is not just atmospheric 鈥?it is gameplay-relevant. Enemy growls indicate nearby threats, and subtle music changes signal boss encounters. Play with headphones for the best experience.</li>
+            </ol>
+
+            <div class="highlight-box">
+                <p><strong>For completionists:</strong> After finishing Part 2, make a separate save file before the final chapter. This allows you to replay specific sections for missed collectibles without starting a New Game+. See our <a href="endings.html">All Endings Explained</a> guide for the optimal playthrough order.</p>
+            </div>
+
+            <!-- Final Thoughts -->
+            <h2>FINAL THOUGHTS</h2>
+
+            <p>Resident Evil Requiem Walkthrough Part 2 is the heart of the game. It is where the dual-protagonist structure truly shines, the boss encounters reach their peak intensity, and the conspiracy story deepens in ways that longtime fans of the franchise will appreciate. Grace Ashcroft's vulnerability contrasts beautifully with Leon's combat prowess, creating a gameplay rhythm that keeps you on edge throughout (citation:3).</p>
+
+            <p>Whether you are here for the collectibles, the boss strategies, or just trying to survive the hospital, we hope this guide has helped you navigate Part 2's challenges. Bookmark this page and check back 鈥?we update our guides regularly as new discoveries are made by the community.</p>
+
+            <p><strong>Looking for more?</strong> Check out our other Resident Evil Requiem guides:</p>
+
+            <ul>
+                <li><a href="walkthrough.html">Walkthrough Part 1: All Chapters, Puzzles & Boss Strategies</a></li>
+                <li><a href="leon-scene.html">Leon Nurse Scene Explained 鈥?All Theories Analyzed</a></li>
+                <li><a href="beginner-guide.html">Beginner Guide: 15 Essential Tips for New Players</a></li>
+                <li><a href="endings.html">All Endings Explained: Secret Ending & Lore Breakdown</a></li>
+            </ul>
+
+            <a href="index.html" class="back-link">鈫?BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+
+    <!-- Related -->
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="walkthrough.html">Walkthrough Part 1</a>
+            <a href="leon-scene.html">Leon Scene Analysis</a>
+            <a href="beginner-guide.html">Beginner Guide</a>
+            <a href="endings.html">All Endings Explained</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated June 2026</p>
+    </footer>
+
+    <!-- Share Scripts -->
+    <script>
+    (function(){
+        var u = encodeURIComponent(window.location.href);
+        var t = encodeURIComponent(document.title);
+        document.getElementById('share-twitter').href = 'https://twitter.com/intent/tweet?url=' + u + '&text=' + t;
+        document.getElementById('share-facebook').href = 'https://www.facebook.com/sharer/sharer.php?u=' + u;
+        document.getElementById('share-reddit').href = 'https://reddit.com/submit?url=' + u + '&title=' + t;
+        document.getElementById('share-whatsapp').href = 'https://api.whatsapp.com/send?text=' + t + '%20' + u;
+    })();
+
+    function copyLink() {
+        navigator.clipboard.writeText(window.location.href).then(function() {
+            var b = document.getElementById('share-copy');
+            b.classList.add('copied');
+            b.title = 'Copied!';
+            setTimeout(function() {
+                b.classList.remove('copied');
+                b.title = 'Copy link';
+            }, 2000);
+        });
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#100808;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="light" cx="30%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:#1a3a1a;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="light2" cx="70%" cy="60%" r="35%">
+      <stop offset="0%" style="stop-color:#8b0000;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="720" height="400" fill="url(#bg)"/>
+  <rect width="720" height="400" fill="url(#light)"/>
+  <rect width="720" height="400" fill="url(#light2)"/>
+  <!-- Corridor perspective lines -->
+  <line x1="360" y1="200" x2="0" y2="0" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="360" y1="200" x2="720" y2="0" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="360" y1="200" x2="0" y2="400" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="360" y1="200" x2="720" y2="400" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Corridor walls -->
+  <line x1="180" y1="100" x2="180" y2="300" stroke="#2a2520" stroke-width="0.5" opacity="0.3"/>
+  <line x1="540" y1="100" x2="540" y2="300" stroke="#2a2520" stroke-width="0.5" opacity="0.3"/>
+  <line x1="180" y1="100" x2="540" y2="100" stroke="#2a2520" stroke-width="0.5" opacity="0.3"/>
+  <line x1="180" y1="300" x2="540" y2="300" stroke="#2a2520" stroke-width="0.5" opacity="0.3"/>
+  <!-- Fluorescent light strips -->
+  <rect x="300" y="95" width="120" height="3" fill="#1a3a1a" opacity="0.3" rx="1"/>
+  <rect x="320" y="90" width="80" height="2" fill="#2a5a2a" opacity="0.15" rx="1"/>
+  <!-- Biohazard containers -->
+  <rect x="200" y="260" width="30" height="40" fill="none" stroke="#2a5a2a" stroke-width="0.8" opacity="0.2" rx="2"/>
+  <rect x="490" y="255" width="35" height="45" fill="none" stroke="#2a5a2a" stroke-width="0.8" opacity="0.2" rx="2"/>
+  <!-- Pipes -->
+  <line x1="190" y1="120" x2="190" y2="280" stroke="#2a2520" stroke-width="2" opacity="0.15"/>
+  <line x1="530" y1="110" x2="530" y2="290" stroke="#2a2520" stroke-width="2" opacity="0.15"/>
+  <!-- Central text -->
+  <text x="360" y="210" font-family="Bebas Neue, Arial Black, sans-serif" font-size="60" fill="#8b0000" text-anchor="middle" opacity="0.08">RHODES BASEMENT</text>
+  <!-- Dripping effect -->
+  <circle cx="350" cy="310" r="2" fill="#1a3a1a" opacity="0.2"/>
+  <circle cx="380" cy="315" r="1.5" fill="#1a3a1a" opacity="0.15"/>
+  <circle cx="320" cy="308" r="1" fill="#1a3a1a" opacity="0.1"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="718" height="398" fill="none" stroke="#2a2520" stroke-width="1"/>
+  <!-- Scanlines -->
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="4" y2="0" stroke="#000" stroke-width="0.5" opacity="0.05"/>
+  </pattern>
+  <rect width="720" height="400" fill="url(#scanlines)"/>
+</svg>

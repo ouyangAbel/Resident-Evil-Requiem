@@ -1,0 +1,55 @@
+﻿<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0d0d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#081015;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" style="stop-color:#0a3a5c;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="30%" cy="70%" r="30%">
+      <stop offset="0%" style="stop-color:#8b0000;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="720" height="400" fill="url(#bg)"/>
+  <rect width="720" height="400" fill="url(#glow)"/>
+  <rect width="720" height="400" fill="url(#glow2)"/>
+  <!-- Bio-containment pods -->
+  <ellipse cx="180" cy="220" rx="50" ry="80" fill="none" stroke="#1a3a5c" stroke-width="0.8" opacity="0.2"/>
+  <ellipse cx="180" cy="220" rx="35" ry="60" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.15"/>
+  <ellipse cx="540" cy="220" rx="50" ry="80" fill="none" stroke="#1a3a5c" stroke-width="0.8" opacity="0.2"/>
+  <ellipse cx="540" cy="220" rx="35" ry="60" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.15"/>
+  <!-- Central pod -->
+  <ellipse cx="360" cy="200" rx="70" ry="100" fill="none" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <ellipse cx="360" cy="200" rx="50" ry="75" fill="none" stroke="#0a5a8c" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="360" cy="200" r="25" fill="none" stroke="#0a5a8c" stroke-width="0.5" opacity="0.2"/>
+  <!-- Data screens -->
+  <rect x="80" y="80" width="100" height="60" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.15" rx="2"/>
+  <line x1="90" y1="95" x2="170" y2="95" stroke="#0a5a8c" stroke-width="0.5" opacity="0.1"/>
+  <line x1="90" y1="105" x2="150" y2="105" stroke="#0a5a8c" stroke-width="0.5" opacity="0.08"/>
+  <line x1="90" y1="115" x2="160" y2="115" stroke="#0a5a8c" stroke-width="0.5" opacity="0.08"/>
+  <rect x="540" y="80" width="100" height="60" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.15" rx="2"/>
+  <line x1="550" y1="95" x2="630" y2="95" stroke="#0a5a8c" stroke-width="0.5" opacity="0.1"/>
+  <line x1="550" y1="105" x2="610" y2="105" stroke="#0a5a8c" stroke-width="0.5" opacity="0.08"/>
+  <line x1="550" y1="115" x2="620" y2="115" stroke="#0a5a8c" stroke-width="0.5" opacity="0.08"/>
+  <!-- Blue ambient lights -->
+  <circle cx="180" cy="140" r="4" fill="#0a5a8c" opacity="0.15"/>
+  <circle cx="540" cy="140" r="4" fill="#0a5a8c" opacity="0.15"/>
+  <circle cx="360" cy="90" r="5" fill="#0a5a8c" opacity="0.2"/>
+  <!-- Grid floor -->
+  <line x1="0" y1="350" x2="720" y2="350" stroke="#1a1a2a" stroke-width="0.5" opacity="0.1"/>
+  <line x1="200" y1="350" x2="360" y2="400" stroke="#1a1a2a" stroke-width="0.3" opacity="0.08"/>
+  <line x1="520" y1="350" x2="360" y2="400" stroke="#1a1a2a" stroke-width="0.3" opacity="0.08"/>
+  <!-- Text -->
+  <text x="360" y="310" font-family="Bebas Neue, Arial Black, sans-serif" font-size="50" fill="#0a5a8c" text-anchor="middle" opacity="0.07">ARK LAB</text>
+  <!-- Border -->
+  <rect x="1" y="1" width="718" height="398" fill="none" stroke="#2a2520" stroke-width="1"/>
+  <!-- Scanlines -->
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="4" y2="0" stroke="#0a5a8c" stroke-width="0.5" opacity="0.02"/>
+  </pattern>
+  <rect width="720" height="400" fill="url(#scanlines)"/>
+</svg>
