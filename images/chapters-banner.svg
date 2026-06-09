@@ -1,0 +1,43 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a0808"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b0000"/>
+      <stop offset="100%" style="stop-color:#c41e1e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <line x1="0" y1="75" x2="800" y2="75" stroke="#2a2520" stroke-width="0.5"/>
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#2a2520" stroke-width="0.5"/>
+  <line x1="0" y1="225" x2="800" y2="225" stroke="#2a2520" stroke-width="0.5"/>
+  <line x1="200" y1="0" x2="200" y2="300" stroke="#2a2520" stroke-width="0.5"/>
+  <line x1="400" y1="0" x2="400" y2="300" stroke="#2a2520" stroke-width="0.5"/>
+  <line x1="600" y1="0" x2="600" y2="300" stroke="#2a2520" stroke-width="0.5"/>
+  <circle cx="400" cy="150" r="100" fill="none" stroke="url(#accent)" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="400" cy="150" r="70" fill="none" stroke="url(#accent)" stroke-width="0.3" opacity="0.2"/>
+  <text x="120" y="80" font-family="'Bebas Neue', sans-serif" font-size="48" fill="#8b0000" opacity="0.12">I</text>
+  <text x="280" y="60" font-family="'Bebas Neue', sans-serif" font-size="36" fill="#8b0000" opacity="0.08">IV</text>
+  <text x="500" y="90" font-family="'Bebas Neue', sans-serif" font-size="42" fill="#8b0000" opacity="0.1">VII</text>
+  <text x="650" y="70" font-family="'Bebas Neue', sans-serif" font-size="50" fill="#8b0000" opacity="0.15">XII</text>
+  <text x="150" y="260" font-family="'Bebas Neue', sans-serif" font-size="32" fill="#8b0000" opacity="0.06">III</text>
+  <text x="550" y="250" font-family="'Bebas Neue', sans-serif" font-size="40" fill="#8b0000" opacity="0.1">IX</text>
+  <text x="400" y="140" font-family="'Bebas Neue', sans-serif" font-size="52" fill="#e8e4e0" text-anchor="middle" letter-spacing="8" filter="url(#glow)">ALL CHAPTERS</text>
+  <text x="400" y="185" font-family="'DM Mono', monospace" font-size="14" fill="#9a9590" text-anchor="middle" letter-spacing="6">CHAPTER I &mdash; XII &bull; COMPLETE LIST</text>
+  <rect x="300" y="210" width="200" height="2" fill="url(#accent)" opacity="0.6"/>
+  <rect x="20" y="20" width="30" height="1" fill="#8b0000" opacity="0.4"/>
+  <rect x="20" y="20" width="1" height="30" fill="#8b0000" opacity="0.4"/>
+  <rect x="750" y="20" width="30" height="1" fill="#8b0000" opacity="0.4"/>
+  <rect x="779" y="20" width="1" height="30" fill="#8b0000" opacity="0.4"/>
+  <rect x="20" y="279" width="30" height="1" fill="#8b0000" opacity="0.4"/>
+  <rect x="20" y="270" width="1" height="30" fill="#8b0000" opacity="0.4"/>
+  <rect x="750" y="279" width="30" height="1" fill="#8b0000" opacity="0.4"/>
+  <rect x="779" y="270" width="1" height="30" fill="#8b0000" opacity="0.4"/>
+</svg>

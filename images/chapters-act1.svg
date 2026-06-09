@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250">
+  <defs><linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d0d0d"/><stop offset="50%" style="stop-color:#1a0a0a"/><stop offset="100%" style="stop-color:#0d0d0d"/></linearGradient><filter id="glow1"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="800" height="250" fill="url(#bg1)"/>
+  <g opacity="0.04"><line x1="0" y1="0" x2="800" y2="0" stroke="#fff" stroke-width="1"/><line x1="0" y1="4" x2="800" y2="4" stroke="#fff" stroke-width="1"/><line x1="0" y1="8" x2="800" y2="8" stroke="#fff" stroke-width="1"/><line x1="0" y1="12" x2="800" y2="12" stroke="#fff" stroke-width="1"/><line x1="0" y1="16" x2="800" y2="16" stroke="#fff" stroke-width="1"/><line x1="0" y1="20" x2="800" y2="20" stroke="#fff" stroke-width="1"/><line x1="0" y1="24" x2="800" y2="24" stroke="#fff" stroke-width="1"/><line x1="0" y1="28" x2="800" y2="28" stroke="#fff" stroke-width="1"/><line x1="0" y1="32" x2="800" y2="32" stroke="#fff" stroke-width="1"/><line x1="0" y1="36" x2="800" y2="36" stroke="#fff" stroke-width="1"/><line x1="0" y1="40" x2="800" y2="40" stroke="#fff" stroke-width="1"/></g>
+  <text x="80" y="180" font-family="'Bebas Neue', sans-serif" font-size="160" fill="#8b0000" opacity="0.06">I-III</text>
+  <text x="500" y="180" font-family="'Bebas Neue', sans-serif" font-size="120" fill="#8b0000" opacity="0.04">ACT I</text>
+  <rect x="50" y="90" width="4" height="60" fill="#8b0000" opacity="0.6"/>
+  <text x="70" y="115" font-family="'DM Mono', monospace" font-size="11" fill="#9a9590" letter-spacing="3">ACT I</text>
+  <text x="70" y="140" font-family="'Bebas Neue', sans-serif" font-size="32" fill="#e8e4e0" letter-spacing="2">THE ESTATE GROUNDS</text>
+  <rect x="680" y="100" width="60" height="1" fill="#8b0000" opacity="0.3"/>
+  <rect x="700" y="110" width="40" height="1" fill="#8b0000" opacity="0.2"/>
+  <rect x="720" y="120" width="20" height="1" fill="#8b0000" opacity="0.1"/>
+</svg>
