@@ -1,0 +1,590 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-GF9BYLZ5F7");</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Resident Evil Requiem Perfect Dodge Guide - Timing, Tips & Advanced Techniques</title><meta name="description" content="Master the Perfect Dodge in Resident Evil Requiem. Learn exact timing windows, boss applications, counterattack bonuses, and advanced dodge techniques."><meta name="keywords" content="resident evil requiem perfect dodge, re requiem dodge timing, resident evil requiem dodge guide, resident evil requiem counter dodge, resident evil requiem combat tips"><meta name="robots" content="index, follow"><link rel="canonical" href="https://rerequiemguide.com/perfect-dodge-guide.html"><meta property="og:title" content="Resident Evil Requiem Perfect Dodge Guide"><meta property="og:description" content="Master the Perfect Dodge mechanic in RE Requiem."><meta property="og:type" content="article"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Resident Evil Requiem Perfect Dodge Guide","description":"Master the Perfect Dodge in Resident Evil Requiem","datePublished":"2026-06-16","dateModified":"2026-06-16","author":{"@type":"Organization","name":"RE Requiem Guide"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rerequiemguide.com/perfect-dodge-guide.html"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a Perfect Dodge in Resident Evil Requiem?","acceptedAnswer":{"@type":"Answer","text":"A Perfect Dodge is a precisely timed dodge just before an enemy attack connects. It triggers slow-motion and opens a counterattack window for bonus damage."}},{"@type":"Question","name":"How do you do a Perfect Dodge in RE Requiem?","acceptedAnswer":{"@type":"Answer","text":"Press the dodge button (R1/RB) within 0.3 seconds of an attack landing on Standard difficulty."}},{"@type":"Question","name":"Does Perfect Dodge work on bosses?","acceptedAnswer":{"@type":"Answer","text":"Yes. Perfect Dodge works on most boss attacks including melee swipes, charges, and shockwaves."}}]}</script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139,0,0,.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+            --warning: #8b6914;
+            --info: #2a4a6b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+
+        /* Article Header */
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(139,0,0,.1) 0%, transparent 60%);
+        }
+        .header-decoration {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            padding: .4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: .05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+
+        /* Share Bar */
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: .5rem;
+            white-space: nowrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+        .share-btn.copy-link.copied { border-color: #4caf50; color: #4caf50; }
+
+        /* Article Content */
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: .8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s;
+        }
+        .article-content a:hover { border-bottom-color: var(--accent-light); }
+        .article-content strong { color: var(--text-primary); }
+
+        /* Illustration Panel */
+        .illustration-panel {
+            margin: 2.5rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .illustration-panel img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 2rem 2.5rem;
+            margin: 2.5rem 0;
+        }
+        .toc-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .toc-list li {
+            margin-bottom: .5rem;
+            font-size: .95rem;
+        }
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color .3s;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: var(--accent-light); }
+        .toc-act {
+            font-family: 'Inter Tight', sans-serif;
+            font-weight: 600;
+            font-size: .75rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--accent-light);
+            margin-top: 1.2rem;
+            margin-bottom: .6rem;
+        }
+        .toc-act:first-child { margin-top: 0; }
+
+        /* Quick Reference Table */
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: .95rem;
+        }
+        .quick-table thead {
+            border-bottom: 2px solid var(--accent);
+        }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: .8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table .ch-num {
+            font-family: 'DM Mono', monospace;
+            color: var(--accent-light);
+            font-weight: 400;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: rgba(139,0,0,.08);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+
+        /* Chapter Cards */
+        .chapter-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            position: relative;
+            transition: border-color .4s ease;
+        }
+        .chapter-card:hover { border-color: var(--accent-glow); }
+        .chapter-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            color: rgba(139,0,0,.15);
+            line-height: 1;
+            margin-bottom: .5rem;
+        }
+        .chapter-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: .8rem;
+        }
+        .chapter-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Fade-in Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Video Embed */
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-caption {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: .8rem;
+            margin-bottom: 2rem;
+            letter-spacing: .05em;
+        }
+
+        /* Tip Card (FAQ) */
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+            margin: 1.5rem 0;
+        }
+        .tip-number {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .8rem;
+        }
+        .tip-card h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 .8rem;
+        }
+        .tip-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: rgba(42,74,107,.12);
+            border-left: 3px solid var(--info);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p { margin-bottom: 0; }
+
+        /* Back Link */
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: .2rem;
+            transition: all .3s;
+        }
+        .back-link:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent-light);
+        }
+
+        /* Related Section */
+        .related {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .related-links a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: .6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all .3s;
+        }
+        .related-links a:hover {
+            color: var(--accent-light);
+            border-color: var(--accent);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem 4rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: .15em;
+            color: var(--accent);
+            margin-bottom: .8rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .1em;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner { padding: .8rem 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .article-header { padding: 5rem 1.5rem 3rem; }
+            .article-content { padding: 1.5rem 1rem; }
+            .chapter-card { padding: 1.5rem; }
+            .toc { padding: 1.5rem; }
+            .quick-table { font-size: .85rem; }
+            .quick-table th, .quick-table td { padding: .5rem .6rem; }
+            .related-links { gap: .6rem; }
+            .related-links a { font-size: .7rem; padding: .5rem .8rem; }
+        }
+    .info-box{background:rgba(42,74,107,.12);border-left:3px solid var(--info);padding:1.2rem 1.5rem;margin:2rem 0;border-radius:0 6px 6px 0}.info-box p{margin-bottom:0}.success-box{background:rgba(45,90,39,.12);border-left:3px solid var(--success);padding:1.2rem 1.5rem;margin:2rem 0;border-radius:0 6px 6px 0}.success-box p{margin-bottom:0}</style>\n</head>\n<body>\n    <header class="header"><div class="header-inner"><a href="index.html" class="logo">RE:REQUIEM<span>STRATEGY GUIDE</span></a><nav class="nav"><a href="index.html#articles">GUIDES</a><a href="walkthrough.html">WALKTHROUGH</a><a href="leon-scene.html">LEON SCENE</a><a href="beginner-guide.html">BEGINNERS</a><a href="boss-guide.html">BOSSES</a><a href="chapters.html">CHAPTERS</a><a href="endings.html">ENDINGS</a></nav></div></header>\n    <article>
+        <header class="article-header">
+            <div class="breadcrumb"><a href="index.html">HOME</a> / RESIDENT EVIL REQUIEM / PERFECT DODGE GUIDE</div>
+            <div class="article-tag">COMBAT MECHANICS &bull; ADVANCED GUIDE</div>
+            <h1 class="article-title">RESIDENT EVIL REQUIEM PERFECT DODGE GUIDE: TIMING, BONUSES &amp; BOSS APPLICATIONS</h1>
+            <div class="article-meta">JUNE 16, 2026 &nbsp;&bull;&nbsp; 15 MIN READ &nbsp;&bull;&nbsp; UPDATED JUNE 2026</div>\n            <div class="share-bar"><span class="share-label">SHARE THIS</span><a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a><a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a><button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button></div>\n        </header>\n        <div class="article-content">
+            <p>The Perfect Dodge is the single most important combat mechanic in Resident Evil Requiem. Mastering it transforms the game from a desperate survival horror experience into a calculated dance of precision and punishment. Whether you are facing basic Lycans in the early chapters or the devastating Amalgam in Chapter XI, the Perfect Dodge is your universal survival tool.</p>
+            <p>This guide covers everything you need to know: exact timing windows, difficulty scaling, enemy-specific applications, boss fight strategies built around Perfect Dodge, and advanced techniques that most players never discover.</p>
+            <div class="toc"><div class="toc-title">TABLE OF CONTENTS</div><ul class="toc-list"><li><a href="#what-is">What Is the Perfect Dodge?</a></li><li><a href="#timing">Timing Windows by Difficulty</a></li><li><a href="#how-to">How to Execute a Perfect Dodge</a></li><li><a href="#benefits">Counterattack Bonuses &amp; Benefits</a></li><li><a href="#enemy-guide">Enemy-Specific Dodge Guide</a></li><li><a href="#boss-applications">Boss Fight Applications</a></li><li><a href="#advanced">Advanced Techniques</a></li><li><a href="#common-mistakes">Common Mistakes</a></li><li><a href="#practice">Best Places to Practice</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+            <h2 id="what-is">WHAT IS THE PERFECT DODGE?</h2>
+            <p>Resident Evil Requiem features an improved dodge system that rewards precise timing. A standard dodge lets you evade enemy attacks. A <strong>Perfect Dodge</strong> triggers when you press the dodge button within a narrow window before an attack connects. The screen briefly flashes, time slows down for approximately 1.5 seconds, and your next attack deals <strong>1.5x to 3x bonus damage</strong> depending on the weapon used.</p>
+            <p>The mechanic is introduced in the opening chapter but is never formally tutorialized. Most players discover it accidentally and never learn to use it consistently. This guide fixes that.</p>
+            <div class="highlight-box"><p><strong>Key Insight:</strong> The Perfect Dodge is not just a defensive tool &mdash; it is the most ammo-efficient offensive strategy in the game. A Perfect Dodge counterattack with the Combat Knife deals more damage than two standard handgun shots, while consuming zero ammunition.</p></div>
+            <h2 id="timing">TIMING WINDOWS BY DIFFICULTY</h2>
+            <p>The Perfect Dodge timing window changes significantly across difficulty levels.</p>
+            <table class="quick-table"><thead><tr><th>Difficulty</th><th>Window</th><th>Slow-Mo</th><th>Counter Multiplier</th></tr></thead><tbody><tr><td>Assisted</td><td>0.5s</td><td>2.0s</td><td>2.0x</td></tr><tr><td>Standard</td><td>0.3s</td><td>1.5s</td><td>1.5x</td></tr><tr><td>Hardcore</td><td>0.2s</td><td>1.0s</td><td>1.5x</td></tr><tr><td>Nightmare</td><td>0.15s</td><td>0.8s</td><td>1.2x</td></tr></tbody></table>
+            <p>On <strong>Standard difficulty</strong>, the 0.3-second window is generous enough to react to most enemy telegraphs. On <strong>Nightmare</strong>, the 0.15-second window requires near-frame-perfect input, making prediction far more important than reaction.</p>
+            <div class="info-box"><p><strong>Adaptive Difficulty Note:</strong> RE Requiem uses an adaptive difficulty system that adjusts enemy aggression based on your performance. If you consistently land Perfect Dodges, enemies will attack faster and with less predictable patterns.</p></div>
+            <h2 id="how-to">HOW TO EXECUTE A PERFECT DODGE</h2>
+            <div class="tip-card"><div class="tip-number">STEP 01</div><h3>Watch the Enemy Telegraph</h3><p>Every enemy attack in RE Requiem has a wind-up animation. For melee attacks, watch the weapon arm or claw. For ranged attacks, watch the projectile origin point. Do not press dodge when you see the attack start &mdash; wait until it is about to connect.</p></div>
+            <div class="tip-card"><div class="tip-number">STEP 02</div><h3>Press Dodge at the Last Moment</h3><p>Press <strong>R1 (PlayStation)</strong> or <strong>RB (Xbox)</strong> within the timing window before the attack lands. For claws and melee weapons, dodge when the limb reaches its maximum extension. For lunges, dodge when the enemy closes to roughly 2 meters.</p></div>
+            <div class="tip-card"><div class="tip-number">STEP 03</div><h3>Counterattack Immediately</h3><p>When the Perfect Dodge triggers, you have a brief slow-motion window. During this window, <strong>any attack deals bonus damage</strong>:</p><ul><li><strong>Combat Knife</strong> &mdash; Fastest counter, 3x damage multiplier, zero ammo cost</li><li><strong>Handgun</strong> &mdash; Quick draw, 1.5x multiplier, good for headshot follow-ups</li><li><strong>Shotgun</strong> &mdash; Highest burst damage, 1.5x multiplier, ideal for staggered bosses</li><li><strong>Rifle</strong> &mdash; Precision counter, 1.5x multiplier, best for weak-point shots</li></ul></div>
+            <div class="success-box"><p><strong>Pro Tip:</strong> The game auto-equips your last-used weapon during the counterattack window. Switch to the knife before dodging for the most ammo-efficient combo: dodge, auto-equip knife, counter, switch back to primary.</p></div>
+            <h2 id="benefits">COUNTERATTACK BONUSES &amp; BENEFITS</h2>
+            <div class="tip-card"><div class="tip-number">BONUS 01</div><h3>Damage Multiplier</h3><p>On Standard difficulty, a Perfect Dodge knife counter deals 3x normal knife damage. Against standard Lycans, this is often a one-hit kill to the head. The multiplier ranges from 1.2x on Nightmare to 3.0x with the knife on Assisted.</p></div>
+            <div class="tip-card"><div class="tip-number">BONUS 02</div><h3>Stagger Guarantee</h3><p>Counterattacks from a Perfect Dodge have a <strong>100% stagger chance</strong> on standard enemies, regardless of weapon. This opens them up for a follow-up context-sensitive melee prompt that deals heavy damage.</p></div>
+            <div class="tip-card"><div class="tip-number">BONUS 03</div><h3>Invincibility Frames</h3><p>During the Perfect Dodge animation, Leon has full invincibility frames lasting approximately 0.8 seconds on all difficulties. You can dodge through area-of-effect shockwaves and multi-hit combos.</p></div>
+            <div class="tip-card"><div class="tip-number">BONUS 04</div><h3>Ammo Conservation</h3><p>Consistent Perfect Dodge usage can reduce ammunition consumption by <strong>30-40%</strong> over a full playthrough. On Hardcore and Nightmare, this determines whether you survive boss encounters.</p></div>
+            <h2 id="enemy-guide">ENEMY-SPECIFIC DODGE GUIDE</h2>
+            <div class="tip-card"><div class="tip-number">ENEMY TYPE</div><h3>Standard Lycans</h3><p><strong>Claw Swipe:</strong> Dodge when the claw reaches maximum extension (~0.6s telegraph). <strong>Lunge:</strong> Crouches low and growls for 0.8s. Dodge sideways when it leaves the ground. <strong>Best counter:</strong> Knife to the head for instant stagger, then context melee.</p></div>
+            <div class="tip-card"><div class="tip-number">ENEMY TYPE</div><h3>Crimson Lycans</h3><p><strong>Leap attack:</strong> Shorter 0.4s telegraph. Watch for the hind-leg crouch. <strong>Chain combo</strong> (two swipes + bite): Perfect Dodge the first swipe, then immediately prepare to dodge the second hit.</p></div>
+            <div class="tip-card"><div class="tip-number">ENEMY TYPE</div><h3>Chainsaw Enemies</h3><p><strong>Overhead slam:</strong> 1.2s telegraph, dodge sideways at the 0.8s mark. <strong>Horizontal sweep:</strong> 0.5s telegraph. <strong>Important:</strong> chainsaw enemies cannot be staggered by Perfect Dodge counters. Use the window for damage then create distance.</p></div>
+            <div class="tip-card"><div class="tip-number">ENEMY TYPE</div><h3>Shadow Stalker</h3><p>Only Perfect Dodge when materialized. Watch for the red glow. Two Perfect Dodge shotgun counters stagger it out of invisibility entirely. The attack window is roughly 2 seconds of visibility.</p></div>
+            <h2 id="boss-applications">BOSS FIGHT APPLICATIONS</h2>
+            <div class="tip-card"><div class="tip-number">BOSS 01</div><h3>The Bloated Lycan (Chapter III)</h3><p><strong>Acid Vomit:</strong> Side-step when the mouth opens. Perfect Dodge gives 2 seconds for 3-4 headshots. <strong>Charging Lunge (Phase 2):</strong> Dodge sideways at the 1-second mark. The failed-lunge recovery is 4 seconds &mdash; the longest punish window of any boss attack.</p></div>
+            <div class="tip-card"><div class="tip-number">BOSS 02</div><h3>The Abomination (Chapter VI)</h3><p><strong>Ground Slam (Phase 2):</strong> Dodge <strong>before</strong> the slam connects, not after. Perfect Dodge gives rifle time for 2-3 precision shots. <strong>Grab Attack:</strong> 1.5-second rear-back telegraph. Getting grabbed is near-instant death on Hardcore.</p></div>
+            <div class="tip-card"><div class="tip-number">BOSS 03</div><h3>The Forgotten King (Optional, Chapter IX)</h3><p><strong>Halberd Sweep:</strong> Stay behind him, dodge into the sweep. Generous window due to slow swing speed. Counter with rifle to the red weak point between his shoulder blades.</p></div>
+            <div class="tip-card"><div class="tip-number">BOSS 04</div><h3>The Amalgam (Chapter XI)</h3><p><strong>Lycan Form:</strong> Fast lunges, 0.3s telegraph, dodge sideways. <strong>Abomination Form:</strong> Tentacles with 0.6s telegraph, use pillars. <strong>Shadow Form:</strong> 0.2s telegraph, track red glow, two shotgun counters force phase-out.</p></div>
+            <div class="tip-card"><div class="tip-number">BOSS 05</div><h3>Final Boss (Chapter XII)</h3><p><strong>Phase 5 Grab:</strong> 2-second telegraph, instant death on Hardcore/Nightmare. Perfect Dodge sideways when arms reach full extension. The counter window allows a full magazine dump dealing 10-15% of remaining HP.</p></div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/TGNxKhbByAA" title="RE Requiem Perfect Dodge Tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+            <p class="video-caption">Perfect Dodge demonstrations against all major bosses</p>
+            <h2 id="advanced">ADVANCED TECHNIQUES</h2>
+            <div class="tip-card"><div class="tip-number">ADVANCED 01</div><h3>Dodge Canceling</h3><p>Cancel any attack recovery animation into a Perfect Dodge. Shoot, see a telegraph, dodge immediately. This maintains offensive pressure while staying safe.</p></div>
+            <div class="tip-card"><div class="tip-number">ADVANCED 02</div><h3>Directional Dodge Bonus</h3><p>Dodging <strong>into</strong> an attack extends the Perfect Dodge window by ~0.05 seconds. The i-frames start at the dodge animation beginning, so moving toward the attack keeps you in the hitbox longer during i-frames.</p></div>
+            <div class="tip-card"><div class="tip-number">ADVANCED 03</div><h3>Multi-Enemy Dodge Chains</h3><p>Chain Perfect Dodges between different attackers. The slow-motion effect gives time to identify the next incoming attack. Skilled players can chain 3-4 Perfect Dodges, clearing groups without firing a shot.</p></div>
+            <div class="tip-card"><div class="tip-number">ADVANCED 04</div><h3>Environmental Perfect Dodge</h3><p>Perfect Dodge works on environmental hazards: explosive barrels, falling debris, trap triggers. Same timing as enemy attacks &mdash; dodge just before the hazard triggers.</p></div>
+            <h2 id="common-mistakes">COMMON MISTAKES</h2>
+            <ul>
+                <li><strong>Dodging too early.</strong> Players panic and dodge at the start of the attack, not when it connects. Wait for the forward momentum.</li>
+                <li><strong>Dodging backward from lunges.</strong> Lunge range is deceptively long. Always dodge <strong>sideways</strong>.</li>
+                <li><strong>Not counterattacking.</strong> A Perfect Dodge without a follow-up wastes the slow-motion window.</li>
+                <li><strong>Ignoring audio cues.</strong> A distinct sound plays 0.2 seconds before attacks connect. Use headphones.</li>
+                <li><strong>Trying to Perfect Dodge everything.</strong> Multi-hit combos and area attacks are better avoided with positioning.</li>
+            </ul>
+            <h2 id="practice">BEST PLACES TO PRACTICE</h2>
+            <ol>
+                <li><strong>Chapter I &mdash; Estate Grounds:</strong> Basic Lycans, slow predictable attacks</li>
+                <li><strong>Chapter III &mdash; Tunnel System:</strong> Tight corridors, Bloated Lycan as first real test</li>
+                <li><strong>Chapter IV &mdash; Main Hall Ambush:</strong> Three-wave Crimson Lycan encounter, best multi-enemy practice</li>
+                <li><strong>Mercenaries Mode:</strong> Endless waves with a timer, ultimate training ground (unlocks after story)</li>
+            </ol>
+            <div class="highlight-box"><p><strong>Practice Routine:</strong> Spend 15 minutes before each play session doing Perfect Dodge drills in Chapter IV. Within a week, the timing will become instinctive.</p></div>
+            <h2 id="faq">FAQ: PERFECT DODGE IN RESIDENT EVIL REQUIEM</h2>
+            <div class="tip-card"><div class="tip-number">Q1</div><h3>What is a Perfect Dodge?</h3><p>A precisely timed dodge just before an attack connects. It triggers slow-motion and opens a counterattack window for 1.2x to 3x bonus damage depending on difficulty and weapon.</p></div>
+            <div class="tip-card"><div class="tip-number">Q2</div><h3>How do you do a Perfect Dodge?</h3><p>Press R1 (PlayStation) or RB (Xbox) within 0.3 seconds of an attack landing on Standard. Window tightens to 0.2s on Hardcore and 0.15s on Nightmare.</p></div>
+            <div class="tip-card"><div class="tip-number">Q3</div><h3>Does it work on bosses?</h3><p>Yes. Works on most boss attacks including melee swipes, charges, acid projectiles, and shockwaves.</p></div>
+            <div class="tip-card"><div class="tip-number">Q4</div><h3>Does it grant invincibility?</h3><p>Yes. Full i-frames for approximately 0.8 seconds on all difficulties. You cannot take damage during the animation.</p></div>
+            <div class="tip-card"><div class="tip-number">Q5</div><h3>Best counter weapon?</h3><p><strong>Combat Knife</strong> for regular enemies (3x multiplier, zero ammo). <strong>Shotgun</strong> for bosses (highest burst). <strong>Rifle</strong> for weak-point precision shots.</p></div>
+            <div class="tip-card"><div class="tip-number">Q6</div><h3>Can you Perfect Dodge grabs?</h3><p>Yes. The Final Boss Phase 5 grab (2s telegraph) and Abomination grab (1.5s telegraph) can both be Perfect Dodged. Essential on Hardcore where grabs are instant death.</p></div>
+            <div class="info-box"><p><strong>Looking for more?</strong> Check out our <a href="beginner-guide.html">Beginner Guide</a> for foundational combat tips, or our <a href="boss-guide.html">Boss Guide</a> for detailed boss strategies built around Perfect Dodge timing.</p></div>
+            <h2>FINAL THOUGHTS</h2>
+            <p>The Perfect Dodge separates good RE Requiem players from great ones. It rewards observation, patience, and precision &mdash; the same qualities that define survival horror as a genre. Once you internalize the timing for each enemy type, combat transforms from a resource-draining struggle into an efficient, almost rhythmic exchange.</p>
+            <p>Start with Standard difficulty and the basic Lycan enemies. Build your timing confidence against single targets before moving to groups. Apply what you learn to boss encounters. Within a few hours of focused practice, Perfect Dodge will become second nature.</p>
+            <p>For a complete combat overview, visit our <a href="weapons-guide.html">Weapons Guide</a>. For detailed boss strategies, see our <a href="boss-guide.html">Boss Guide</a>. And for tips on getting started, check out our <a href="beginner-guide.html">Beginner Guide</a>.</p>
+            <a href="index.html" class="back-link">&larr; BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+    <section class="related"><h3 class="related-title">MORE GUIDES</h3><div class="related-links"><a href="beginner-guide.html">Beginner Guide</a><a href="boss-guide.html">Boss Guide</a><a href="weapons-guide.html">Weapons Guide</a><a href="walkthrough.html">Walkthrough</a><a href="index.html">Home</a></div></section>
+    <footer class="footer"><div class="footer-logo">RE:REQUIEM GUIDE</div><p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated June 2026</p><p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p></footer>
+    <script>(function(){var u=encodeURIComponent(window.location.href);var t=encodeURIComponent(document.title);document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u})();function copyLink(){navigator.clipboard.writeText(window.location.href).then(function(){var b=document.getElementById("share-copy");b.classList.add("copied");b.title="Copied!";setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000)})}</script>
+</body>
+</html>
