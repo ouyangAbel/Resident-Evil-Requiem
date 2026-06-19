@@ -1,0 +1,785 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-GF9BYLZ5F7");</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Resident Evil Requiem Crafting Guide - All Recipes, Herb Combinations & Ammo Crafting (2026)</title><meta name="description" content="Complete Resident Evil Requiem crafting guide. All herb combinations, ammo crafting recipes, weapon upgrade materials, and best crafting tips for survival. Updated 2026."><meta name="keywords" content="resident evil requiem crafting, re requiem herb combinations, resident evil requiem ammo crafting, resident evil requiem recipes, resident evil requiem crafting guide, resident evil requiem herb guide, re requiem crafting recipes"><meta name="robots" content="index, follow"><link rel="canonical" href="https://rerequiemguide.com/crafting-guide.html"><meta property="og:title" content="Resident Evil Requiem Crafting Guide - All Recipes & Herb Combinations"><meta property="og:description" content="Complete crafting guide with all herb combinations, ammo recipes, and weapon upgrade materials in RE Requiem."><meta property="og:type" content="article"><meta property="og:url" content="https://rerequiemguide.com/crafting-guide.html"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Resident Evil Requiem Crafting Guide - All Recipes & Herb Combinations","description":"Complete crafting guide with all herb combinations, ammo recipes, and weapon upgrade materials in Resident Evil Requiem","datePublished":"2026-06-20","dateModified":"2026-06-20","author":{"@type":"Organization","name":"RE Requiem Guide"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rerequiemguide.com/crafting-guide.html"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are the herb combinations in Resident Evil Requiem?","acceptedAnswer":{"@type":"Answer","text":"Green+Green restores moderate health. Green+Red fully heals. Green+Blue increases defense. Red+Blue creates a full heal with defense boost. Triple mix (Green+Red+Blue) gives full heal, defense, and temporary damage resistance."}},{"@type":"Question","name":"How do you craft ammo in RE Requiem?","acceptedAnswer":{"@type":"Answer","text":"Ammo is crafted at workbenches using Gunpowder and Chemical agents. Different combinations produce different ammo types: standard handgun rounds, shotgun shells, rifle ammo, and special rounds like incendiary or acid."}},{"@type":"Question","name":"Where are workbenches in Resident Evil Requiem?","acceptedAnswer":{"@type":"Answer","text":"Workbenches are found in most safe rooms throughout the game. They are marked on your map with a wrench icon after discovery."}}]}</script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139,0,0,.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+            --warning: #8b6914;
+            --info: #2a4a6b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(45,90,39,.08) 0%, transparent 60%);
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            padding: .4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: .05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: .5rem;
+            white-space: nowrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+        .share-btn.copy-link.copied { border-color: #4caf50; color: #4caf50; }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: .8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s;
+        }
+        .article-content a:hover { border-bottom-color: var(--accent-light); }
+        .article-content strong { color: var(--text-primary); }
+        .highlight-box {
+            background: rgba(139,0,0,.08);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .info-box {
+            background: rgba(42,74,107,.12);
+            border-left: 3px solid var(--info);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p { margin-bottom: 0; }
+        .success-box {
+            background: rgba(45,90,39,.1);
+            border-left: 3px solid var(--success);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .success-box p { margin-bottom: 0; }
+        .craft-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.8rem 2rem;
+            margin: 1.5rem 0;
+            transition: border-color .4s ease;
+        }
+        .craft-card:hover { border-color: var(--accent-glow); }
+        .craft-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: .6rem;
+        }
+        .craft-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin-bottom: .8rem;
+        }
+        .craft-recipe {
+            font-family: 'DM Mono', monospace;
+            font-size: .85rem;
+            color: var(--accent-light);
+            background: rgba(139,0,0,.08);
+            padding: .4rem .8rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: .8rem;
+        }
+        .craft-effect {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: .95rem;
+        }
+        .quick-table thead { border-bottom: 2px solid var(--accent); }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: .8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table tr:hover td { color: var(--text-primary); }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+            margin: 1.5rem 0;
+        }
+        .tip-number {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .8rem;
+        }
+        .tip-card h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 .8rem;
+        }
+        .tip-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: .2rem;
+            transition: all .3s;
+        }
+        .back-link:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent-light);
+        }
+        .related {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .related-links a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: .6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all .3s;
+        }
+        .related-links a:hover {
+            color: var(--accent-light);
+            border-color: var(--accent);
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem 4rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .5rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .header-inner { padding: 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .article-header { padding: 6rem 1.5rem 3rem; }
+            .article-content { padding: 1.5rem; }
+            .craft-card { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE:REQUIEM</a>
+            <nav class="nav">
+                <a href="walkthrough.html">Walkthrough</a>
+                <a href="beginner-guide.html">Beginner</a>
+                <a href="chapters.html">Chapters</a>
+                <a href="endings.html">Endings</a>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <div class="article-header">
+            <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Crafting Guide</div>
+            <div class="article-tag">SURVIVAL ESSENTIALS</div>
+            <h1 class="article-title">RESIDENT EVIL REQUIEM CRAFTING GUIDE: ALL RECIPES, HERB COMBINATIONS &amp; AMMO CRAFTING</h1>
+            <div class="article-meta">UPDATED JUNE 2026 &bull; 15 MIN READ</div>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">SHARE THIS</span>
+            <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+            <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+        </div>
+        <div class="article-content">
+            <div class="success-box">
+                <p><strong>Crafting Overview:</strong> Resident Evil Requiem features a deep crafting system using workbenches found in safe rooms. You can craft healing items, ammunition, weapon upgrades, and defensive tools using materials scavenged from the environment. Efficient crafting is the key to surviving Nightmare difficulty.</p>
+            </div>
+
+            <p>The crafting system in Resident Evil Requiem is essential for survival. Unlike earlier RE games where you relied on finding supplies, Requiem lets you convert raw materials into exactly what you need. Mastering herb combinations, ammo recipes, and upgrade material management will determine whether you barely survive or dominate every encounter. This guide covers every recipe, the best crafting strategies, and how to never run out of supplies.</p>
+
+            <h2 id="workbenches">WORKBENCHES: YOUR CRAFTING HUB</h2>
+            <p>Workbenches are special stations found in safe rooms throughout the game. They allow you to craft items, upgrade weapons, and manage your inventory in a secure environment.</p>
+
+            <ul>
+                <li><strong>Location:</strong> Workbenches appear in most safe rooms and are marked on your map with a wrench icon once discovered.</li>
+                <li><strong>Function:</strong> Craft ammunition, combine herbs, create defensive items, and install weapon modifications.</li>
+                <li><strong>Safety:</strong> Enemies cannot enter safe rooms, so you can craft without interruption.</li>
+                <li><strong>Availability:</strong> There are 14 workbenches across the game&rsquo;s 12 chapters. You will never be far from one.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Pro Tip:</strong> Always visit a workbench before boss fights. Craft maximum ammo and healing items using all your stored materials. Materials do not carry over between chapters, so use them before you lose them.</p>
+            </div>
+
+            <h2 id="herb-combos">HERB COMBINATIONS</h2>
+            <p>Herbs are the foundation of your healing arsenal. RE Requiem features three herb colors and a robust combination system that rewards experimentation. You can combine herbs directly from your inventory without a workbench.</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr>
+                        <th>Combination</th>
+                        <th>Effect</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Green Herb</strong></td>
+                        <td>Restores 25% health</td>
+                        <td>Basic healing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Green + Green</strong></td>
+                        <td>Restores 50% health</td>
+                        <td>Efficient stack</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Green + Red</strong></td>
+                        <td>Full health restore</td>
+                        <td>Best single heal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Green + Blue</strong></td>
+                        <td>25% health + temporary defense boost</td>
+                        <td>Tank build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Red + Blue</strong></td>
+                        <td>Full health + defense boost</td>
+                        <td>Premium combo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Green + Red + Blue</strong></td>
+                        <td>Full health + defense + damage resistance</td>
+                        <td>Best combo</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <p><strong>Herb Strategy:</strong> Always carry Green+Red combinations for emergencies. Save Blue herbs for boss fights where defense matters most. The triple mix (Green+Red+Blue) is extremely powerful but requires all three herbs &mdash; use it only before the hardest encounters.</p>
+            </div>
+
+            <h3>Herb Farming Locations</h3>
+            <p>Herbs respawn after certain story triggers. The best farming spots are:</p>
+            <ul>
+                <li><strong>Chapter II forest path:</strong> 3 Green herbs and 1 Blue herb respawn after the cabin encounter.</li>
+                <li><strong>Chapter V garden:</strong> 2 Green, 1 Red, and 1 Blue herb available near the greenhouse.</li>
+                <li><strong>Chapter VIII shadow realm:</strong> Herbs grow in the light patches. 2 Green and 1 Red per visit.</li>
+                <li><strong>Chapter X convergence zone:</strong> All three herb types spawn in the dimensional rift garden.</li>
+            </ul>
+
+            <h2 id="ammo-crafting">AMMO CRAFTING RECIPES</h2>
+            <p>Ammunition is crafted at workbenches using Gunpowder and Chemical Agents. Different combinations produce different ammo types. Managing your gunpowder supply is critical on higher difficulties where ammo is scarce.</p>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">HANDGUN</div>
+                <div class="craft-title">HANDGUN AMMO</div>
+                <div class="craft-recipe">Gunpowder (S) x1 + Chemical Agent x1</div>
+                <p class="craft-effect"><strong>Yields:</strong> 15 rounds. The most efficient recipe for general combat. Craft these in bulk for exploration.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">SHOTGUN</div>
+                <div class="craft-title">SHOTGUN SHELLS</div>
+                <div class="craft-recipe">Gunpowder (L) x1 + Chemical Agent x1</div>
+                <p class="craft-effect"><strong>Yields:</strong> 6 shells. Essential for crowd control and boss fights. Save large gunpowder for these.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">RIFLE</div>
+                <div class="craft-title">RIFLE AMMO</div>
+                <div class="craft-recipe">Gunpowder (S) x2 + Chemical Agent x1</div>
+                <p class="craft-effect"><strong>Yields:</strong> 10 rounds. Long-range precision ammo. Useful for picking off distant threats and weak points.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">MAGNUM</div>
+                <div class="craft-title">MAGNUM AMMO</div>
+                <div class="craft-recipe">Gunpowder (L) x2 + Chemical Agent (R) x1</div>
+                <p class="craft-effect"><strong>Yields:</strong> 4 rounds. The most expensive recipe but deals massive damage. Reserve for bosses and elite enemies.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">SPECIAL</div>
+                <div class="craft-title">INCENDIARY ROUNDS</div>
+                <div class="craft-recipe">Gunpowder (S) x1 + Chemical Agent (R) x1 + Plant Resin x1</div>
+                <p class="craft-effect"><strong>Yields:</strong> 6 rounds. Deals fire damage over time. Extremely effective against organic enemies and bosses weak to fire.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">SPECIAL</div>
+                <div class="craft-title">ACID ROUNDS</div>
+                <div class="craft-recipe">Gunpowder (L) x1 + Chemical Agent (R) x1 + Plant Resin x1</div>
+                <p class="craft-effect"><strong>Yields:</strong> 4 rounds. Corrodes enemy armor and deals sustained damage. Best against heavily armored foes.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">SPECIAL</div>
+                <div class="craft-title">FLASH ROUNDS</div>
+                <div class="craft-recipe">Gunpowder (S) x1 + Phosphorus x1</div>
+                <p class="craft-effect"><strong>Yields:</strong> 3 rounds. Blinds and stuns all enemies in an area. Invaluable for crowd control in tight spaces.</p>
+            </div>
+
+            <h2 id="defense-items">DEFENSE & UTILITY CRAFTING</h2>
+            <p>Beyond herbs and ammo, you can craft defensive tools and utility items that provide tactical advantages.</p>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">DEFENSE</div>
+                <div class="craft-title">DEFENSE ITEM</div>
+                <div class="craft-recipe">Chemical Agent x1 + Scrap Metal x1</div>
+                <p class="craft-effect"><strong>Effect:</strong> Automatically counters a grab attack and deals damage to the attacker. You can carry up to 3.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">UTILITY</div>
+                <div class="craft-title">FIRST AID MED</div>
+                <div class="craft-recipe">Green Herb x1 + Chemical Agent (R) x1</div>
+                <p class="craft-effect"><strong>Effect:</strong> Instantly restores 75% health. Faster animation than herb combinations. Best crafted before boss fights.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">UTILITY</div>
+                <div class="craft-title">HERB RECIPE (UPGRADED)</div>
+                <div class="craft-recipe">Herb Recipe + Any 2 Herbs at workbench</div>
+                <p class="craft-effect"><strong>Effect:</strong> The Herb Recipe from the Chapter V safe unlocks enhanced combinations at workbenches, doubling the potency of herb mixes.</p>
+            </div>
+
+            <h2 id="materials">CRAFTING MATERIALS GUIDE</h2>
+            <p>Understanding where to find materials and how to manage them is just as important as knowing the recipes.</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Source</th>
+                        <th>Rarity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gunpowder (S)</strong></td>
+                        <td>Desks, shelves, ammo boxes</td>
+                        <td>Common</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gunpowder (L)</strong></td>
+                        <td>Locked chests, boss arenas, hidden rooms</td>
+                        <td>Uncommon</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chemical Agent</strong></td>
+                        <td>Laboratory shelves, medical cabinets</td>
+                        <td>Common</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chemical Agent (R)</strong></td>
+                        <td>Research labs, safe caches</td>
+                        <td>Rare</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plant Resin</strong></td>
+                        <td>Herb plants, garden areas, forest zones</td>
+                        <td>Uncommon</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phosphorus</strong></td>
+                        <td>Industrial areas, chemical storage</td>
+                        <td>Rare</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scrap Metal</strong></td>
+                        <td>Broken machinery, weapon crates, workshops</td>
+                        <td>Common</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="weapon-upgrades">WEAPON UPGRADE MATERIALS</h2>
+            <p>Weapon upgrades are installed at workbenches and require specific parts found throughout the game. See our <a href="weapons-guide.html">Weapons Guide</a> for full upgrade paths.</p>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">UPGRADE</div>
+                <div class="craft-title">WEAPON PARTS</div>
+                <p class="craft-effect"><strong>14 weapon parts</strong> are hidden across the game. Each weapon has 2-3 upgrade slots (damage, capacity, reload speed, special). Parts are found in safes, hidden rooms, and boss arenas. Check our <a href="safe-codes.html">Safe Codes Guide</a> for locked container locations.</p>
+            </div>
+
+            <div class="craft-card fade-in">
+                <div class="craft-label">UPGRADE</div>
+                <div class="craft-title">RAILGUN BATTERY</div>
+                <p class="craft-effect"><strong>Location:</strong> Chapter IX underground bunker safe. Required to power the experimental Railgun weapon. Only 1 available per playthrough.</p>
+            </div>
+
+            <h2 id="crafting-tips">TOP 10 CRAFTING TIPS</h2>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 01</div>
+                <h3>Never Hoard Materials</h3>
+                <p>Materials do not carry between chapters. Craft everything before leaving a chapter. Excess items carry over, but raw materials do not.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 02</div>
+                <h3>Prioritize Handgun Ammo</h3>
+                <p>Handgun ammo is your bread and butter. Always craft it first when gunpowder is limited. Shotgun shells are your second priority.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 03</div>
+                <h3>Save Blue Herbs for Bosses</h3>
+                <p>Blue herbs provide defense boosts that are most valuable during boss fights. Do not waste them on regular exploration.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 04</div>
+                <h3>Use Defense Items Proactively</h3>
+                <p>Craft at least 2 Defense Items before entering new areas. They auto-counter grabs, which are the most dangerous attacks in the game.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 05</div>
+                <h3>Get the Herb Recipe Early</h3>
+                <p>The Herb Recipe from the Chapter V Lab Safe (code: 06-17-89) doubles herb potency at workbenches. Do not skip this safe.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 06</div>
+                <h3>Craft Special Ammo for Bosses</h3>
+                <p>Incendiary and Acid rounds are boss-killers. Stockpile Plant Resin and Chemical Agent (R) for these recipes before boss chapters.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 07</div>
+                <h3>Convert Excess Green Herbs</h3>
+                <p>If you have more than 4 Green herbs, combine pairs into Green+Green for better inventory efficiency.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 08</div>
+                <h3>Flash Rounds Are Underrated</h3>
+                <p>Flash rounds stun entire groups. Craft them before rooms with multiple enemies. They work on every enemy type including bosses.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 09</div>
+                <h3>Explore Before Crafting</h3>
+                <p>Fully explore each area before returning to the workbench. You may find Gunpowder (L) or rare Chemical Agents in hidden rooms.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">TIP 10</div>
+                <h3>Nightmare Difficulty Strategy</h3>
+                <p>On Nightmare, material drops are reduced by 40%. Focus on handgun ammo and Green+Red herb combos. Skip magnum ammo crafting unless facing the final boss.</p>
+            </div>
+
+            <h2 id="faq">FAQ: CRAFTING IN RE REQUIEM</h2>
+
+            <div class="tip-card">
+                <div class="tip-number">Q1</div>
+                <h3>Can you craft anywhere or only at workbenches?</h3>
+                <p><strong>Herbs can be combined anywhere</strong> from your inventory. However, ammunition, defense items, and weapon upgrades can only be crafted at workbenches.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q2</div>
+                <h3>Do materials carry over between chapters?</h3>
+                <p><strong>Finished items carry over, but raw materials do not.</strong> Always craft all materials into usable items before completing a chapter.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q3</div>
+                <h3>What is the most efficient ammo recipe?</h3>
+                <p><strong>Handgun Ammo</strong> (Gunpowder S + Chemical Agent = 15 rounds) is the most resource-efficient recipe. It gives the highest round-per-material ratio.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q4</div>
+                <h3>Where do I find the Herb Recipe?</h3>
+                <p>The Herb Recipe is in the <strong>Chapter V Lab Storage Locker</strong> (code: 06-17-89). It doubles herb combination potency when used at workbenches.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q5</div>
+                <h3>Is crafting worth it on Standard difficulty?</h3>
+                <p>Yes. Even on Standard, crafting gives you a significant advantage, especially special ammo types and defense items that are rarely found in the environment.</p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Need more help?</strong> Check our <a href="beginner-guide.html">Beginner Guide</a> for essential survival tips, <a href="weapons-guide.html">Weapons Guide</a> for upgrade paths, and <a href="safe-codes.html">Safe Codes Guide</a> for locked containers with rare crafting materials.</p>
+            </div>
+
+            <h2 id="conclusion">FINAL THOUGHTS</h2>
+            <p>Mastering the crafting system in Resident Evil Requiem is the difference between struggling through every encounter and confidently taking on Nightmare difficulty. Prioritize handgun ammo and healing combinations, save special materials for boss fights, and always convert raw materials before chapter transitions.</p>
+            <p>The herb combination system rewards planning: carry Green+Red for emergencies, save Blue herbs for defense-heavy boss fights, and craft the triple mix only for the hardest encounters. With the Herb Recipe from Chapter V, your healing capacity doubles at workbenches.</p>
+            <p>For more survival strategies, visit our <a href="walkthrough.html">Complete Walkthrough</a>, check our <a href="boss-guide.html">Boss Guide</a> for combat loadouts, and see our <a href="trophies-guide.html">Trophies Guide</a> for the crafting-related achievements.</p>
+
+            <a href="index.html" class="back-link">&larr; BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="weapons-guide.html">Weapons Guide</a>
+            <a href="beginner-guide.html">Beginner Guide</a>
+            <a href="boss-guide.html">Boss Guide</a>
+            <a href="safe-codes.html">Safe Codes</a>
+            <a href="walkthrough.html">Walkthrough</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated June 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+    <script>
+        (function(){
+            var u=encodeURIComponent(window.location.href);
+            var t=encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+            document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+            document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+            document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b=document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title="Copied!";
+                setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+            });
+        }
+    </script>
+</body>
+</html>
