@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-GF9BYLZ5F7');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Boss Guide: Phase Strategy & Endings | RE Requiem</title>
+    <meta name="description" content="Complete strategy guide for the Final Boss in Resident Evil Requiem Chapter XII. Five-phase gauntlet, all echo forms, QTE finish, and ending guide.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rerequiemguide.com/boss/final-boss.html">
+    <meta property="og:title" content="Final Boss Guide: Phase Strategy & Endings | RE Requiem">
+    <meta property="og:description" content="Complete strategy guide for the Final Boss in Resident Evil Requiem Chapter XII. Five-phase gauntlet, all echo forms, QTE finish, and ending guide.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rerequiemguide.com/boss/final-boss.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+
+        :root{--bg:#0a0a0a;--bg-surface:#111;--bg-card:#161616;--accent:#8b0000;--accent-light:#c41e1e;--accent-glow:rgba(139,0,0,.3);--text-primary:#e8e4e0;--text-secondary:#9a9590;--text-muted:#5a5550;--border:#2a2520;--success:#2d5a27;--warning:#8b6914;--info:#2a4a6b}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Crimson Pro',Georgia,serif;background:var(--bg);color:var(--text-primary);line-height:1.8;overflow-x:hidden}
+        body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:1000}
+        .header{position:sticky;top:0;z-index:100;background:rgba(10,10,10,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+        .header-inner{max-width:1200px;margin:0 auto;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.15em;color:var(--accent-light);text-decoration:none}
+        .nav a{color:var(--text-secondary);text-decoration:none;font-family:'Inter Tight',sans-serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-left:2rem;transition:color .3s}
+        .nav a:hover{color:var(--accent-light)}
+        .article-header{position:relative;padding:8rem 2rem 4rem;max-width:800px;margin:0 auto;text-align:center;background:radial-gradient(ellipse at 50% 80%,rgba(139,0,0,.1) 0%,transparent 60%)}
+        .breadcrumb{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--text-muted);letter-spacing:.15em;text-transform:uppercase;margin-bottom:2rem}
+        .breadcrumb a{color:var(--text-muted);text-decoration:none}.breadcrumb a:hover{color:var(--accent-light)}
+        .article-tag{display:inline-block;background:var(--accent);color:#fff;font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;padding:.4rem 1.2rem;margin-bottom:2rem}
+        .article-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);letter-spacing:.05em;line-height:1.1;margin-bottom:1.5rem;background:linear-gradient(135deg,var(--text-primary) 0%,var(--accent-light) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .article-meta{font-family:'DM Mono',monospace;font-size:.75rem;color:var(--text-muted);letter-spacing:.1em}
+        .share-bar{display:flex;align-items:center;justify-content:center;gap:.8rem;padding:1.5rem 0;margin:2.5rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+        .share-label{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.2em;color:var(--text-muted);text-transform:uppercase;margin-right:.5rem;white-space:nowrap}
+        .share-btn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary);text-decoration:none;transition:all .3s;cursor:pointer}
+        .share-btn:hover{border-color:var(--accent);color:var(--accent-light);transform:translateY(-2px)}
+        .share-btn svg{width:16px;height:16px;fill:currentColor}
+        .share-btn.copy-link.copied{border-color:#4caf50;color:#4caf50}
+        .article-content{max-width:720px;margin:0 auto;padding:2rem}
+        .article-content p{margin-bottom:1.5rem;font-size:1.1rem;color:var(--text-secondary)}
+        .article-content h2{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.05em;color:var(--text-primary);margin:3rem 0 1.5rem;padding-top:2rem;border-top:1px solid var(--border)}
+        .article-content h3{font-family:'Inter Tight',sans-serif;font-size:1.3rem;color:var(--text-primary);margin:2rem 0 1rem;font-weight:600}
+        .article-content ul,.article-content ol{padding-left:1.5rem;margin-bottom:1.5rem}
+        .article-content li{margin-bottom:.8rem;color:var(--text-secondary);font-size:1.05rem}
+        .article-content strong{color:var(--text-primary)}
+        .article-content a{color:var(--accent-light);text-decoration:underline;text-underline-offset:3px}
+        .article-content a:hover{color:var(--accent)}
+        .toc{background:var(--bg-card);border:1px solid var(--border);padding:2rem;margin-bottom:3rem}
+        .toc-title{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.2em;color:var(--accent-light);text-transform:uppercase;margin-bottom:1rem}
+        .toc ol{padding-left:1.2rem}.toc li{margin-bottom:.5rem;font-size:1rem}
+        .toc a{color:var(--text-secondary);text-decoration:none;transition:color .3s}.toc a:hover{color:var(--accent-light)}
+        .boss-card{background:linear-gradient(135deg,var(--bg-card) 0%,rgba(139,0,0,.08) 100%);border:1px solid var(--border);padding:2.5rem;margin:2.5rem 0;position:relative}
+        .boss-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--accent),var(--accent-light))}
+        .boss-card::after{content:'';position:absolute;top:0;right:0;width:120px;height:120px;background:radial-gradient(circle at top right,rgba(139,0,0,.12),transparent 70%);pointer-events:none}
+        .boss-name{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.08em;color:var(--accent-light);margin-bottom:.5rem}
+        .boss-subtitle{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.15em;color:var(--text-muted);margin-bottom:1.5rem}
+        .boss-difficulty{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.12em;color:var(--text-muted);margin-bottom:1rem}
+        .boss-difficulty .stars{color:var(--accent-light)}
+        .boss-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:1.5rem 0;padding:1rem;background:rgba(0,0,0,.3);border:1px solid var(--border)}
+        .boss-stat-label{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.15em;color:var(--text-muted);text-transform:uppercase}
+        .boss-stat-value{font-family:'Inter Tight',sans-serif;font-size:1rem;color:var(--text-primary);margin-top:.3rem;font-weight:600}
+        .boss-phase{background:rgba(139,0,0,.06);border-left:3px solid var(--accent);padding:1rem 1.5rem;margin:1.5rem 0}
+        .boss-phase-title{font-family:'Inter Tight',sans-serif;font-size:1rem;color:var(--accent-light);font-weight:600;margin-bottom:.5rem}
+        .boss-card p{color:var(--text-secondary);font-size:1.05rem;margin-bottom:1rem}
+        .boss-card strong{color:var(--text-primary)}
+        .tip-card{background:var(--bg-card);border:1px solid var(--border);padding:2rem;margin:2rem 0;position:relative}
+        .tip-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--success),#4a8a3f)}
+        .tip-number{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;color:#4a8a3f;text-transform:uppercase;margin-bottom:.5rem}
+        .tip-card h3{font-family:'Inter Tight',sans-serif;font-size:1.2rem;color:var(--text-primary);margin-bottom:.8rem}
+        .tip-card p{color:var(--text-secondary);font-size:1rem;margin-bottom:.5rem}
+        .quick-ref{width:100%;border-collapse:collapse;margin:2rem 0;font-size:.95rem}
+        .quick-ref th{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.15em;color:var(--accent-light);text-transform:uppercase;text-align:left;padding:1rem;background:var(--bg-card);border-bottom:2px solid var(--accent)}
+        .quick-ref td{padding:.8rem 1rem;border-bottom:1px solid var(--border);color:var(--text-secondary)}
+        .quick-ref tr:hover td{background:rgba(139,0,0,.05)}
+        .related{max-width:800px;margin:0 auto;padding:3rem 2rem;text-align:center}
+        .related-title{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.2em;color:var(--text-muted);text-transform:uppercase;margin-bottom:1.5rem}
+        .related-links{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+        .related-links a{color:var(--text-secondary);text-decoration:none;font-family:'Inter Tight',sans-serif;font-size:.85rem;letter-spacing:.05em;padding:.6rem 1.2rem;border:1px solid var(--border);transition:all .3s}
+        .related-links a:hover{border-color:var(--accent);color:var(--accent-light)}
+        .back-link{display:inline-block;font-family:'DM Mono',monospace;font-size:.75rem;color:var(--text-muted);text-decoration:none;letter-spacing:.1em;margin-top:2rem;transition:color .3s}
+        .back-link:hover{color:var(--accent-light)}
+        .footer{padding:4rem 2rem;text-align:center;border-top:1px solid var(--border)}
+        .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.15em;color:var(--accent-light);margin-bottom:1rem}
+        .footer-text{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--text-muted);letter-spacing:.1em}
+        @media(max-width:768px){.header-inner{flex-direction:column;gap:1rem}.nav{gap:1rem}.nav a{margin-left:1rem;font-size:.7rem}.boss-stats{grid-template-columns:1fr 1fr}.related-links{flex-direction:column;gap:.8rem}}
+    
+.logo span{display:block;font-size:.6rem;letter-spacing:.3em;color:var(--text-muted)}
+
+    </style>
+</head>
+<body>
+    <header class="header">        <div class="header-inner">            <a href="../index.html" class="logo">                RE:REQUIEM                <span>STRATEGY GUIDE</span>            </a>            <nav class="nav">                    <a href="../index.html#articles">GUIDES</a>
+                    <a href="../walkthrough.html">WALKTHROUGH</a>
+                    <a href="../leon-scene.html">LEON SCENE</a>
+                    <a href="../beginner-guide.html">BEGINNERS</a>
+                    <a href="../boss-guide.html">BOSSES</a>
+                    <a href="../chapters.html">CHAPTERS</a>
+                    <a href="../endings.html">ENDINGS</a>            </nav>        </div>    </header>
+    <article>
+        <header class="article-header">
+            <div class="breadcrumb"><a href="../index.html">HOME</a> &rsaquo; <a href="../boss-guide.html">BOSS GUIDE</a> &rsaquo; BOSSES › THE FINAL BOSS</div>
+            <div class="article-tag">FINAL ENCOUNTER</div>
+            <h1 class="article-title">The Final Boss</h1>
+            <div class="article-meta">Chapter XII: Requiem &bull; DIFFICULTY: ★★★★★ &bull; UPDATED JUNE 2026</div>
+            <div class="share-bar">
+                <span class="share-label">SHARE THIS</span>
+                <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+                <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                <button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+            </div>
+        </header>
+        <div class="article-content">
+            <p>The Final Boss of Resident Evil Requiem, encountered in Chapter XII: Requiem, is a multi-phase gauntlet that mirrors the entire game arc. Each phase references a previous boss encounter, escalating in intensity and complexity. The boss itself is the same regardless of your choices throughout the game, but the ending you receive depends on the Lore Fragments you collected. This guide covers both the boss fight and the ending criteria.</p>
+
+            <h2 id="ending-pre-requisites">ENDING PRE-REQUISITES</h2>
+            <ul>
+                <li>The Final Boss encounter is identical regardless of your choices. However, the ending cutscene and post-credits sequence depend on optional collectibles.</li>
+                <li>To unlock the True Ending, you must collect all 6 Lore Fragments scattered throughout the game. These are found in optional areas and require backtracking.</li>
+                <li>If you miss any Lore Fragment, you will receive the Standard Ending. You can collect remaining fragments in New Game Plus.</li>
+                <li>Lore Fragment locations: Chapter III (hidden behind destructible wall in the forest chapel), Chapter V (locked safe in the hospital director's office), Chapter VII (behind the optional puzzle in the clock tower), Chapter IX (Forgotten King throne room), Chapter X (merchant's hidden cache), Chapter XI (the eastern corridor destructible crates).</li>
+                <li>The Forgotten Crest from the Forgotten King boss is one of the 6 Lore Fragments. Defeating the Forgotten King is mandatory for the True Ending.</li>
+            </ul>
+
+            <h2 id="arena-overview">ARENA OVERVIEW</h2>
+            <ul>
+                <li>The Dimensional Nexus is a sprawling arena that shifts and reforms throughout the fight. The floor is an unstable energy field that crackles with red lightning.</li>
+                <li>The arena has a large central platform surrounded by four smaller platforms connected by energy bridges. The bridges collapse and reform during different phases.</li>
+                <li>Throughout the fight, the arena floor develops glowing red cracks. These mark hazardous areas that deal damage over time if you stand on them.</li>
+                <li>Explosive canisters spawn periodically near the arena edges during Phase 4 and Phase 5.</li>
+                <li>The arena has no traditional cover. Your only defense is movement and dodge timing.</li>
+            </ul>
+
+            <h2 id="phase-1">PHASE 1: LYCAN ECHO (100%-80% HP)</h2>
+            <ul>
+                <li>The Final Boss opens in its Lycan Echo form, mirroring the Bloated Lycan but with significantly faster attack speed.</li>
+                <li>Maintain medium distance (roughly 6–8 meters). The Lycan Echo's lunge covers roughly 7 meters and has better tracking than the original.</li>
+                <li>The acid vomit attack has a shorter telegraph (roughly 1 second instead of 1.5). Dodge sideways immediately when you see the chest bulge.</li>
+                <li>Use the Semi-Auto Rifle for headshots during the vomit recovery window. Each precision shot deals roughly 250 damage.</li>
+                <li>This is a warm-up phase. Conserve ammo by using only headshots — do not waste rounds on body shots.</li>
+                <li>Phase transition occurs at roughly 80% HP. You have roughly 60 seconds before the next phase.</li>
+            </ul>
+
+            <h2 id="phase-2">PHASE 2: ABOMINATION ECHO (80%-60% HP)</h2>
+            <ul>
+                <li>The boss shifts to its Abomination Echo form, with tentacle attacks and a shockwave slam.</li>
+                <li>The arena pillars in this phase are destructible and do NOT regenerate. Manage your cover carefully.</li>
+                <li>The tentacle sweep telegraph is roughly 1.5 seconds. Get behind a pillar or dodge through the sweep (the hitbox is thinner near the tentacle origin point).</li>
+                <li>The shockwave slam has a 2-second telegraph. The boss rises onto its hind legs and slams both appendages down. Back away or jump over the shockwave.</li>
+                <li>Switch to the W-870 Shotgun during stagger windows. Two close-range blasts deal roughly 700 damage total.</li>
+                <li>Phase transition requires roughly 20 tentacle/slam dodge cycles. Be patient.</li>
+            </ul>
+
+            <h2 id="phase-3">PHASE 3: SHADOW ECHO (60%-40% HP)</h2>
+            <ul>
+                <li>The boss shifts to Shadow Echo form, with faster invisibility cycling than the Chapter VIII encounter.</li>
+                <li>Visible windows last roughly 4 seconds. Materialization windows last roughly 3 seconds between attacks.</li>
+                <li>The red glow during invisibility is dimmer than the original Shadow Stalker. Look for it at ground level against the arena's dark floor.</li>
+                <li>Fire 2–3 shotgun blasts when the boss materializes. This forces it to phase out.</li>
+                <li>Keep your back to the arena walls to prevent the backstab teleport attack. The walls are marked by a faint blue glow — look for them.</li>
+                <li>Phase transition requires roughly 6–8 materialization cycles.</li>
+            </ul>
+
+            <h2 id="phase-4">PHASE 4: DIMENSIONAL COLLAPSE (40%-15% HP)</h2>
+            <ul>
+                <li>The arena begins to collapse. Glowing red cracks mark hazardous floor sections that deal roughly 50 damage per second.</li>
+                <li>The boss enters a hybrid form that combines Lycan speed, Abomination tentacles, and Shadow phasing.</li>
+                <li>Energy beams fire from the boss's chest periodically. The telegraph is the boss's chest glowing bright white for 1.5 seconds. Dodge sideways.</li>
+                <li>Stay on stable ground (sections without red cracks). The cracks spread from the outside inward, so stay near the center when possible.</li>
+                <li>Explosive canisters begin spawning near the arena edges every 40 seconds. Use these for primary damage.</li>
+                <li>Use the Semi-Auto Rifle for ranged damage during Lycan-pattern windows. Switch to shotgun for Abomination-pattern windows.</li>
+                <li>Conserve magnum rounds for Phase 5. Do not use them here unless absolutely necessary.</li>
+            </ul>
+
+            <h2 id="phase-5">PHASE 5: REQUIEM (15%-0% HP)</h2>
+            <ul>
+                <li>The final phase. The arena is now mostly cracked, with only a small stable platform remaining. The boss combines all attack patterns simultaneously.</li>
+                <li>The boss gains area denial energy fields. Purple spheres appear at random locations and pulse for roughly 5 seconds. Avoid these areas.</li>
+                <li>The one-hit kill grab attack is the deadliest move in the phase. The telegraph is the boss rearing back with both arms for roughly 2 seconds. Dodge sideways IMMEDIATELY.</li>
+                <li>On Standard difficulty, the grab can be survived at full health with an auto-triggered First Aid Med. On Hardcore and Nightmare, it is instant death.</li>
+                <li>Use everything you have: Broken Butterfly Magnum for burst damage (each shot ~2,000 damage), grenades for AoE, shotgun for stagger, rifle for precision.</li>
+                <li>The boss's weak point is a glowing red core on its chest. All weapons deal bonus damage to this point.</li>
+                <li>Explosive canisters spawn every 30 seconds. Lure the boss near them and detonate for roughly 5% HP per canister.</li>
+                <li>At 5% HP, a QTE prompt appears. The prompt requires pressing the action button within 1 second. Missing the QTE triggers a cinematic where the boss grabs you — you must repeat the final 5% damage.</li>
+                <li>After the QTE, a final cinematic plays and the credits roll. The ending you receive depends on your Lore Fragment count.</li>
+            </ul>
+
+            <h2 id="recommended-loadout">RECOMMENDED LOADOUT</h2>
+            <ul>
+                <li><strong>Semi-Auto Rifle (30+ rounds)</strong> — Primary weapon for Phases 1, 4, and 5</li>
+                <li><strong>W-870 Shotgun (20+ shells)</strong> — Phases 2, 3, and 5 stagger windows</li>
+                <li><strong>Broken Butterfly Magnum (6+ rounds)</strong> — Phase 5 burst damage only</li>
+                <li><strong>Handgun (30+ backup)</strong> — Supplementary damage for the final phase</li>
+                <li><strong>All Grenades</strong> — AoE damage for Phase 5 area control</li>
+                <li><strong>3 Herb Combos</strong> — Healing throughout the multi-phase gauntlet</li>
+                <li><strong>2 First Aid Meds</strong> — Emergency heals for Phase 4–5</li>
+            </ul>
+
+            <h2 id="endings-guide">ENDINGS GUIDE</h2>
+            <ul>
+                <li><strong>Standard Ending (0–5 Lore Fragments):</strong> Grace defeats the Final Boss and escapes the Dimensional Nexus. The credits roll over a monologue about the nature of the Requiem. Post-credits scene shows a hooded figure entering the abandoned Rookwood Estate — a sequel hook.</li>
+                <li><strong>True Ending (6 Lore Fragments):</strong> Grace defeats the Final Boss and uses the combined power of the Lore Fragments to seal the Dimensional Rift permanently. The credits roll over a full cinematic showing the estate collapsing into the rift. Post-credits scene reveals the identity of the figure from the Standard Ending and ties the narrative to the original Resident Evil timeline.</li>
+                <li>The True Ending unlocks the Secret Difficulty ("Nightmare+") for New Game Plus, featuring remixed enemy placements and additional boss phases.</li>
+                <li>Lore Fragments carry over to New Game Plus. You do not need to recollect them for the True Ending on subsequent playthroughs.</li>
+            </ul>
+            <div class="boss-stats">
+                <div><div class="boss-stat-label">HP (Standard)</div><div class="boss-stat-value">~35,000</div></div>
+                <div><div class="boss-stat-label">Phases</div><div class="boss-stat-value">5</div></div>
+                <div><div class="boss-stat-label">Arena</div><div class="boss-stat-value">Dimensional Nexus</div></div>
+                <div><div class="boss-stat-label">Mandatory</div><div class="boss-stat-value">Yes</div></div>
+            </div>
+            <a href="../boss-guide.html" class="back-link">&larr; BACK TO ALL BOSSES</a>
+        </div>
+    </article>
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="../walkthrough.html">Complete Walkthrough</a>
+            <a href="../weapons-guide.html">Weapons Guide</a>
+            <a href="../beginner-guide.html">Beginner Guide</a>
+            <a href="../safe-codes.html">Safe Codes</a>
+            <a href="../endings.html">All Endings</a>
+            <a href="../chapters.html">Chapters List</a>
+            <a href="../index.html">Home</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated June 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+    <script>
+        (function(){
+            var u=encodeURIComponent(window.location.href);
+            var t=encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+            document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+            document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+            document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b=document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title="Copied!";
+                setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+            });
+        }
+    </script>
+</body>
+</html>
