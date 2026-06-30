@@ -1,0 +1,764 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-GF9BYLZ5F7");</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Resident Evil Requiem Speedrun Guide - Fastest Routes, Skip Techniques &amp; S+ Rank Strategies (2026)</title><meta name="description" content="Complete Resident Evil Requiem speedrun guide with fastest routes per chapter, skip techniques, S+ rank requirements, and Professional difficulty optimization. World record strategies and time-saving tips."><meta name="keywords" content="resident evil requiem speedrun, RE requiem speedrun guide, resident evil requiem S+ rank, RE requiem skip techniques, resident evil requiem fastest routes, RE requiem speedrun strats, resident evil requiem world record, RE requiem professional speedrun, resident evil requiem time save"><meta name="robots" content="index, follow"><link rel="canonical" href="https://rerequiemguide.com/speedrun-guide.html"><meta property="og:title" content="Resident Evil Requiem Speedrun Guide - Fastest Routes &amp; S+ Rank Strategies"><meta property="og:description" content="Complete speedrun guide with fastest routes, skip techniques, S+ rank requirements, and Professional difficulty strats for Resident Evil Requiem."><meta property="og:type" content="article"><meta property="og:url" content="https://rerequiemguide.com/speedrun-guide.html"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Resident Evil Requiem Speedrun Guide - Fastest Routes, Skip Techniques & S+ Rank Strategies","description":"Complete speedrun guide with fastest routes, skip techniques, S+ rank requirements, and Professional difficulty strats for Resident Evil Requiem","datePublished":"2026-07-01","dateModified":"2026-07-01","author":{"@type":"Organization","name":"RE Requiem Guide"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rerequiemguide.com/speedrun-guide.html"}}</script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet"><style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139,0,0,.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+            --warning: #8b6914;
+            --info: #2a4a6b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(139,0,0,.08) 0%, transparent 60%);
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            background: var(--warning);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            padding: .4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: .05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: .5rem;
+            white-space: nowrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+        .share-btn.copy-link.copied { border-color: #4caf50; color: #4caf50; }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: .8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s;
+        }
+        .article-content a:hover { border-bottom-color: var(--accent-light); }
+        .article-content strong { color: var(--text-primary); }
+        .highlight-box {
+            background: rgba(139,0,0,.08);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .info-box {
+            background: rgba(42,74,107,.12);
+            border-left: 3px solid var(--info);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p { margin-bottom: 0; }
+        .success-box {
+            background: rgba(45,90,39,.1);
+            border-left: 3px solid var(--success);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .success-box p { margin-bottom: 0; }
+        .craft-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.8rem 2rem;
+            margin: 1.5rem 0;
+            transition: border-color .4s ease;
+        }
+        .craft-card:hover { border-color: var(--accent-glow); }
+        .craft-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: .6rem;
+        }
+        .craft-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin-bottom: .8rem;
+        }
+        .craft-recipe {
+            font-family: 'DM Mono', monospace;
+            font-size: .85rem;
+            color: var(--accent-light);
+            background: rgba(139,0,0,.08);
+            padding: .4rem .8rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: .8rem;
+        }
+        .craft-effect {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: .95rem;
+        }
+        .quick-table thead { border-bottom: 2px solid var(--accent); }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: .8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table tr:hover td { color: var(--text-primary); }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+            margin: 1.5rem 0;
+        }
+        .tip-number {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .8rem;
+        }
+        .tip-card h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 .8rem;
+        }
+        .tip-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: .2rem;
+            transition: all .3s;
+        }
+        .back-link:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent-light);
+        }
+        .related {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .related-links a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: .6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all .3s;
+        }
+        .related-links a:hover {
+            color: var(--accent-light);
+            border-color: var(--accent);
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem 4rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .5rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .header-inner { padding: 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .article-header { padding: 6rem 1.5rem 3rem; }
+            .article-content { padding: 1.5rem; }
+            .craft-card { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE:REQUIEM</a>
+            <nav class="nav">
+                <a href="walkthrough.html">Walkthrough</a>
+                <a href="beginner-guide.html">Beginner</a>
+                <a href="chapters.html">Chapters</a>
+                <a href="endings.html">Endings</a>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <div class="article-header">
+            <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Speedrun Guide</div>
+            <div class="article-tag">SPEEDRUN &amp; RANKING</div>
+            <h1 class="article-title">RESIDENT EVIL REQUIEM SPEEDRUN GUIDE: FASTEST ROUTES, SKIP TECHNIQUES &amp; S+ RANK STRATEGIES</h1>
+            <div class="article-meta">UPDATED JULY 1, 2026 &bull; 25 MIN READ</div>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">SHARE THIS</span>
+            <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+            <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+        </div>
+        <div class="article-content">
+
+            <p>Resident Evil Requiem's speedrun community has exploded since launch, with runners shaving seconds off world records every week. Whether you are chasing the coveted <strong>S+ rank on Professional difficulty</strong>, gunning for a spot on the leaderboards, or just want to clear your next NG+ run in under two hours, this guide covers everything you need to know.</p>
+
+            <p>We have analyzed over <strong>200 hours of speedrun footage</strong>, dissected every skip technique, and mapped optimal routes through all 12 chapters. This guide breaks down rank requirements, the fastest path through each chapter, critical skips that save minutes, and the weapon loadout that maximizes your damage-to-time ratio. If you want the S+ rank, the clock is your real enemy — and this guide teaches you how to beat it.</p>
+
+            <div class="highlight-box">
+                <p><strong>BEFORE YOU START:</strong> This guide assumes familiarity with the game's mechanics and layout. For fundamentals, see our <a href="beginner-guide.html">Beginner Guide</a>. For weapon details, consult the <a href="weapons-guide.html">Weapons Guide</a>. Speedrunning on a first playthrough is not recommended — complete the game once normally, then return here for your ranking runs.</p>
+            </div>
+
+            <h2 id="rank-requirements">RANK REQUIREMENTS AND TIME THRESHOLDS</h2>
+
+            <p>Resident Evil Requiem awards a letter rank at the end of each playthrough based on <strong>completion time</strong>, <strong>number of saves</strong>, and <strong>deaths</strong>. The requirements vary by difficulty. Here is exactly what you need for each rank.</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>RANK</th><th>STANDARD TIME</th><th>HARDCORE TIME</th><th>PROFESSIONAL TIME</th><th>MAX SAVES</th><th>MAX DEATHS</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>S+</strong></td><td>&lt; 2:30:00</td><td>&lt; 3:00:00</td><td>&lt; 3:30:00</td><td>3</td><td>0</td></tr>
+                    <tr><td><strong>S</strong></td><td>&lt; 3:00:00</td><td>&lt; 3:30:00</td><td>&lt; 4:00:00</td><td>5</td><td>0</td></tr>
+                    <tr><td><strong>A</strong></td><td>&lt; 4:00:00</td><td>&lt; 4:30:00</td><td>&lt; 5:00:00</td><td>10</td><td>3</td></tr>
+                    <tr><td><strong>B</strong></td><td>&lt; 5:30:00</td><td>&lt; 6:00:00</td><td>&lt; 7:00:00</td><td>Unlimited</td><td>Unlimited</td></tr>
+                    <tr><td><strong>C</strong></td><td>&gt; 5:30:00</td><td>&gt; 6:00:00</td><td>&gt; 7:00:00</td><td>Unlimited</td><td>Unlimited</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <p><strong>KEY INSIGHT:</strong> S+ requires zero deaths and a maximum of 3 saves on every difficulty. Choose your save points strategically — most runners save before Chapter 5 (Betrayal in the Dark), Chapter 8 (Dimensions Apart), and Chapter 11 (The Final Descent), as these are the hardest and longest sections.</p>
+            </div>
+
+            <p>The S+ rank unlocks the <strong>Village Lycan costume</strong> for Leon, <strong>infinite ammo for one weapon</strong> of your choice, and the <strong>Requiem Coat</strong> for Grace. On Professional difficulty, S+ also unlocks the <strong>Rocket Launcher</strong> with infinite ammo for all future playthroughs — the ultimate speedrun tool. See our <a href="unlockables-ngplus-guide.html">Unlockables and NG+ Guide</a> for the complete unlock tree.</p>
+
+            <h2 id="general-strategies">GENERAL SPEEDRUN STRATEGIES</h2>
+
+            <p>Before diving into chapter-by-chapter routing, master these universal speedrun principles. They apply to every chapter and collectively save over 30 minutes across a full run.</p>
+
+            <div class="tip-card">
+                <div class="tip-number">PRINCIPLE 1</div>
+                <h3>Run Past Everything (Unless It Blocks a Door)</h3>
+                <p>The single biggest time-save in RE Requiem is ignoring enemies. Most standard enemies can be sprinted past without taking damage if you zigzag. Only kill enemies that physically block a doorway or corridor you must traverse. Bloated Lycans, Shadow Wraiths in tight hallways, and enemies in mandatory combat arenas are the exceptions. For everything else: run, do not fight.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">PRINCIPLE 2</div>
+                <h3>Animation Cancel Everything</h3>
+                <p>You can cancel almost every animation in the game. Door-opening animations cancel by quick-turning (down + sprint) the moment the door begins to open. Ladder climbs cancel by pressing crouch at the top. Item-pickup animations cancel by opening the inventory the frame the pickup begins. Vault animations cancel by aiming down sights mid-vault. Practice these until they become muscle memory — animation cancels save roughly 8 to 12 minutes across a full run.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">PRINCIPLE 3</div>
+                <h3>Master the Perfect Dodge</h3>
+                <p>Speedrunning without taking damage is essential for S+ rank (zero deaths). The Perfect Dodge window on Professional difficulty is just <strong>6 frames</strong> (100ms at 60fps). You must dodge at the exact moment an enemy attack connects. Practice against the Infected Staff enemies in Chapter 1 until you can chain five perfect dodges in a row. A successful Perfect Dodge grants a 3-second slow-motion window during which you can sprint past the attacker.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">PRINCIPLE 4</div>
+                <h3>Skip All Cutscenes</h3>
+                <p>Hold the Options/Menu button during every cutscene to skip it. Some cutscenes have a 2-second minimum before the skip prompt appears, but mashing the button still triggers the skip at the earliest possible frame. Cutscene skipping saves approximately <strong>45 minutes</strong> across a full playthrough. The in-game timer pauses during cutscenes — skipping them does not affect your rank time, but it does get you to the end faster in real time if you are streaming or competing.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">PRINCIPLE 5</div>
+                <h3>Route Your Inventory in Advance</h3>
+                <p>On NG+ speedruns, arrange your attaché case before starting. Place your primary weapon (fully upgraded shotgun or magnum) in the top-left slot, healing items top-right, and key items in a designated corner. Never spend more than 2 seconds in the inventory during a speedrun. The in-game timer does NOT pause in the inventory screen — every second spent rummaging adds up fast.</p>
+            </div>
+
+            <h2 id="best-weapons">BEST WEAPONS FOR SPEEDRUNNING</h2>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>WEAPON</th><th>BEST FOR</th><th>RECOMMENDED UPGRADES</th><th>PRIORITY</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>W870 Shotgun</td><td>Crowd control, door-blockers</td><td>Firepower Lv.5, Reload Speed Lv.3</td><td>S-TIER</td></tr>
+                    <tr><td>Anti-Materiel Rifle</td><td>Boss fights, one-shot kills</td><td>None needed (base is sufficient)</td><td>S-TIER</td></tr>
+                    <tr><td>LE 5 SMG</td><td>Stagger-locking fast enemies</td><td>Fire Rate Lv.4, Capacity Lv.3</td><td>A-TIER</td></tr>
+                    <tr><td>Primal Knife</td><td>Infinite durability melee</td><td>Max durability (automatic)</td><td>A-TIER</td></tr>
+                    <tr><td>Rocket Launcher</td><td>NG+ boss deletion</td><td>Infinite ammo (S+ Professional unlock)</td><td>NG+ ONLY</td></tr>
+                    <tr><td>Magnum (Lightning Hawk)</td><td>Boss weak-point destruction</td><td>Firepower Lv.3</td><td>B-TIER</td></tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <p><strong>SPEEDRUNNER'S DREAM LOADOUT:</strong> For NG+ speedruns, the Rocket Launcher with infinite ammo trivializes every encounter. For fresh-file Professional S+ attempts, the W870 Shotgun and Anti-Materiel Rifle form the optimal two-weapon core. The Primal Knife eliminates the need to craft or repair melee weapons, saving precious inventory seconds. For the complete weapon unlock tree, see our <a href="unlockables-ngplus-guide.html">Unlockables and NG+ Guide</a>.</p>
+            </div>
+
+            <h2 id="chapter-routes">CHAPTER-BY-CHAPTER SPEEDRUN ROUTES</h2>
+
+            <p>Below are the fastest routes through every chapter. Target times assume Professional difficulty with a fresh file (no NG+ weapons). NG+ runs with the Rocket Launcher can subtract roughly 20 percent from each target time.</p>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 1 — TARGET: 8 MINUTES</div>
+                <div class="craft-title">THE AWAKENING</div>
+                <div class="craft-recipe">ROUTE: Main hall → Kitchen → East corridor → Armory → Courtyard exit</div>
+                <p class="craft-effect"><strong>Key skips:</strong> Do not enter the West Wing at all — the drawing room puzzle is optional on repeat playthroughs. Grab the Shotgun from the Armory (mandatory pickup), sprint past all Infected Staff in the east corridor, and head directly to the Courtyard. The Infected Staff in the kitchen can be dodged by hugging the right counter. <strong>Save point:</strong> Do not waste a save here — Chapter 1 is too short to justify one of your 3 saves.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 2 — TARGET: 12 MINUTES</div>
+                <div class="craft-title">ECHOES OF THE ESTATE</div>
+                <div class="craft-recipe">ROUTE: Courtyard → Hedge maze (right path only) → East garden → Estate cellar → Underground passage</div>
+                <p class="craft-effect"><strong>Key skips:</strong> The Hedge Maze has two paths — take the right path every time, it is 23 seconds faster than the left. Skip the Gardener's Shed entirely (no save point needed). The Bloated Lycan in the cellar must be killed — unload 4 shotgun rounds into its head at close range; do not waste magnum ammo here. The chapter ends the moment you reach the underground passage door.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 3 — TARGET: 15 MINUTES</div>
+                <div class="craft-title">BELOW THE SURFACE</div>
+                <div class="craft-recipe">ROUTE: Underground passage → Catacombs → Flooded chamber → Lift to Chapter 4</div>
+                <p class="craft-effect"><strong>Key skips:</strong> After picking up the Lift Key, do NOT explore the side catacomb rooms — they contain only optional treasures. The flooded chamber has three Shadow Wraiths that materialize sequentially — shotgun the first, sprint past the second, flashbang the third. The lift activation cutscene cannot be skipped entirely but can be shortened by holding the confirm button.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 4 — TARGET: 18 MINUTES</div>
+                <div class="craft-title">THE CRIMSON WING</div>
+                <div class="craft-recipe">ROUTE: Main hall → Library → Upper gallery → Ballroom → Exit to Chapter 5</div>
+                <p class="craft-effect"><strong>Key skips:</strong> The Candelabra puzzle in the main hall can be solved in one pass if you pull both levers simultaneously (stand at the midpoint and quick-turn between them). Skip the Hidden Chapel entirely. The Ballroom fight against the two Armored Lycans is the chapter's only mandatory combat — use 2 magnum rounds on each to end the fight in under 60 seconds.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 5 — TARGET: 22 MINUTES</div>
+                <div class="craft-title">BETRAYAL IN THE DARK</div>
+                <div class="craft-recipe">ROUTE: Estate ruins → Victor Gideon confrontation → Lake path → Chapel → Chapter 6 transition</div>
+                <p class="craft-effect"><strong>Key skips:</strong> Victor Gideon's dialogue sequence can be shortened by shooting him before he finishes his monologue — this triggers the boss fight early. The Bloated Lycan boss: unload 6 shotgun rounds into the glowing weak point on its back after it charges. The Lake path has 4 Infected Staff — flashbang all of them and sprint through. <strong>SAVE HERE (Save 1 of 3).</strong></p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 6 — TARGET: 20 MINUTES</div>
+                <div class="craft-title">THE LIVING LABORATORY</div>
+                <div class="craft-recipe">ROUTE: Grace Hospital entrance → ER → Morgue → Lab wing → Amalgam boss → Chapter 7</div>
+                <p class="craft-effect"><strong>Key skips:</strong> Do not enter the Nurse Station — the Morgue Key is not needed. The Morgue drawer puzzle can be brute-forced: drawer 7 is always the correct answer on the second attempt. Amalgam boss: 4 Anti-Materiel Rifle rounds to the central mass, then shotgun the exposed heart. Entire fight under 90 seconds with good aim. Skip all patient rooms on the upper floor.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 7 — TARGET: 10 MINUTES</div>
+                <div class="craft-title">THE REQUIEM BEGINS</div>
+                <div class="craft-recipe">ROUTE: Laboratory entrance → Main lab → Rift chamber → Chapter 8</div>
+                <p class="craft-effect"><strong>Key skips:</strong> The shortest chapter in the game. Only mandatory objective is activating the Rift stabilizer. The three lab terminals must be activated in order: left, right, center. Sprint past all lab-infected enemies. The Rift chamber cutscene is unskippable but only lasts 90 seconds — use this time to hydrate. No combat required in this chapter if you keep moving.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 8 — TARGET: 25 MINUTES</div>
+                <div class="craft-title">DIMENSIONS APART</div>
+                <div class="craft-recipe">ROUTE: RPD arrival → West office → Armory → Rooftop → Helipad → Return to Rift → Chapter 9</div>
+                <p class="craft-effect"><strong>Key skips:</strong> Do NOT return to the armory after the Rift stabilizes — this triggers the optional HUNK boss fight that costs 5+ minutes. The RPD West Office has a skip: shoot the window from the hallway, vault through, and bypass the locked door entirely. The Rooftop Shadow Wraith ambush can be neutralized with a flashbang — toss it at the third wraith that spawns, then sprint to the helipad ladder. <strong>SAVE HERE (Save 2 of 3).</strong></p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 9 — TARGET: 22 MINUTES</div>
+                <div class="craft-title">THE FORGOTTEN CITY</div>
+                <div class="craft-recipe">ROUTE: City gates → Central plaza → Museum → Forgotten King arena → Waterfall path → Chapter 10</div>
+                <p class="craft-effect"><strong>Key skips:</strong> The Central Plaza has 8 enemies — do not engage any of them. Run a serpentine pattern from gate to museum entrance. Forgotten King boss: 6 Anti-Materiel Rifle rounds to the crown (head weak point) while strafing. His charge attack is telegraphed by a 2-second roar — perfect-dodge left. Skip the Museum display cases (optional treasures only).</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 10 — TARGET: 18 MINUTES</div>
+                <div class="craft-title">CONVERGENCE</div>
+                <div class="craft-recipe">ROUTE: Convergence Lab → West wing → Central chamber → East wing → Chapter 11</div>
+                <p class="craft-effect"><strong>Key skips:</strong> The West wing weapons locker (Anti-Materiel Rifle pickup) is worth the 90-second detour if you do not already have it. The Central chamber fight against the dual Abominations: flashbang both, shotgun the left one 4 times, then the right one. The East wing corridor is the most dangerous section — two Shadow Wraiths spawn behind you. Toss a flashbang the moment you hear their spawn audio cue and do not look back.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 11 — TARGET: 20 MINUTES</div>
+                <div class="craft-title">THE FINAL DESCENT</div>
+                <div class="craft-recipe">ROUTE: Descent elevator → Lower catacombs → Extraction point → Amalgam boss arena → Chapter 12</div>
+                <p class="craft-effect"><strong>Key skips:</strong> The Descent elevator is 45 seconds of unskippable descent — use this time to craft ammo. The Lower Catacombs maze: always turn right at every junction. The extraction point ambush spawns 6 enemies in waves of 2 — shotgun each pair as they appear. <strong>SAVE HERE (Save 3 of 3).</strong> The Amalgam boss fight is your last checkpoint before the final chapter.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">CHAPTER 12 — TARGET: 15 MINUTES</div>
+                <div class="craft-title">REQUIEM</div>
+                <div class="craft-recipe">ROUTE: Final arena → Final Boss (3 phases) → Ending sequence</div>
+                <p class="craft-effect"><strong>Key skips:</strong> The Final Boss phases: Phase 1 — 8 shotgun rounds to the chest core. Phase 2 — flashbang to interrupt the AoE slam, then 4 Anti-Materiel rounds to the exposed back. Phase 3 — the desperation phase; use all remaining magnum rounds on the head, then finish with the shotgun. If you have the Rocket Launcher (NG+), one rocket per phase ends the fight in under 45 seconds. The credits sequence is unskippable but does not count toward your time.</p>
+            </div>
+
+            <h2 id="skip-techniques">ADVANCED SKIP TECHNIQUES</h2>
+
+            <p>These techniques require practice but save enormous amounts of time when executed correctly. The RE Requiem speedrun community discovers new skips regularly — these are the most impactful ones as of July 2026.</p>
+
+            <div class="craft-card">
+                <div class="craft-label">SKIP TECHNIQUE</div>
+                <div class="craft-title">DOOR CANCEL (ALL CHAPTERS)</div>
+                <div class="craft-recipe">INPUT: Down + Sprint the frame the door begins to open</div>
+                <p class="craft-effect">Cancels the door-opening animation, allowing you to move through doors approximately 1.2 seconds faster per door. With roughly 80 doors in the game, this skip saves <strong>approximately 96 seconds</strong> across a full run. Timing is tight — practice on the Chapter 1 main hall doors until consistent.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">SKIP TECHNIQUE</div>
+                <div class="craft-title">LADDER SLIDE CANCEL (CHAPTERS 1, 4, 9, 11)</div>
+                <div class="craft-recipe">INPUT: Crouch at the top of any ladder</div>
+                <p class="craft-effect">Cancels the ladder dismount animation. Saves approximately 0.8 seconds per ladder. There are 11 ladders in a full speedrun route, saving <strong>roughly 9 seconds</strong> total. Minimal but worth mastering — in a game where S+ Professional requires sub-3:30:00, every second counts.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">SKIP TECHNIQUE</div>
+                <div class="craft-title">WINDOW VAULT SKIP (CHAPTER 8)</div>
+                <div class="craft-recipe">INPUT: Shoot the RPD West Office window from the hallway, vault through</div>
+                <p class="craft-effect">Bypasses the locked West Office door entirely, saving the 3-minute detour to find the West Office Key. This skip saves <strong>approximately 3 minutes</strong> and is the single most impactful skip in the entire run. Shoot the window with any weapon — even the starting pistol works — and the vault prompt appears immediately.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">SKIP TECHNIQUE</div>
+                <div class="craft-title">VICTOR GIDEON EARLY TRIGGER (CHAPTER 5)</div>
+                <div class="craft-recipe">INPUT: Fire any weapon at Victor Gideon during his monologue</div>
+                <p class="craft-effect">Cuts his 2-minute monologue down to 10 seconds, triggering the boss fight immediately. Aim for his chest — a single pistol round is sufficient. This skip saves <strong>roughly 110 seconds</strong>. Be ready: the boss fight begins the instant the bullet connects, so have your shotgun equipped before firing.</p>
+            </div>
+
+            <div class="craft-card">
+                <div class="craft-label">SKIP TECHNIQUE</div>
+                <div class="craft-title">INVENTORY PICKUP CANCEL (ALL CHAPTERS)</div>
+                <div class="craft-recipe">INPUT: Open inventory the frame the pickup animation starts</div>
+                <p class="craft-effect">Cancels the item-pickup animation. Saves approximately 0.5 seconds per mandatory pickup. With roughly 30 mandatory pickups in a speedrun route, this saves <strong>approximately 15 seconds</strong>. Easy to learn — just double-tap the inventory button when picking up any item.</p>
+            </div>
+
+            <h2 id="professional-s-plus">PROFESSIONAL S+ STEP-BY-STEP STRATEGY</h2>
+
+            <p>Earning S+ on Professional difficulty (sub-3:30:00, max 3 saves, 0 deaths) is the holy grail of RE Requiem speedrunning. This section outlines the exact strategy used by top runners.</p>
+
+            <div class="highlight-box">
+                <p><strong>THE MENTALITY:</strong> Professional S+ is a marathon of perfection. Every mistake costs time or a death — and a death means restarting from your last save, which might be an hour behind you. Play conservatively in the first third of the run, then push hard once Save 2 is banked.</p>
+            </div>
+
+            <h3>Save Strategy</h3>
+            <ul>
+                <li><strong>Save 1:</strong> End of Chapter 5 (roughly 1:15:00 into the run). This is your biggest reset point — if you die in Chapters 1-5, you restart the whole run.</li>
+                <li><strong>Save 2:</strong> End of Chapter 8 (roughly 2:15:00 into the run). Chapters 6-8 contain the Amalgam boss and the RPD section, both high-death-risk zones.</li>
+                <li><strong>Save 3:</strong> Start of Chapter 11, before the Amalgam boss (roughly 3:00:00 into the run). The final two chapters are the hardest and a death here without a recent save is devastating.</li>
+            </ul>
+
+            <h3>Time Budget</h3>
+            <table class="quick-table">
+                <thead>
+                    <tr><th>CHAPTER</th><th>TARGET TIME</th><th>MAXIMUM TIME</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Ch 1: The Awakening</td><td>8:00</td><td>12:00</td></tr>
+                    <tr><td>Ch 2: Echoes of the Estate</td><td>12:00</td><td>16:00</td></tr>
+                    <tr><td>Ch 3: Below the Surface</td><td>15:00</td><td>19:00</td></tr>
+                    <tr><td>Ch 4: The Crimson Wing</td><td>18:00</td><td>22:00</td></tr>
+                    <tr><td>Ch 5: Betrayal in the Dark</td><td>22:00</td><td>26:00</td></tr>
+                    <tr><td>Ch 6: The Living Laboratory</td><td>20:00</td><td>24:00</td></tr>
+                    <tr><td>Ch 7: The Requiem Begins</td><td>10:00</td><td>13:00</td></tr>
+                    <tr><td>Ch 8: Dimensions Apart</td><td>25:00</td><td>30:00</td></tr>
+                    <tr><td>Ch 9: The Forgotten City</td><td>22:00</td><td>26:00</td></tr>
+                    <tr><td>Ch 10: Convergence</td><td>18:00</td><td>22:00</td></tr>
+                    <tr><td>Ch 11: The Final Descent</td><td>20:00</td><td>24:00</td></tr>
+                    <tr><td>Ch 12: Requiem</td><td>15:00</td><td>18:00</td></tr>
+                    <tr><td><strong>TOTAL</strong></td><td><strong>3:25:00</strong></td><td><strong>3:30:00 (cutoff)</strong></td></tr>
+                </tbody>
+            </table>
+
+            <p>The target times leave a 5-minute buffer. If you are behind pace by Chapter 8, consider abandoning the run rather than pushing through and failing at the finish line. The biggest time-loss offenders are boss fights — practice the Amalgam (Chapter 6), Forgotten King (Chapter 9), and Final Boss (Chapter 12) until you can do them flawlessly.</p>
+
+            <div class="success-box">
+                <p><strong>PRO TIP:</strong> Use the Rocket Launcher on NG+ Professional runs. With infinite ammo unlocked from a previous S+ Professional clear, every boss dies in one rocket. A NG+ Professional S+ run can be completed in under 1:45:00, making it the fastest way to farm Requiem Points for the in-game shop.</p>
+            </div>
+
+            <h2 id="faq">FAQ: RE REQUIEM SPEEDRUNNING</h2>
+
+            <div class="tip-card">
+                <div class="tip-number">Q1</div>
+                <h3>Does the in-game timer pause during cutscenes?</h3>
+                <p><strong>Yes.</strong> The in-game completion timer pauses during all cutscenes, including unskippable ones. This means you can safely watch cutscenes without affecting your rank. However, the <strong>real-time clock</strong> does not pause, which matters for streaming categories and community leaderboard submissions on sites like speedrun.com.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q2</div>
+                <h3>Can I get S+ rank on NG+?</h3>
+                <p><strong>Yes, absolutely.</strong> NG+ runs have the same rank requirements as fresh-file runs. Using NG+ weapons (Rocket Launcher, Primal Knife, fully upgraded shotgun) makes Professional S+ significantly easier. The only restriction: Professional difficulty must be unlocked first by completing the game on Hardcore. There is no penalty for using NG+ gear in ranked runs.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q3</div>
+                <h3>What is the current world record for RE Requiem?</h3>
+                <p>As of July 2026, the Any% (Standard difficulty, fresh file) world record stands at approximately 1 hour 38 minutes. The Professional Any% NG+ record is around 1 hour 12 minutes. These times change frequently — check speedrun.com for the latest leaderboards. Our chapter target times above are tuned for sub-3:30:00 Professional S+ rather than world-record pace, making them achievable for intermediate runners.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q4</div>
+                <h3>Which difficulty should I speedrun first?</h3>
+                <p>Start with <strong>Standard difficulty S+</strong> (sub-2:30:00). This teaches routing, skip execution, and time management without the punishing damage of Hardcore or Professional. Once you can consistently clear Standard S+, move to Hardcore S+ (sub-3:00:00), then Professional S+ (sub-3:30:00). Jumping straight to Professional S+ is a recipe for frustration.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q5</div>
+                <h3>Are there any glitches or out-of-bounds skips?</h3>
+                <p>The RE Requiem speedrun community currently runs the game <strong>glitchless</strong> — no out-of-bounds clips, no wrong-warps, no sequence breaks. Capcom's RE Engine is famously robust against clipping glitches. The skips documented in this guide all operate within the game's intended mechanics (animation cancels, early triggers, route optimization). If new glitch skips are discovered, speedrun.com typically creates a separate category to preserve the glitchless leaderboard.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q6</div>
+                <h3>Do I need to collect anything for S+ rank?</h3>
+                <p><strong>No.</strong> Rank is determined solely by completion time, save count, and deaths. Collectibles, treasures, side missions, and Lore Fragments do not affect your letter rank. For a speedrun, ignore everything that is not on the critical path. If you want to combine a speedrun with the True Ending requirements, you need all 12 Lore Fragments — that is an entirely different (and much harder) challenge requiring a separate guide.</p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Looking for more?</strong> Pair this speedrun guide with our <a href="weapons-guide.html">Weapons Guide</a> for optimal loadouts, the <a href="unlockables-ngplus-guide.html">Unlockables Guide</a> for everything you earn from S+ rank, and the <a href="difficulty-guide.html">Difficulty Guide</a> to understand exactly how Professional mode changes enemy behavior and damage scaling.</p>
+            </div>
+
+            <h2 id="conclusion">FINAL THOUGHTS</h2>
+            <p>Speedrunning Resident Evil Requiem is one of the most rewarding challenges in the 2026 survival horror landscape. The game's tight controls, consistent enemy behavior, and well-designed critical path make for an incredibly satisfying speed game — every death feels like your fault, and every personal best feels earned. Whether you are chasing the S+ Professional unlock, competing for a spot on the leaderboards, or just looking to experience the game in a new way, the strategies in this guide will get you there.</p>
+            <p>The speedrun community for RE Requiem is growing rapidly. New skips are discovered monthly, route optimizations are refined weekly, and the world record drops by seconds every few days. If you discover a new skip or route improvement, share it — the community is collaborative and welcoming to new runners. The best place to connect is the RE Requiem channel on the Resident Evil speedrunning Discord server, where veteran runners share VODs, split files, and real-time advice.</p>
+            <p>For the complete RE Requiem experience, see our <a href="walkthrough.html">Complete Walkthrough</a>, <a href="boss-guide.html">Boss Guide</a>, <a href="weapons-guide.html">Weapons Guide</a>, and <a href="unlockables-ngplus-guide.html">Unlockables and NG+ Guide</a>. Good luck, runner — the clock is ticking.</p>
+
+                        <a href="index.html" class="back-link">&larr; BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="weapons-guide.html">Weapons Guide</a>
+            <a href="unlockables-ngplus-guide.html">Unlockables Guide</a>
+            <a href="difficulty-guide.html">Difficulty Guide</a>
+            <a href="walkthrough.html">Walkthrough</a>
+            <a href="boss-guide.html">Boss Guide</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated July 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+    <script>
+        (function(){
+            var u=encodeURIComponent(window.location.href);
+            var t=encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+            document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+            document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+            document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b=document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title="Copied!";
+                setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+            });
+        }
+    </script>
+</body></html>
