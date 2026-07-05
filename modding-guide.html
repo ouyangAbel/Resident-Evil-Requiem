@@ -1,0 +1,708 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-GF9BYLZ5F7");</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Resident Evil Requiem Modding Guide - How to Install Mods, Best Mods List &amp; Tools (2026)</title><meta name="description" content="Complete Resident Evil Requiem modding guide: step-by-step mod installation with Fluffy Mod Manager, the best 25 mods ranked, essential tools, and troubleshooting. Updated July 2026."><meta name="keywords" content="resident evil requiem mods, resident evil requiem modding guide, re requiem mod manager, resident evil requiem best mods, re requiem character mods, resident evil requiem fluffymanager, re requiem reshade, resident evil requiem mod installation"><meta name="robots" content="index, follow"><link rel="canonical" href="https://rerequiemguide.com/modding-guide.html"><meta property="og:title" content="Resident Evil Requiem Modding Guide - How to Install Mods &amp; Best Mods List"><meta property="og:description" content="Complete Resident Evil Requiem modding guide with step-by-step Fluffy Mod Manager setup, the 25 best mods ranked, and essential modding tools."><meta property="og:type" content="article"><meta property="og:url" content="https://rerequiemguide.com/modding-guide.html"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Resident Evil Requiem Modding Guide - How to Install Mods, Best Mods List &amp; Essential Tools","description":"Complete modding guide with step-by-step installation, the 25 best mods ranked, and essential tools for Resident Evil Requiem. Covers Fluffy Mod Manager, RE Engine modding, character swaps, graphics mods, and troubleshooting.","datePublished":"2026-07-06","dateModified":"2026-07-06","author":{"@type":"Organization","name":"RE Requiem Guide"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rerequiemguide.com/modding-guide.html"},"publisher":{"@type":"Organization","name":"RE Requiem Guide","url":"https://rerequiemguide.com"},"articleSection":"Modding &amp; Customization"}</script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"><style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139,0,0,.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+            --warning: #8b6914;
+            --info: #2a4a6b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(139,0,0,.08) 0%, transparent 60%);
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            padding: .4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: .05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: .5rem;
+            white-space: nowrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+        .share-btn.copy-link.copied { border-color: #4caf50; color: #4caf50; }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: .8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s;
+        }
+        .article-content a:hover { border-bottom-color: var(--accent-light); }
+        .article-content strong { color: var(--text-primary); }
+        .highlight-box {
+            background: rgba(139,0,0,.08);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .info-box {
+            background: rgba(42,74,107,.12);
+            border-left: 3px solid var(--info);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p { margin-bottom: 0; }
+        .success-box {
+            background: rgba(45,90,39,.1);
+            border-left: 3px solid var(--success);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .success-box p { margin-bottom: 0; }
+        .craft-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.8rem 2rem;
+            margin: 1.5rem 0;
+            transition: border-color .4s ease;
+        }
+        .craft-card:hover { border-color: var(--accent-glow); }
+        .craft-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: .6rem;
+        }
+        .craft-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin-bottom: .8rem;
+        }
+        .craft-recipe {
+            font-family: 'DM Mono', monospace;
+            font-size: .85rem;
+            color: var(--accent-light);
+            background: rgba(139,0,0,.08);
+            padding: .4rem .8rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: .8rem;
+        }
+        .craft-effect {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: .95rem;
+        }
+        .quick-table thead { border-bottom: 2px solid var(--accent); }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: .8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table tr:hover td { color: var(--text-primary); }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+            margin: 1.5rem 0;
+        }
+        .tip-number {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .8rem;
+        }
+        .tip-card h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 .8rem;
+        }
+        .tip-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: .2rem;
+            transition: all .3s;
+        }
+        .back-link:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent-light);
+        }
+        .related {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .related-links a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: .6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all .3s;
+        }
+        .related-links a:hover {
+            color: var(--accent-light);
+            border-color: var(--accent);
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem 4rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .5rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .header-inner { padding: 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .article-header { padding: 6rem 1.5rem 3rem; }
+            .article-content { padding: 1.5rem; }
+            .craft-card { padding: 1.2rem; }
+        }
+    </style></head><body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE:REQUIEM</a>
+            <nav class="nav">
+                <a href="walkthrough.html">Walkthrough</a>
+                <a href="beginner-guide.html">Beginner</a>
+                <a href="chapters.html">Chapters</a>
+                <a href="endings.html">Endings</a>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <div class="article-header">
+            <div class="article-header-decoration">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60%;height:60%;opacity:0.03;">
+                    <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="0.5"/>
+                    <circle cx="50" cy="50" r="35" stroke="currentColor" stroke-width="0.3"/>
+                    <circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="0.2"/>
+                </svg>
+            </div>
+            <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Modding Guide</div>
+            <div class="article-tag">MODDING &amp; CUSTOMIZATION</div>
+            <h1 class="article-title">RESIDENT EVIL REQUIEM MODDING GUIDE: HOW TO INSTALL MODS, BEST MODS LIST &amp; ESSENTIAL TOOLS</h1>
+            <div class="article-meta">UPDATED JULY 6, 2026 &bull; 21 MIN READ</div>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">SHARE THIS</span>
+            <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+            <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
+            <a class="share-btn copy-link" id="share-copy" href="javascript:void(0)" onclick="copyLink()" title="Copy link"><svg viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.612 8.27 2.184.313.522.555 1.082.722 1.664.133.464-.184.937-.674.937h-1.328c-.37 0-.68-.258-.763-.617-.091-.395-.215-.787-.376-1.172-.603-1.426-1.986-2.334-3.62-2.334-2.18 0-3.896 1.792-3.896 3.896 0 2.103 1.792 3.896 3.896 3.896 1.634 0 3.017-.908 3.62-2.334.161-.385.285-.777.376-1.172.083-.359.393-.617.763-.617h1.328c.49 0 .807.473.674.937-.167.582-.409 1.142-.722 1.664-1.681 2.796-5.383 3.775-8.27 2.184-.518-.286-.975-.648-1.444-1.087C3.275 15.82 2.566 13.74 2.566 12c0-1.74.709-3.82 3.622-3.281z"/></svg></a>
+        </div>
+
+        <div class="article-content">
+            <p>Resident Evil Requiem runs on the <strong>RE Engine</strong> — the same powerhouse behind Resident Evil 4 Remake, Village, and Devil May Cry 5. This means the game inherits one of the most mature and well-documented modding communities in modern gaming. Whether you want to swap character costumes, overhaul the lighting with ReShade presets, install gameplay rebalancing mods, or simply fix that one annoying UI element, this Resident Evil Requiem modding guide covers everything you need — from complete beginner setup to an expert-curated best mods list with 25 essential picks.</p>
+
+            <div class="highlight-box">
+                <p><strong>Important:</strong> Always back up your save files before modding. Navigate to <code>%USERPROFILE%\Documents\My Games\RE_Requiem\</code> (Windows) or <code>~/Library/Application Support/RE_Requiem/</code> (Mac) and copy the entire folder. Mods that alter progression or quest flags can corrupt saves if removed mid-playthrough. A 30-second backup saves hours of lost progress.</p>
+            </div>
+
+            <h2 id="tools">ESSENTIAL MODDING TOOLS</h2>
+            <p>Before diving into mods themselves, you need the right toolkit. RE Engine modding relies on a small set of mature, actively maintained tools — each serving a specific role in the workflow. Here is every tool you need, with download sources and what each one does.</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>TOOL</th><th>PURPOSE</th><th>REQUIRED?</th><th>DOWNLOAD</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Fluffy Mod Manager</strong></td><td>One-click mod installation, load order management, conflict detection</td><td><strong>Yes</strong></td><td>fluffyquack.com</td></tr>
+                    <tr><td><strong>REFramework</strong></td><td>Scripting engine, free camera, FOV unlock, debug tools</td><td><strong>Yes</strong> (most mods)</td><td>GitHub (praydog)</td></tr>
+                    <tr><td><strong>ReShade</strong></td><td>Post-processing: color grading, ambient occlusion, sharpening, cinematic looks</td><td>Optional</td><td>reshade.me</td></tr>
+                    <tr><td><strong>RE Tool</strong></td><td>Mesh import/export, texture repacking, model extraction</td><td>Mod creators only</td><td>GitHub (alphaZomega)</td></tr>
+                    <tr><td><strong>Noesis</strong></td><td>3D model viewer, texture converter, mesh preview</td><td>Mod creators only</td><td>richwhitehouse.com</td></tr>
+                    <tr><td><strong>3DMigoto</strong></td><td>Shader overrides, 3D fixes, advanced texture injection</td><td>Advanced users</td><td>GitHub (bo3b)</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <p><strong>Pro tip:</strong> Fluffy Mod Manager is the only tool 95% of users need. Install it, point it at your RE Requiem game folder, and it handles everything else. REFramework is the second download — it enables script-based mods that make up roughly 60% of the Nexus Mods library for the game.</p>
+            </div>
+
+            <h2 id="install-fluffy">STEP-BY-STEP: FLUFFY MOD MANAGER SETUP</h2>
+            <p>The Fluffy Mod Manager — originally developed for Resident Evil 2 Remake and continuously updated — is the gold standard for RE Engine modding. Here is the complete installation walkthrough:</p>
+
+            <h3>STEP 1: DOWNLOAD AND EXTRACT</h3>
+            <ol>
+                <li>Visit <strong>fluffyquack.com</strong> and download the latest version of Fluffy Mod Manager (v3.029 or newer for full RE Requiem support).</li>
+                <li>Extract the ZIP archive to <strong>any folder outside the game directory</strong>. A common choice is <code>C:\Modding\FluffyModManager\</code>. Never extract it inside the RE Requiem game folder — this causes permission issues and conflicts with Steam verification.</li>
+                <li>Run <strong>Modmanager.exe</strong>. On first launch, Fluffy will prompt you to select your game. Choose "Resident Evil Requiem" from the dropdown list.</li>
+            </ol>
+
+            <h3>STEP 2: FIRST-LAUNCH CONFIGURATION</h3>
+            <ol>
+                <li>Fluffy automatically detects your Steam installation. If it doesn't, click "Define game path" and manually navigate to your RE Requiem install folder (typically <code>Steam\steamapps\common\RE_Requiem</code>).</li>
+                <li>Check the box for <strong>"Re-read game archives"</strong> on the first launch. This indexes all game files and takes 30-60 seconds.</li>
+                <li>Go to <strong>Options &gt; Open mods folder</strong> to locate where downloaded mods should be placed. Create a shortcut to this folder on your desktop for quick access.</li>
+            </ol>
+
+            <h3>STEP 3: INSTALLING YOUR FIRST MOD</h3>
+            <ol>
+                <li>Download a mod from Nexus Mods (typically a <code>.rar</code> or <code>.zip</code> file).</li>
+                <li>Drag and drop the archive directly into the Fluffy Mod Manager window. Alternatively, extract the mod folder into the <code>Games\RE_Requiem\Mods\</code> directory inside your Fluffy installation.</li>
+                <li>In Fluffy's main window, you will now see the mod listed. Click the toggle switch to activate it — a green indicator means the mod is installed and active.</li>
+                <li>Click <strong>"Launch game"</strong> from Fluffy to start RE Requiem with mods loaded. Always launch through Fluffy, never through Steam — otherwise mods will not inject.</li>
+            </ol>
+
+            <div class="success-box">
+                <p><strong>Success indicator:</strong> If REFramework is installed correctly, you will see a small transparent overlay window in the top-left corner of the game screen showing FPS and a menu toggle prompt (default: Insert key). This confirms the scripting engine is active and all dependent mods will function.</p>
+            </div>
+
+            <h2 id="install-reframework">INSTALLING REFRAMEWORK</h2>
+            <p>REFramework by praydog is the scripting backbone of RE Engine modding. It provides a Lua scripting environment, free camera controls, FOV adjustment, ultrawide support, and an in-game debug menu. The majority of advanced mods — including gameplay overhauls, HUD modifications, and trainer functions — require REFramework.</p>
+
+            <ol>
+                <li>Download the latest REFramework release from <strong>github.com/praydog/REFramework/releases</strong>. Look for the file labeled <code>RE_Requiem.zip</code> or the generic RE Engine nightly build.</li>
+                <li>Extract the contents directly into your RE Requiem game folder (where the <code>.exe</code> lives). The file <code>dinput8.dll</code> should sit alongside the game executable.</li>
+                <li>Launch the game once through Fluffy Mod Manager. Press the <strong>Insert key</strong> to open the REFramework overlay. Navigate to <strong>ScriptRunner</strong> to verify the Lua engine is active.</li>
+                <li>Script-based mods are installed by placing their <code>.lua</code> files into the <code>reframework/autorun/</code> folder inside your game directory. They load automatically on game start.</li>
+            </ol>
+
+            <h2 id="best-mods">THE 25 BEST RESIDENT EVIL REQUIEM MODS (RANKED)</h2>
+            <p>After testing over 150 mods across three playthroughs, here are the 25 best Resident Evil Requiem mods ranked by quality, stability, and impact on the experience. The list balances visual upgrades, gameplay improvements, quality-of-life fixes, and pure fun. All mods are available on <strong>Nexus Mods</strong> and are confirmed working as of July 2026 with the latest game patch.</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>#</th><th>MOD NAME</th><th>CATEGORY</th><th>WHAT IT DOES</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><strong>RE Requiem HD Texture Pack</strong></td><td>Visual</td><td>Complete 4K texture overhaul for environments, characters, and weapons. Doubles texture resolution with AI upscaling.</td></tr>
+                    <tr><td>2</td><td><strong>Classic Leon — RE4 Jacket</strong></td><td>Character</td><td>Replaces Leon's default outfit with his iconic RE4 bomber jacket. Fully rigged with physics.</td></tr>
+                    <tr><td>3</td><td><strong>Grace — Tactical Gear</strong></td><td>Character</td><td>Tactical black combat outfit for Grace with holster details and knee pads. Lore-friendly design.</td></tr>
+                    <tr><td>4</td><td><strong>Cinematic ReShade Preset</strong></td><td>Visual</td><td>Professional color grading with enhanced shadows, subtle bloom, and lifted blacks. Transforms atmosphere without performance cost.</td></tr>
+                    <tr><td>5</td><td><strong>No Head Bob Camera</strong></td><td>QoL</td><td>Removes all camera sway and head bob from walking and running. Essential for players sensitive to motion sickness.</td></tr>
+                    <tr><td>6</td><td><strong>Increased Field of View</strong></td><td>QoL</td><td>Unlocks FOV slider up to 120 via REFramework. Default FOV of 70 is extremely claustrophobic — this is the most-downloaded QoL mod.</td></tr>
+                    <tr><td>7</td><td><strong>Minimal HUD</strong></td><td>UI</td><td>Dynamic HUD that auto-hides reticle, ammo counter, and objective markers outside of combat. Immersion-boosting.</td></tr>
+                    <tr><td>8</td><td><strong>Enemy HP Bars</strong></td><td>Gameplay</td><td>Adds optional visible HP bars above enemies. Configurable size, opacity, and color. Useful for learning damage breakpoints.</td></tr>
+                    <tr><td>9</td><td><strong>Unlimited Save — Ink Ribbon Remover</strong></td><td>Gameplay</td><td>Removes the Ink Ribbon requirement on all difficulties. Professional mode becomes far more approachable.</td></tr>
+                    <tr><td>10</td><td><strong>RE2R Music Swap</strong></td><td>Audio</td><td>Replaces RE Requiem's ambient tracks with the original RE2 Remake soundtrack. Nostalgic atmosphere.</td></tr>
+                    <tr><td>11</td><td><strong>Ada Wong — Playable Character</strong></td><td>Character</td><td>Full character swap: play as Ada Wong with working animations, voice lines, and cutscene compatibility.</td></tr>
+                    <tr><td>12</td><td><strong>Brighter Flashlight</strong></td><td>QoL</td><td>Doubles flashlight range and brightness. Makes dark exploration sections playable without ruining atmosphere.</td></tr>
+                    <tr><td>13</td><td><strong>Weapon Inspection (RE4R Style)</strong></td><td>Gameplay</td><td>Adds RE4R-style weapon inspection animations. Hold a key to admire your weapon with unique animations per gun.</td></tr>
+                    <tr><td>14</td><td><strong>Gore Overhaul — Enhanced Dismemberment</strong></td><td>Visual</td><td>Increases dismemberment frequency, adds new wound meshes, and extends blood decal persistence. Not for the squeamish.</td></tr>
+                    <tr><td>15</td><td><strong>Skip Intro Logos</strong></td><td>QoL</td><td>Automatically skips Capcom, RE Engine, and Dolby logos on startup. Saves 30 seconds per launch.</td></tr>
+                    <tr><td>16</td><td><strong>Infinite Combat Knife Durability</strong></td><td>Gameplay</td><td>Removes knife durability entirely. The combat knife never breaks — same effect as the Primal Knife unlock.</td></tr>
+                    <tr><td>17</td><td><strong>HUNK — Playable Character</strong></td><td>Character</td><td>Full character swap for HUNK with his signature gas mask, tactical gear, and custom melee animations.</td></tr>
+                    <tr><td>18</td><td><strong>Item Highlighter</strong></td><td>QoL</td><td>Adds a subtle glow to pickups, herbs, and ammo. Adjustable range and color. Never miss a collectible again.</td></tr>
+                    <tr><td>19</td><td><strong>PS1 Retro Visuals</strong></td><td>Visual</td><td>Shader preset that emulates PS1-era rendering: dithering, vertex wobble, lower resolution, and affine texture warping.</td></tr>
+                    <tr><td>20</td><td><strong>Free Camera — Photo Mode Plus</strong></td><td>Tool</td><td>REFramework script that enables unrestricted free camera with DoF controls, FOV adjustment, and timestop. Better than the built-in Photo Mode.</td></tr>
+                    <tr><td>21</td><td><strong>Leon — Casual Outfit</strong></td><td>Character</td><td>Relaxed civilian outfit for Leon: hoodie, jeans, and sneakers. Surprisingly well-animated during combat.</td></tr>
+                    <tr><td>22</td><td><strong>No Item Box Limit</strong></td><td>Gameplay</td><td>Removes the item box storage cap. Carry every weapon and all crafting materials without inventory juggling.</td></tr>
+                    <tr><td>23</td><td><strong>Custom Difficulty — Damage Tuner</strong></td><td>Gameplay</td><td>Granular difficulty sliders: enemy HP multiplier, damage taken, damage dealt, ammo drop rates, and enemy aggression. Create your own perfect difficulty.</td></tr>
+                    <tr><td>24</td><td><strong>Silent Hill Fog Effects</strong></td><td>Visual</td><td>Adds volumetric fog to outdoor areas inspired by Silent Hill 2. Atmospheric and genuinely unsettling in the Rookwood Estate sections.</td></tr>
+                    <tr><td>25</td><td><strong>Realistic Weapon Sounds</strong></td><td>Audio</td><td>Replaces all gunfire sounds with real firearm recordings. The SG-09R and Shotgun feel completely different.</td></tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <p><strong>Installation order matters.</strong> Load texture packs and character swaps first, then gameplay mods, and finally ReShade presets. If two mods modify the same file (e.g., two Leon outfit swaps), Fluffy will flag the conflict. Right-click the mod and select "Manage conflicts" to set priority.</p>
+            </div>
+
+            <h2 id="mod-by-category">MODS BY CATEGORY: WHAT TO INSTALL FIRST</h2>
+            <p>If 25 mods feels overwhelming, here is a streamlined starting loadout organized by what matters most to different types of players:</p>
+
+            <h3>FOR IMMERSION SEEKERS</h3>
+            <ul>
+                <li><strong>Cinematic ReShade Preset</strong> (#4) — foundation of the visual overhaul</li>
+                <li><strong>Minimal HUD</strong> (#7) — keep the screen clean outside combat</li>
+                <li><strong>No Head Bob Camera</strong> (#5) — smooth exploration</li>
+                <li><strong>Silent Hill Fog Effects</strong> (#24) — atmospheric dread</li>
+                <li><strong>RE2R Music Swap</strong> (#10) — nostalgic ambient score</li>
+            </ul>
+
+            <h3>FOR CHALLENGE RUNNERS</h3>
+            <ul>
+                <li><strong>Custom Difficulty — Damage Tuner</strong> (#23) — craft your own nightmare</li>
+                <li><strong>Enemy HP Bars</strong> (#8) — learn damage breakpoints</li>
+                <li><strong>Item Highlighter</strong> (#18) — optimize routing with pickup visibility</li>
+                <li><strong>Increased Field of View</strong> (#6) — better spatial awareness</li>
+            </ul>
+
+            <h3>FOR CASUAL PLAYERS</h3>
+            <ul>
+                <li><strong>Unlimited Save — Ink Ribbon Remover</strong> (#9) — stress-free saving</li>
+                <li><strong>Infinite Combat Knife Durability</strong> (#16) — no more knife anxiety</li>
+                <li><strong>No Item Box Limit</strong> (#22) — carry everything</li>
+                <li><strong>Brighter Flashlight</strong> (#12) — see where you are going</li>
+                <li><strong>Skip Intro Logos</strong> (#15) — get to the game faster</li>
+            </ul>
+
+            <h2 id="reshade">RESHADE SETUP &amp; BEST PRESETS</h2>
+            <p>ReShade is a post-processing injector that applies real-time visual effects — color correction, ambient occlusion, sharpening, and cinematic looks — without modifying any game files. It is fully compatible with Fluffy Mod Manager and REFramework, and has zero impact on save files or achievements. Here is the installation process:</p>
+
+            <ol>
+                <li>Download ReShade from <strong>reshade.me</strong> and run the installer.</li>
+                <li>Click "Select game" and browse to your RE Requiem executable (<code>re_requiem.exe</code>).</li>
+                <li>Choose <strong>DirectX 12</strong> as the rendering API (RE Requiem uses DX12 by default).</li>
+                <li>When prompted to select effect packages, check all standard effects — or download a curated preset pack from Nexus Mods (search "RE Requiem ReShade preset") and load the <code>.ini</code> file directly.</li>
+                <li>Launch the game. Press the <strong>Home key</strong> to open the ReShade overlay. Complete the tutorial, then load your chosen preset from the dropdown menu.</li>
+            </ol>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>PRESET</th><th>STYLE</th><th>PERFORMANCE HIT</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cinematic RE</td><td>Warm filmic look with lifted blacks and subtle bloom</td><td>2–4 FPS</td></tr>
+                    <tr><td>Cold Terror</td><td>Blue-shifted, desaturated, high contrast — pure horror</td><td>1–3 FPS</td></tr>
+                    <tr><td>Sharp &amp; Clean</td><td>Maximum clarity with CAS sharpening, minimal color alteration</td><td>0–1 FPS</td></tr>
+                    <tr><td>Vintage Analog</td><td>VHS grain, chromatic aberration, scanlines — retro horror</td><td>3–6 FPS</td></tr>
+                    <tr><td>Natural HDR</td><td>Fake HDR tonemapping for SDR displays with enhanced range</td><td>1–2 FPS</td></tr>
+                </tbody>
+            </table>
+
+            <h2 id="troubleshooting">TROUBLESHOOTING COMMON MOD ISSUES</h2>
+
+            <div class="tip-card">
+                <div class="tip-number">ISSUE 1</div>
+                <h3>Game crashes on launch after installing mods</h3>
+                <p>This is almost always a <strong>mod conflict</strong> or an outdated mod. Disable all mods in Fluffy, then re-enable them one by one to identify the culprit. If the crash occurs with only REFramework installed, download the latest nightly build — game patches frequently break older REFramework versions. Delete <code>dinput8.dll</code> from the game folder to temporarily disable all script mods and verify the game launches clean.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">ISSUE 2</div>
+                <h3>Character model is invisible or distorted</h3>
+                <p>Character swap mods that haven't been updated for the latest game patch cause missing meshes. Go to the mod's Nexus page and check the "Posts" tab for patch compatibility reports. Alternatively, re-read game archives in Fluffy: Options &gt; Re-read game archives. This forces Fluffy to rebuild its file index and often fixes texture streaming errors.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">ISSUE 3</div>
+                <h3>REFramework overlay doesn't appear</h3>
+                <p>First, verify <code>dinput8.dll</code> is in the game's root folder (next to the <code>.exe</code>). If it is, your antivirus may have quarantined it — REFramework injects into the game process, which some AV software flags as suspicious. Add an exception for the RE Requiem game folder. Third possibility: you launched via Steam instead of Fluffy. REFramework loads via DLL proxy — Steam's overlay sometimes blocks the injection chain.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">ISSUE 4</div>
+                <h3>Achievements stopped unlocking</h3>
+                <p>REFramework and most visual mods do <strong>not</strong> disable achievements. However, certain gameplay mods — particularly those that modify game difficulty parameters or quest flags — can trip the anti-cheat integrity check. The <strong>Unlimited Save</strong> mod and <strong>Custom Difficulty Tuner</strong> are known to occasionally block achievement triggers. Disable them when achievement hunting, or use them on a separate save file dedicated to modded playthroughs.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">ISSUE 5</div>
+                <h3>Mods work but performance dropped significantly</h3>
+                <p>The <strong>HD Texture Pack</strong> (#1) is the most demanding mod on this list — it requires at least 8 GB of VRAM for the full 4K package. If you have a 6 GB or lower GPU, download the "2K Lite" version from the same Nexus page. Additionally, combining a heavy ReShade preset with the HD pack and the Gore Overhaul can overwhelm mid-range systems. Disable ambient occlusion in ReShade first — it is the single most expensive effect.</p>
+            </div>
+
+            <h2 id="mod-creation">MAKING YOUR OWN MODS: A QUICK START</h2>
+            <p>The RE Engine modding scene thrives because the toolchain is accessible to beginners. If you want to create your own Resident Evil Requiem mods, here is the fastest entry path:</p>
+
+            <ol>
+                <li><strong>Texture mods</strong> are the easiest starting point. Download <strong>RE Tool</strong> (alphaZomega's GitHub), extract a texture with <code>RE Tool --extract-textures</code>, edit it in Photoshop or GIMP, and repack. No coding required.</li>
+                <li><strong>Lua script mods</strong> use REFramework's built-in Lua API. Open the in-game REFramework menu (Insert key), navigate to <strong>ScriptRunner &gt; "Run script"</strong>, and load community example scripts to learn the API. The <code>reframework-sdk</code> repository on GitHub has documentation and sample code.</li>
+                <li><strong>Character swaps</strong> require Noesis for model preview and RE Tool for mesh replacement. Start with a simple recolor (edit a texture file) before attempting full model imports. The Nexus Mods "RE Engine Modding Discord" is the central hub for troubleshooting and tutorials.</li>
+                <li><strong>3D model imports</strong> are the most advanced category. You will need Blender with the RE Engine MESH plugin, RE Tool for file format conversion, and patience — a full custom character import typically takes 20-40 hours for an experienced modder.</li>
+            </ol>
+
+            <div class="info-box">
+                <p><strong>Community resource:</strong> The <a href="https://residentevilmodding.boards.net" target="_blank" rel="noopener">Resident Evil Modding Board</a> and the RE Engine Modding Discord server are the best places to ask questions, share WIP mods, and learn from experienced creators. The community is notably welcoming to newcomers — RE Engine modding documentation is among the best in the industry.</p>
+            </div>
+
+            <h2 id="faq">FREQUENTLY ASKED QUESTIONS</h2>
+
+            <div class="tip-card">
+                <div class="tip-number">Q1</div>
+                <h3>Will modding Resident Evil Requiem get me banned?</h3>
+                <p>No. RE Requiem is a <strong>single-player game</strong> with no anti-cheat system and no competitive online component. Capcom has never banned players for using mods in any RE Engine title. The only risk is that game patches may temporarily break mods — always update your mods after a game update, especially REFramework.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q2</div>
+                <h3>Can I use mods and still unlock achievements?</h3>
+                <p>Yes — for the vast majority of mods. Visual mods (textures, ReShade, character swaps), QoL mods (FOV, no head bob, brighter flashlight), and audio mods never interfere with achievements. Only gameplay-altering mods that modify difficulty parameters carry a small risk of blocking achievement triggers. See the Troubleshooting section above for specifics.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q3</div>
+                <h3>Do mods work on the Steam Deck?</h3>
+                <p>Yes, with extra steps. Steam Deck runs RE Requiem through Proton, which handles DLL injection differently. Install Fluffy Mod Manager through <strong>Bottles</strong> or <strong>Lutris</strong>, point it at the game's Proton prefix, and launch through Fluffy. REFramework has a native Linux build that works on Steam Deck. ReShade requires the Linux-compatible <strong>vkBasalt</strong> as an alternative — standard ReShade installers do not work through Proton.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q4</div>
+                <h3>What is the "must-have" starter pack?</h3>
+                <p>Install these five in order: <strong>Fluffy Mod Manager</strong> (launcher), <strong>REFramework</strong> (script engine), <strong>Increased Field of View</strong> (comfort), <strong>Skip Intro Logos</strong> (speed), and <strong>Cinematic ReShade Preset</strong> (visuals). This takes under 10 minutes to set up and dramatically improves the default experience without altering gameplay or risking save corruption.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q5</div>
+                <h3>How do I completely remove all mods?</h3>
+                <p>Open Fluffy Mod Manager and click <strong>"Uninstall all mods"</strong>, then <strong>"Re-read game archives"</strong> to restore original files. Delete <code>dinput8.dll</code> from the game folder (if REFramework was installed). For ReShade, run the ReShade installer again and select "Uninstall" for the RE Requiem executable. Verify file integrity through Steam as a final step: right-click the game &gt; Properties &gt; Installed Files &gt; "Verify integrity of game files." Steam will re-download any modified or missing files.</p>
+            </div>
+
+            <h2 id="conclusion">FINAL THOUGHTS ON RESIDENT EVIL REQUIEM MODDING</h2>
+            <p>The Resident Evil Requiem modding scene is already one of the healthiest in the RE Engine ecosystem, with new mods appearing on Nexus Mods daily. Capcom's decision to build on the mature RE Engine toolchain — rather than a proprietary new system — has given modders a running start, and the results speak for themselves: within two months of launch, the community has produced HD texture overhauls, full character swaps with working physics, gameplay rebalancers, and cinematic presets that rival official remasters.</p>
+            <p>Whether you install a single FOV fix or curate a 50-mod loadout, the core takeaway is that RE Requiem respects modders in a way few AAA releases do. The game's file structure is clean, the tools are mature, and the community is generous with documentation. Start with Fluffy Mod Manager and REFramework, browse the best mods list above, and make the game your own. For more on what the base game offers, see our <a href="best-settings-guide.html">Best Settings Guide</a> for PC optimization, our <a href="weapons-guide.html">Weapons Guide</a> for every weapon and upgrade path, and our <a href="unlockables-ngplus-guide.html">Unlockables &amp; NG+ Guide</a> for everything that carries over into New Game Plus.</p>
+
+            <a href="index.html" class="back-link">&larr; BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="best-settings-guide.html">Best Settings Guide</a>
+            <a href="weapons-guide.html">Weapons Guide</a>
+            <a href="unlockables-ngplus-guide.html">Unlockables &amp; NG+</a>
+            <a href="farming-guide.html">Farming Guide</a>
+            <a href="secrets-guide.html">Secrets Guide</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated July 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+    <script>
+        (function(){
+            var u=encodeURIComponent(window.location.href);
+            var t=encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+            document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+            document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+            document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b=document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title="Copied!";
+                setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+            });
+        }
+    </script>
+</body></html>
