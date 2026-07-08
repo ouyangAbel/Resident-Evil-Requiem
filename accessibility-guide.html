@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="en"><head>    <!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-GF9BYLZ5F7');</script>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Resident Evil Requiem Accessibility Guide — Settings, Subtitles & Difficulty Options</title>    <meta name="description" content="Complete Resident Evil Requiem accessibility guide: subtitle settings, colorblind modes, difficulty adjustments, controller remapping, and audio cues for every player.">    <meta name="keywords" content="resident evil requiem accessibility, resident evil requiem accessibility settings, resident evil requiem subtitles, resident evil requiem colorblind mode, resident evil requiem difficulty options, resident evil requiem controller remapping, resident evil requiem audio cues">    <meta name="robots" content="index, follow">    <link rel="canonical" href="https://rerequiemguide.com/accessibility-guide.html">    <!-- Open Graph -->    <meta property="og:title" content="Resident Evil Requiem Accessibility Guide — Settings, Subtitles & Difficulty Options">    <meta property="og:description" content="Complete accessibility guide for RE Requiem: subtitle settings, colorblind modes, difficulty adjustments, controller remapping, and audio cues.">    <meta property="og:type" content="article">    <meta property="og:url" content="https://rerequiemguide.com/accessibility-guide.html">    <!-- Structured Data -->    <script type="application/ld+json">    {        "@context": "https://schema.org",        "@type": "Article",        "headline": "Resident Evil Requiem Accessibility Guide — Settings, Subtitles & Difficulty Options",        "description": "Complete accessibility guide covering subtitle settings, colorblind modes, difficulty adjustments, controller remapping, and audio cues.",        "author": { "@type": "Organization", "name": "RE Requiem Guide" },        "publisher": { "@type": "Organization", "name": "RE Requiem Guide" },        "datePublished": "2026-07-09",        "dateModified": "2026-07-09",        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://rerequiemguide.com/accessibility-guide.html" }    }    </script>    <link rel="preconnect" href="https://fonts.googleapis.com">    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:wght@400;500;600&display=swap" rel="stylesheet">    <style>        :root {            --bg: #0a0a0a;            --bg-surface: #111111;            --bg-card: #161616;            --accent: #8b0000;            --accent-light: #c41e1e;            --accent-glow: rgba(139, 0, 0, 0.15);            --text-primary: #e8e8e8;            --text-secondary: #999;            --text-muted: #666;            --border: #222;        }        * { margin: 0; padding: 0; box-sizing: border-box; }        body {            font-family: 'Crimson Pro', Georgia, serif;            background: var(--bg);            color: var(--text-primary);            line-height: 1.75;            font-size: 18px;            -webkit-font-smoothing: antialiased;        }        .header {            position: fixed; top: 0; left: 0; right: 0; z-index: 100;            background: rgba(10, 10, 10, 0.92);            backdrop-filter: blur(12px);            border-bottom: 1px solid var(--border);        }        .header-inner {            max-width: 1200px; margin: 0 auto;            padding: 1rem 2rem;            display: flex; justify-content: space-between; align-items: center;        }        .logo {            font-family: 'Bebas Neue', sans-serif;            font-size: 1.4rem; letter-spacing: .25em;            color: var(--accent-light); text-decoration: none;        }        .nav { display: flex; gap: 2rem; }        .nav a {            font-family: 'Inter Tight', sans-serif;            font-size: .75rem; letter-spacing: .12em;            text-transform: uppercase; color: var(--text-secondary);            text-decoration: none; transition: color .3s;        }        .nav a:hover { color: var(--accent-light); }        .article-header {            position: relative;            max-width: 800px; margin: 0 auto;            padding: 8rem 2rem 3rem;            text-align: center;        }        .article-header-decoration {            position: absolute; top: 0; left: 0; right: 0; bottom: 0;            overflow: hidden; pointer-events: none;        }        .breadcrumb {            font-family: 'DM Mono', monospace;            font-size: .7rem; letter-spacing: .15em;            text-transform: uppercase; color: var(--text-muted);            margin-bottom: 1.5rem;        }        .breadcrumb a { color: var(--text-secondary); text-decoration: none; }        .breadcrumb a:hover { color: var(--accent-light); }        .article-tag {            display: inline-block;            font-family: 'DM Mono', monospace;            font-size: .65rem; letter-spacing: .2em;            text-transform: uppercase; color: var(--accent-light);            border: 1px solid var(--accent);            padding: .3rem .8rem; border-radius: 2px;            margin-bottom: 1.5rem;        }        .article-title {            font-family: 'Bebas Neue', sans-serif;            font-size: clamp(2rem, 5vw, 3.2rem);            letter-spacing: .06em;            line-height: 1.15; color: var(--text-primary);            margin-bottom: 1rem;        }        .article-meta {            font-family: 'DM Mono', monospace;            font-size: .7rem; letter-spacing: .15em;            text-transform: uppercase; color: var(--text-muted);        }        .share-bar {            display: flex; justify-content: center; align-items: center;            gap: .6rem; padding: 1rem 2rem;            border-bottom: 1px solid var(--border);            max-width: 720px; margin: 0 auto;        }        .share-label {            font-family: 'DM Mono', monospace;            font-size: .6rem; letter-spacing: .2em;            text-transform: uppercase; color: var(--text-muted);            margin-right: .5rem;        }        .share-btn {            width: 32px; height: 32px;            display: flex; align-items: center; justify-content: center;            border: 1px solid var(--border); border-radius: 4px;            color: var(--text-secondary); text-decoration: none;            transition: all .3s;        }        .share-btn:hover { border-color: var(--accent); color: var(--accent-light); }        .share-btn svg { width: 14px; height: 14px; fill: currentColor; }        .share-btn.copied { border-color: #2ecc71; color: #2ecc71; }        .article-content {            max-width: 720px; margin: 0 auto;            padding: 2rem;        }        .article-content p {            margin-bottom: 1.5rem;            color: var(--text-primary);        }        .article-content h2 {            font-family: 'Bebas Neue', sans-serif;            font-size: 1.8rem; letter-spacing: .08em;            color: var(--text-primary);            margin: 3rem 0 1rem;            padding-top: 1rem;            border-top: 1px solid var(--border);        }        .article-content h3 {            font-family: 'Inter Tight', sans-serif;            font-size: 1.1rem; font-weight: 600;            color: var(--text-primary);            margin: 2rem 0 .75rem;        }        .article-content ul, .article-content ol {            margin-bottom: 1.5rem; padding-left: 1.5rem;        }        .article-content li { margin-bottom: .5rem; }        .article-content a { color: var(--accent-light); text-decoration: underline; text-underline-offset: 3px; }        .article-content a:hover { color: #e55555; }        .article-content strong { color: #fff; font-weight: 600; }        .article-content code {            font-family: 'DM Mono', monospace;            font-size: .85em; background: var(--bg-card);            padding: .15em .4em; border-radius: 3px;            border: 1px solid var(--border);        }        .highlight-box {            background: var(--accent-glow);            border-left: 3px solid var(--accent);            padding: 1.2rem 1.5rem; margin: 1.5rem 0;            border-radius: 0 4px 4px 0;        }        .highlight-box p { margin-bottom: 0; }        .info-box {            background: var(--bg-card);            border: 1px solid var(--border);            padding: 1.2rem 1.5rem; margin: 1.5rem 0;            border-radius: 4px;        }        .info-box p { margin-bottom: 0; }        .quick-table {            width: 100%; border-collapse: collapse;            margin: 1.5rem 0; font-size: .9rem;        }        .quick-table th {            font-family: 'DM Mono', monospace;            font-size: .65rem; letter-spacing: .15em;            text-transform: uppercase; color: var(--text-muted);            text-align: left; padding: .75rem 1rem;            border-bottom: 1px solid var(--border);        }        .quick-table td {            padding: .75rem 1rem;            border-bottom: 1px solid var(--border);            color: var(--text-secondary);            vertical-align: top;        }        .quick-table tr:hover td { background: var(--bg-surface); }        .tip-card {            background: var(--bg-card);            border: 1px solid var(--border);            border-radius: 6px;            padding: 1.5rem; margin: 1.5rem 0;            position: relative;        }        .tip-number {            font-family: 'Bebas Neue', sans-serif;            font-size: 1.2rem; color: var(--accent-light);            margin-bottom: .5rem;        }        .tip-card h3 {            font-family: 'Inter Tight', sans-serif;            font-size: 1rem; font-weight: 600;            color: var(--text-primary); margin-bottom: .5rem;        }        .tip-card p { margin-bottom: 0; color: var(--text-secondary); }        .character-card {            background: var(--bg-card);            border: 1px solid var(--border);            border-radius: 6px;            padding: 1.5rem; margin: 1.5rem 0;        }        .back-link {            display: inline-block; margin-top: 3rem;            font-family: 'DM Mono', monospace;            font-size: .75rem; letter-spacing: .1em;            text-transform: uppercase; color: var(--text-muted);            text-decoration: none; transition: color .3s;        }        .back-link:hover { color: var(--accent-light); }        .related {            max-width: 720px; margin: 0 auto;            padding: 2rem; text-align: center;        }        .related-title {            font-family: 'DM Mono', monospace;            font-size: .65rem; letter-spacing: .2em;            text-transform: uppercase; color: var(--text-muted);            margin-bottom: 1rem;        }        .related-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }        .related-links a {            font-family: 'Inter Tight', sans-serif;            font-size: .8rem; letter-spacing: .08em;            text-transform: uppercase; color: var(--text-secondary);            text-decoration: none; padding: .6rem 1.2rem;            border: 1px solid var(--border); border-radius: 4px;            transition: all .3s;        }        .related-links a:hover { color: var(--accent-light); border-color: var(--accent); }        .footer {            text-align: center; padding: 3rem 2rem 4rem;            border-top: 1px solid var(--border);            max-width: 720px; margin: 0 auto;        }        .footer-logo {            font-family: 'Bebas Neue', sans-serif;            font-size: 1.2rem; letter-spacing: .2em;            color: var(--accent-light); margin-bottom: .5rem;        }        .footer-text {            font-family: 'DM Mono', monospace;            font-size: .65rem; letter-spacing: .15em;            color: var(--text-muted); text-transform: uppercase;        }        @media (max-width: 768px) {            .header-inner { padding: 1rem; }            .nav a { margin-left: 1rem; font-size: .7rem; }            .article-header { padding: 6rem 1.5rem 3rem; }            .article-content { padding: 1.5rem; }        }    </style></head><body>    <header class="header">        <div class="header-inner">            <a href="index.html" class="logo">RE:REQUIEM</a>            <nav class="nav">                <a href="walkthrough.html">Walkthrough</a>                <a href="beginner-guide.html">Beginner</a>                <a href="chapters.html">Chapters</a>                <a href="endings.html">Endings</a>            </nav>        </div>    </header>    <article>        <div class="article-header">            <div class="article-header-decoration">                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60%;height:60%;opacity:0.03;">                    <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="0.5"/>                    <circle cx="50" cy="50" r="35" stroke="currentColor" stroke-width="0.3"/>                    <circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="0.2"/>                </svg>            </div>            <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Accessibility Guide</div>            <div class="article-tag">ACCESSIBILITY &amp; INCLUSIVITY</div>            <h1 class="article-title">RESIDENT EVIL REQUIEM ACCESSIBILITY GUIDE: SETTINGS, SUBTITLES &amp; DIFFICULTY OPTIONS FOR EVERY PLAYER</h1>            <div class="article-meta">UPDATED JULY 9, 2026 &bull; 16 MIN READ</div>        </div>        <div class="share-bar">            <span class="share-label">SHARE THIS</span>            <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>            <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>            <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>            <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>            <a class="share-btn copy-link" id="share-copy" href="javascript:void(0)" onclick="copyLink()" title="Copy link"><svg viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.612 8.27 2.184.313.522.555 1.082.722 1.664.133.464-.184.937-.674.937h-1.328c-.37 0-.68-.258-.763-.617-.091-.395-.215-.787-.376-1.172-.603-1.426-1.986-2.334-3.62-2.334-2.18 0-3.896 1.792-3.896 3.896 0 2.103 1.792 3.896 3.896 3.896 1.634 0 3.017-.908 3.62-2.334.161-.385.285-.777.376-1.172.083-.359.393-.617.763-.617h1.328c.49 0 .807.473.674.937-.167.582-.409 1.142-.722 1.664-1.681 2.796-5.383 3.775-8.27 2.184-.518-.286-.975-.648-1.444-1.087C3.275 15.82 2.566 13.74 2.566 12c0-1.74.709-3.82 3.622-3.281z"/></svg></a>        </div>
+
+        <div class="article-content">
+            <p>Resident Evil Requiem is Capcom's most ambitious survival horror game to date, and accessibility has become an increasingly important part of the conversation around modern game design. Whether you have limited mobility, hearing difficulties, visual impairments, or simply prefer a more customized experience, Resident Evil Requiem offers a surprisingly robust set of <strong>accessibility settings</strong> that can dramatically improve your playthrough. This comprehensive Resident Evil Requiem accessibility guide covers every option in the game — from subtitle customization and colorblind modes to controller remapping, difficulty adjustments, and audio cue settings — so every player can experience Requiem's terrifying world on their own terms.</p>
+
+            <div class="highlight-box">
+                <p><strong>Accessibility Note:</strong> All accessibility settings in Resident Evil Requiem can be changed at any time from the pause menu — you do not need to restart the game or create a new save. Experiment freely to find what works best for you.</p>
+            </div>
+
+            <h2 id="subtitle-settings">SUBTITLE &amp; CAPTION SETTINGS</h2>
+            <p>Subtitles are one of the most commonly requested accessibility features, and Resident Evil Requiem delivers a comprehensive subtitle system that goes beyond simple text display. The game offers three subtitle modes, adjustable font sizing, background opacity controls, and speaker identification — making it one of the most customizable subtitle systems in the Resident Evil franchise.</p>
+
+            <h3>Subtitle Modes</h3>
+            <p>Navigate to <strong>Options → Display → Subtitles</strong> to access the following settings:</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>SETTING</th><th>OPTIONS</th><th>DESCRIPTION</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Subtitles</strong></td><td>Off / Dialogue Only / Full</td><td>"Dialogue Only" shows spoken lines; "Full" includes sound effect descriptions like [GLASS SHATTERS] and [FOOTSTEPS APPROACHING]</td></tr>
+                    <tr><td><strong>Subtitle Size</strong></td><td>Small / Medium / Large / Extra Large</td><td>Changes font size; "Extra Large" is significantly bigger for low-vision players</td></tr>
+                    <tr><td><strong>Subtitle Background</strong></td><td>Off / Low / Medium / High / Solid</td><td>Semi-transparent black background behind text; "Solid" provides maximum contrast</td></tr>
+                    <tr><td><strong>Speaker Name</strong></td><td>Off / On</td><td>Shows the character name before each line of dialogue in a distinct color</td></tr>
+                    <tr><td><strong>Subtitle Color</strong></td><td>White / Yellow / Cyan / Custom</td><td>Changes the text color; "Custom" opens an RGB color picker</td></tr>
+                    <tr><td><strong>Closed Captions</strong></td><td>Off / On</td><td>Displays directional audio cues like [LEFT: GROWLING] and [BEHIND: DOOR CREAKING]</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <p><strong>Pro Tip:</strong> Set subtitles to "Full" with "Speaker Name: On" during your first playthrough. Resident Evil Requiem has several scenes where off-screen characters speak — knowing who is talking and from which direction can be the difference between life and death in scripted ambush sequences.</p>
+            </div>
+
+            <h3>Closed Captions for Deaf and Hard-of-Hearing Players</h3>
+            <p>The <strong>Closed Captions</strong> option is distinct from subtitles and specifically designed for deaf and hard-of-hearing players. When enabled, the game displays bracketed descriptions of environmental and gameplay sounds — things like <code>[BEHIND: HEAVY BREATHING]</code>, <code>[ABOVE: CEILING CREAKING]</code>, and <code>[RIGHT: DISTANT EXPLOSION]</code>. These directional cues are especially valuable during stealth sections and boss encounters where audio positioning is critical for survival.</p>
+
+            <p>Unlike many games that offer generic sound descriptions, RE Requiem's closed captions include <strong>directional indicators</strong> (LEFT, RIGHT, BEHIND, ABOVE, BELOW) and <strong>distance qualifiers</strong> (CLOSE, DISTANT) that convey spatial information usually delivered through surround sound. This makes the game fully playable without audio for the first time in the series.</p>
+
+            <h2 id="visual-accessibility">VISUAL ACCESSIBILITY OPTIONS</h2>
+            <p>Resident Evil Requiem includes several visual accessibility features that address colorblindness, low vision, and photosensitivity — areas where the survival horror genre has historically been weak.</p>
+
+            <h3>Colorblind Modes</h3>
+            <p>Navigate to <strong>Options → Display → Colorblind Assist</strong> to find three dedicated filters:</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>MODE</th><th>TYPE</th><th>WHAT IT CHANGES</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Protanopia</strong></td><td>Red-weak</td><td>Shifts red hues toward orange/yellow; affects enemy health bars, item highlights, and warning indicators</td></tr>
+                    <tr><td><strong>Deuteranopia</strong></td><td>Green-weak</td><td>Shifts green hues toward blue/amber; affects herb colors, safe indicators, and map markers</td></tr>
+                    <tr><td><strong>Tritanopia</strong></td><td>Blue-weak</td><td>Shifts blue hues toward green/red; affects UI accents, item rarity borders, and waypoint colors</td></tr>
+                </tbody>
+            </table>
+
+            <p>Each colorblind mode adjusts the game's entire color pipeline — not just UI elements. This means environmental cues (like the red glow of a save room typewriter or the green shimmer of a healing herb) are also corrected. The filter intensity can be adjusted from 0% to 100% with a real-time preview slider, so you can fine-tune the correction to match your specific vision profile.</p>
+
+            <div class="highlight-box">
+                <p><strong>Herb Color Accessibility:</strong> The classic Resident Evil herb system (green = heal, red = boost, yellow = cure) has historically been problematic for colorblind players. In RE Requiem, enabling any colorblind mode also adds distinct <strong>shape indicators</strong> to herb icons — a cross for green, a diamond for red, and a circle for yellow — so you can identify herbs by shape alone.</p>
+            </div>
+
+            <h3>Screen Shake &amp; Photosensitivity</h3>
+            <p>Resident Evil Requiem contains significant screen shake during explosions, boss encounters, and scripted events. For players sensitive to motion effects, the following settings are available under <strong>Options → Display → Visual Effects</strong>:</p>
+
+            <ul>
+                <li><strong>Screen Shake Intensity:</strong> Adjustable from 0% (off) to 100% (default). Setting to 0% removes all camera wobble while preserving gameplay impact.</li>
+                <li><strong>Chromatic Aberration:</strong> Off / Low / High. This post-processing effect can cause eye strain and headaches for some players.</li>
+                <li><strong>Motion Blur:</strong> Off / Low / Medium / High. Disabling motion blur improves clarity during fast camera movements.</li>
+                <li><strong>Flashing Lights Reduction:</strong> On / Off. Replaces strobing and rapid flash effects with a steady glow. Essential for photosensitive players.</li>
+                <li><strong>Film Grain:</strong> Off / Low / High. Removes the noise overlay that simulates analog film texture.</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>Photosensitivity Warning:</strong> Chapter 6 ("The Living Laboratory") and Chapter 10 ("Convergence") contain intense strobe sequences. If you are photosensitive, enable "Flashing Lights Reduction" before reaching these chapters. The setting replaces strobe effects with a sustained soft glow that conveys the same narrative intensity without the risk.</p>
+            </div>
+
+            <h3>HUD &amp; Text Scaling</h3>
+            <p>Under <strong>Options → Display → HUD</strong>, you can adjust the size and opacity of all heads-up display elements:</p>
+
+            <ul>
+                <li><strong>HUD Scale:</strong> 80% / 90% / 100% / 110% / 120% / 150%. Scales health bar, ammo counter, minimap, and item notifications.</li>
+                <li><strong>HUD Opacity:</strong> 50% to 100% in 10% increments.</li>
+                <li><strong>Minimap Always On:</strong> Off / On. When enabled, the minimap remains visible even during combat (normally hides during encounters).</li>
+                <li><strong>Objective Marker:</strong> Off / On / Persistent. "Persistent" keeps the objective marker on-screen at all times with a directional arrow, even when the target is behind you.</li>
+            </ul>
+
+            <h2 id="controller-remapping">CONTROLLER &amp; INPUT REMAPPING</h2>
+            <p>Resident Evil Requiem supports full button remapping for both controllers and keyboard/mouse — a critical accessibility feature for players with limited mobility or those using adaptive controllers.</p>
+
+            <h3>Controller Remapping</h3>
+            <p>Navigate to <strong>Options → Controls → Button Assignment</strong> to access the full remapping screen. Every single button on a standard controller can be reassigned, including:</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>ACTION</th><th>DEFAULT (XBOX)</th><th>DEFAULT (PS5)</th><th>NOTES</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Move</td><td>Left Stick</td><td>Left Stick</td><td>Can swap sticks</td></tr>
+                    <tr><td>Camera</td><td>Right Stick</td><td>Right Stick</td><td>Can swap sticks</td></tr>
+                    <tr><td>Aim</td><td>LT</td><td>L2</td><td>Toggle or Hold</td></tr>
+                    <tr><td>Fire / Attack</td><td>RT</td><td>R2</td><td>Toggle or Hold</td></tr>
+                    <tr><td>Interact</td><td>A</td><td>Cross</td><td>—</td></tr>
+                    <tr><td>Reload</td><td>X</td><td>Square</td><td>—</td></tr>
+                    <tr><td>Run</td><td>B</td><td>Circle</td><td>Toggle or Hold</td></tr>
+                    <tr><td>Inventory</td><td>Y</td><td>Triangle</td><td>—</td></tr>
+                    <tr><td>Perfect Dodge</td><td>B (timed)</td><td>Circle (timed)</td><td>Separate timing window setting</td></tr>
+                    <tr><td>Quick Turn</td><td>Down + B</td><td>Down + Circle</td><td>Can be single-button</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Hold vs. Toggle Options</h3>
+            <p>Many actions in Resident Evil Requiem default to "hold" inputs (hold to aim, hold to run, hold to sprint). For players with grip strength limitations or those using adaptive controllers, each of these can be switched to "toggle" mode:</p>
+
+            <ul>
+                <li><strong>Aim Mode:</strong> Hold / Toggle. Toggle means press LT once to enter aiming, press again to lower the weapon.</li>
+                <li><strong>Sprint Mode:</strong> Hold / Toggle. Toggle means press once to start running, press again to stop.</li>
+                <li><strong>Block / Guard:</strong> Hold / Toggle. Available for melee-focused playstyles.</li>
+                <li><strong>Continuous Interaction:</strong> Off / On. When enabled, holding the interact button automatically completes all hold-to-interact prompts (doors, levers, puzzle items) without repeated input.</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>Adaptive Controller Support:</strong> RE Requiem has native support for the Xbox Adaptive Controller and PlayStation Access Controller. All remapping works with these devices, and the game recognizes them as standard controllers with no additional configuration needed.</p>
+            </div>
+
+            <h3>Keyboard &amp; Mouse Remapping</h3>
+            <p>PC players get full keyboard remapping under <strong>Options → Controls → Key Bindings</strong>. Every action can be bound to any key, and the game supports modifier keys (Shift+, Ctrl+, Alt+) for expanded binding options. Mouse buttons 4 and 5 (side buttons) are fully supported and can be bound to any action. Additionally, mouse sensitivity can be adjusted separately for normal camera movement (1–100) and aiming (1–100), with an independent ADS (aim-down-sights) multiplier.</p>
+
+            <h2 id="difficulty-accessibility">DIFFICULTY &amp; GAMEPLAY ADJUSTMENTS</h2>
+            <p>Resident Evil Requiem's difficulty system has significant accessibility implications. The game offers four difficulty levels, and unlike some entries in the series, you can switch difficulty at any time from the pause menu without losing progress.</p>
+
+            <h3>Difficulty Levels Compared</h3>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>DIFFICULTY</th><th>ENEMY HP</th><th>PLAYER DAMAGE</th><th>ITEM SCARCITY</th><th>BEST FOR</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Assisted</strong></td><td>-30%</td><td>-40%</td><td>Generous</td><td>Story-focused players, accessibility needs</td></tr>
+                    <tr><td><strong>Standard</strong></td><td>Default</td><td>Default</td><td>Balanced</td><td>First playthrough, moderate challenge</td></tr>
+                    <tr><td><strong>Hardcore</strong></td><td>+40%</td><td>+50%</td><td>Scarce</td><td>RE veterans, survival challenge</td></tr>
+                    <tr><td><strong>Professional</strong></td><td>+80%</td><td>+100%</td><td>Minimal</td><td>Mastery runs, no auto-save</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Assisted Mode Accessibility Features</h3>
+            <p>Assisted difficulty is more than just reduced numbers — it includes several built-in accessibility enhancements:</p>
+
+            <ul>
+                <li><strong>Auto-Aim Assist:</strong> When aiming near an enemy, the crosshair gently snaps toward the nearest vulnerable point. Sensitivity is adjustable from Low to High.</li>
+                <li><strong>Auto-Recovery:</strong> When health drops to "Danger" (red), it slowly regenerates to "Caution" (yellow) over 30 seconds. This eliminates the pressure of finding healing items during tense sequences.</li>
+                <li><strong>Quick Time Event (QTE) Assist:</strong> QTEs automatically succeed after a 3-second grace period. You can still complete them manually for faster results, but failure is impossible.</li>
+                <li><strong>Reduced Enemy Aggression:</strong> Enemies attack less frequently, have longer telegraph windows, and are less likely to ambush from behind.</li>
+                <li><strong>Unlimited Ink Ribbons:</strong> Save at any typewriter without consuming items (Standard and above require ink ribbons on Professional).</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>No Difficulty Trophies:</strong> Resident Evil Requiem does NOT have difficulty-specific trophies or achievements. You can play the entire game on Assisted and still earn the Platinum trophy. This is a deliberate accessibility decision by Capcom — play at whatever difficulty brings you the most enjoyment.</p>
+            </div>
+
+            <h2 id="audio-accessibility">AUDIO ACCESSIBILITY SETTINGS</h2>
+            <p>Audio is central to the survival horror experience, and RE Requiem provides several options to customize the audio experience for different needs.</p>
+
+            <h3>Audio Mix Profiles</h3>
+            <p>Under <strong>Options → Audio → Mix Profile</strong>, you can select from several pre-configured audio mixes:</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr><th>PROFILE</th><th>DESCRIPTION</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Default</strong></td><td>Standard horror mix — emphasizes ambient tension, whisper-quiet enemies, dramatic music swells</td></tr>
+                    <tr><td><strong>Headphones</strong></td><td>Optimized for stereo headphones — wider spatial separation, enhanced positional audio</td></tr>
+                    <tr><td><strong>TV Speakers</strong></td><td>Compressed dynamic range — dialogue is louder relative to effects, bass is reduced</td></tr>
+                    <tr><td><strong>Night Mode</strong></td><td>Heavy dynamic range compression — quiet sounds are louder, loud sounds are quieter. Ideal for playing without disturbing others.</td></tr>
+                    <tr><td><strong>Accessibility</strong></td><td>Maximum dialogue clarity, reduced ambient noise, enhanced directional cues. Best for hard-of-hearing players.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Individual Volume Sliders</h3>
+            <p>Beyond the mix profiles, RE Requiem offers granular volume control for five separate channels:</p>
+
+            <ul>
+                <li><strong>Master Volume:</strong> 0–100</li>
+                <li><strong>Music:</strong> 0–100 — controls the dynamic score that intensifies during combat</li>
+                <li><strong>Sound Effects:</strong> 0–100 — footsteps, gunshots, environmental sounds</li>
+                <li><strong>Dialogue:</strong> 0–100 — spoken lines and radio communications</li>
+                <li><strong>Ambient:</strong> 0–100 — background atmosphere, wind, creaking, distant sounds</li>
+            </ul>
+
+            <p>For hard-of-hearing players, the recommended setup is: <strong>Dialogue at 100</strong>, <strong>Music at 40</strong>, <strong>Ambient at 30</strong>, and <strong>Sound Effects at 80</strong>. This prioritizes spoken content while reducing the atmospheric layer that can mask important audio cues.</p>
+
+            <h3>3D Audio &amp; Spatial Sound</h3>
+            <p>On PS5, Resident Evil Requiem supports <strong>Tempest 3D Audio</strong> for headphones, providing accurate vertical and horizontal positioning of enemy sounds. On PC, the game supports both <strong>Windows Sonic</strong> and <strong>Dolby Atmos for Headphones</strong>. These spatial audio technologies are particularly valuable for locating enemies in dark environments where visual confirmation is limited — an accessibility benefit for players who rely more heavily on audio cues.</p>
+
+            <h2 id="gameplay-assists">GAMEPLAY ASSIST OPTIONS</h2>
+            <p>Beyond difficulty settings, Resident Evil Requiem includes several standalone gameplay assists that can be toggled independently of difficulty level:</p>
+
+            <ul>
+                <li><strong>Aim Snap Strength:</strong> Off / Low / Medium / High. Adjusts how strongly the crosshair pulls toward enemies when you aim near them.</li>
+                <li><strong>Aim Slowdown:</strong> Off / On. Reduces camera speed when the crosshair passes over an enemy, making it easier to stay on target.</li>
+                <li><strong>Auto-Item Pickup:</strong> Off / On. Items are automatically collected when you walk near them, eliminating the need to press an interact button.</li>
+                <li><strong>Puzzle Hint System:</strong> Off / Delayed / Immediate. "Delayed" shows a hint after 2 minutes of no progress; "Immediate" shows the solution approach right away.</li>
+                <li><strong>Navigation Assist:</strong> Off / On. Adds a persistent breadcrumb trail on the ground leading to your current objective. Colors change based on distance (green = close, yellow = medium, red = far).</li>
+                <li><strong>QTE Auto-Complete:</strong> Off / On (Independent of difficulty). Automatically completes all quick-time events regardless of difficulty setting.</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>Key Point:</strong> All gameplay assists work on ANY difficulty, including Hardcore and Professional. You can play on Professional with auto-aim and navigation assist enabled. There is no penalty for using assists — trophies, unlocks, and rankings are not affected.</p>
+            </div>
+
+            <h2 id="recommended-settings">RECOMMENDED ACCESSIBILITY PRESETS</h2>
+            <p>Based on common player needs, here are optimized starting configurations for different accessibility profiles:</p>
+
+            <h3>For Low Vision Players</h3>
+            <ul>
+                <li>HUD Scale: 150%</li>
+                <li>Subtitle Size: Extra Large</li>
+                <li>Subtitle Background: Solid</li>
+                <li>Objective Marker: Persistent</li>
+                <li>Navigation Assist: On</li>
+                <li>Screen Shake: 0%</li>
+                <li>Chromatic Aberration: Off</li>
+                <li>Motion Blur: Off</li>
+            </ul>
+
+            <h3>For Deaf / Hard-of-Hearing Players</h3>
+            <ul>
+                <li>Subtitles: Full</li>
+                <li>Closed Captions: On</li>
+                <li>Speaker Name: On</li>
+                <li>Audio Mix: Accessibility</li>
+                <li>Dialogue Volume: 100</li>
+                <li>Music Volume: 30</li>
+                <li>Navigation Assist: On (compensates for missing audio directional cues)</li>
+            </ul>
+
+            <h3>For Motor / Mobility Impairment</h3>
+            <ul>
+                <li>Aim Mode: Toggle</li>
+                <li>Sprint Mode: Toggle</li>
+                <li>Continuous Interaction: On</li>
+                <li>QTE Auto-Complete: On</li>
+                <li>Aim Snap: High</li>
+                <li>Aim Slowdown: On</li>
+                <li>Quick Turn: Single Button</li>
+            </ul>
+
+            <h3>For Photosensitive Players</h3>
+            <ul>
+                <li>Flashing Lights Reduction: On</li>
+                <li>Screen Shake: 0%</li>
+                <li>Chromatic Aberration: Off</li>
+                <li>Motion Blur: Off</li>
+                <li>Film Grain: Off</li>
+            </ul>
+
+            <h2 id="platform-specific">PLATFORM-SPECIFIC ACCESSIBILITY NOTES</h2>
+
+            <h3>PS5</h3>
+            <p>The PS5 version supports the <strong>PlayStation Access Controller</strong> natively. Additionally, the DualSense controller's haptic feedback can be adjusted independently: <strong>Vibration Intensity</strong> (Off / Weak / Medium / Strong) and <strong>Adaptive Triggers</strong> (Off / On). Turning off adaptive triggers reduces the resistance on L2/R2, which can be helpful for players with grip strength limitations. The PS5's built-in system-level accessibility features (text-to-speech, button remapping, high contrast) also work with RE Requiem.</p>
+
+            <h3>Xbox Series X|S</h3>
+            <p>The Xbox version has full compatibility with the <strong>Xbox Adaptive Controller</strong>. The Xbox system-level Copilot feature — which lets two controllers act as one — also works with RE Requiem, allowing a second player to assist with inputs if needed.</p>
+
+            <h3>PC</h3>
+            <p>PC players benefit from additional customization through config file editing. The file <code>re_quiem_config.ini</code> (located in <code>%USERPROFILE%\Documents\My Games\RE_Requiem\</code>) exposes additional settings not available in the in-game menu, including custom field-of-view values, frame rate cap adjustments, and raw input sensitivity multipliers. For detailed PC optimization, see our <a href="best-settings-guide.html">Best Settings Guide</a>.</p>
+
+            <h2 id="conclusion">FINAL THOUGHTS ON RE REQUIEM ACCESSIBILITY</h2>
+            <p>Resident Evil Requiem represents a significant step forward for accessibility in the survival horror genre. Capcom has clearly studied what studios like Naughty Dog (The Last of Us Part II) and Santa Monica Studio (God of War Ragnarök) have accomplished with accessibility, and brought many of those principles into the Resident Evil framework without compromising the series' signature tension and challenge.</p>
+
+            <p>The key insight is that RE Requiem's accessibility options are <strong>granular and independent</strong> — you can enable auto-aim without touching difficulty, activate closed captions without enabling subtitles, or reduce screen shake without disabling any visual effects. This modular approach means you can create a perfectly tailored experience rather than choosing between "accessible" and "default." Every setting can be changed at any time, and no accessibility option disables trophies, unlocks, or ranking.</p>
+
+            <p>For more on optimizing your RE Requiem experience, check out our <a href="difficulty-guide.html">Difficulty Guide</a> for a deep dive into each difficulty tier, our <a href="beginner-guide.html">Beginner Guide</a> for 15 essential tips for new players, and our <a href="best-settings-guide.html">Best Settings Guide</a> for PC-specific graphics and performance optimization.</p>
+
+            <a href="index.html" class="back-link">&larr; BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="difficulty-guide.html">Difficulty Guide</a>
+            <a href="beginner-guide.html">Beginner Guide</a>
+            <a href="best-settings-guide.html">Best Settings Guide</a>
+            <a href="perfect-dodge-guide.html">Perfect Dodge Guide</a>
+            <a href="crafting-guide.html">Crafting Guide</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated July 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+    <script>
+        (function(){
+            var u=encodeURIComponent(window.location.href);
+            var t=encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+            document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+            document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+            document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b=document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title="Copied!";
+                setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+            });
+        }
+    </script>
+</body></html>
