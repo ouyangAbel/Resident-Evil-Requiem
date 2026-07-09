@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GF9BYLZ5F7');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil Requiem Survival Horror Tips — When to Fight, Run & Manage Resources</title>
+    <meta name="description" content="Master survival horror in RE Requiem with expert tips on resource management, when to fight vs run, ammo conservation, and advanced survival strategies for every difficulty.">
+    <meta name="keywords" content="resident evil requiem survival tips, re requiem resource management, when to fight or run re requiem, resident evil requiem ammo conservation, re requiem survival horror guide, resident evil requiem herbs, re requiem professional tips">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rerequiemguide.com/survival-horror-tips.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Resident Evil Requiem Survival Horror Tips — When to Fight, Run & Manage Resources">
+    <meta property="og:description" content="Master survival horror in RE Requiem with expert tips on resource management, when to fight vs run, and advanced survival strategies.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rerequiemguide.com/survival-horror-tips.html">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Resident Evil Requiem Survival Horror Tips — When to Fight, Run & Manage Resources",
+        "description": "Master survival horror in RE Requiem with expert tips on resource management, when to fight vs run, and advanced survival strategies.",
+        "author": {"@type": "Organization", "name": "RE Requiem Guide"},
+        "publisher": {"@type": "Organization", "name": "RE Requiem Guide"},
+        "datePublished": "2026-07-10",
+        "dateModified": "2026-07-10",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rerequiemguide.com/survival-horror-tips.html"}
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139, 0, 0, 0.15);
+            --text-primary: #e8e8e8;
+            --text-secondary: #999;
+            --text-muted: #666;
+            --border: #222;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.75;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px; margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem; letter-spacing: .25em;
+            color: var(--accent-light); text-decoration: none;
+        }
+        .nav { display: flex; gap: 2rem; }
+        .nav a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .75rem; letter-spacing: .12em;
+            text-transform: uppercase; color: var(--text-secondary);
+            text-decoration: none; transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        .article-header {
+            position: relative;
+            max-width: 800px; margin: 0 auto;
+            padding: 8rem 2rem 3rem;
+            text-align: center;
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem; letter-spacing: .15em;
+            text-transform: uppercase; color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        .breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--accent-light);
+            border: 1px solid var(--accent);
+            padding: .3rem .8rem; border-radius: 2px;
+            margin-bottom: 1.5rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            letter-spacing: .06em;
+            line-height: 1.15; color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem; letter-spacing: .15em;
+            text-transform: uppercase; color: var(--text-muted);
+        }
+        .share-bar {
+            display: flex; justify-content: center; align-items: center;
+            gap: .6rem; padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border);
+            max-width: 720px; margin: 0 auto;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--text-muted);
+            margin-right: .5rem;
+        }
+        .share-btn {
+            width: 32px; height: 32px;
+            display: flex; align-items: center; justify-content: center;
+            border: 1px solid var(--border); border-radius: 4px;
+            color: var(--text-secondary); text-decoration: none;
+            transition: all .3s;
+        }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent-light); }
+        .share-btn svg { width: 14px; height: 14px; fill: currentColor; }
+        .share-btn.copied { border-color: #2ecc71; color: #2ecc71; }
+        .article-content {
+            max-width: 720px; margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem; letter-spacing: .08em;
+            color: var(--text-primary);
+            margin: 3rem 0 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.1rem; font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 .75rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem; padding-left: 1.5rem;
+        }
+        .article-content li { margin-bottom: .5rem; }
+        .article-content a { color: var(--accent-light); text-decoration: underline; text-underline-offset: 3px; }
+        .article-content a:hover { color: #e55555; }
+        .article-content strong { color: #fff; font-weight: 600; }
+        .highlight-box {
+            background: var(--accent-glow);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem; margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .info-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 1.2rem 1.5rem; margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .info-box p { margin-bottom: 0; }
+        .quick-table {
+            width: 100%; border-collapse: collapse;
+            margin: 1.5rem 0; font-size: .9rem;
+        }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem; letter-spacing: .15em;
+            text-transform: uppercase; color: var(--text-muted);
+            text-align: left; padding: .75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .quick-table td {
+            padding: .75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+        .quick-table tr:hover td { background: var(--bg-surface); }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.5rem; margin: 1.5rem 0;
+            position: relative;
+        }
+        .tip-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem; color: var(--accent-light);
+            margin-bottom: .5rem;
+        }
+        .tip-card h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1rem; font-weight: 600;
+            color: var(--text-primary); margin-bottom: .5rem;
+        }
+        .tip-card p { margin-bottom: 0; color: var(--text-secondary); }
+        .back-link {
+            display: inline-block; margin-top: 3rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem; letter-spacing: .1em;
+            text-transform: uppercase; color: var(--text-muted);
+            text-decoration: none; transition: color .3s;
+        }
+        .back-link:hover { color: var(--accent-light); }
+        .related {
+            max-width: 720px; margin: 0 auto;
+            padding: 2rem; text-align: center;
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        .related-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
+        .related-links a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--text-secondary);
+            text-decoration: none; padding: .6rem 1.2rem;
+            border: 1px solid var(--border); border-radius: 4px;
+            transition: all .3s;
+        }
+        .related-links a:hover { color: var(--accent-light); border-color: var(--accent); }
+        .footer {
+            text-align: center; padding: 3rem 2rem 4rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px; margin: 0 auto;
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem; letter-spacing: .2em;
+            color: var(--accent-light); margin-bottom: .5rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem; letter-spacing: .15em;
+            color: var(--text-muted); text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .header-inner { padding: 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .article-header { padding: 6rem 1.5rem 3rem; }
+            .article-content { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE REQUIEM GUIDE</a>
+            <nav class="nav">
+                <a href="index.html">GUIDES</a>
+                <a href="walkthrough.html">WALKTHROUGH</a>
+                <a href="boss-guide.html">BOSSES</a>
+                <a href="weapons-guide.html">WEAPONS</a>
+                <a href="chapters.html">CHAPTERS</a>
+                <a href="endings.html">ENDINGS</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Header -->
+    <div class="article-header">
+        <div class="breadcrumb">
+            <a href="index.html">HOME</a> &rsaquo; <a href="index.html">GUIDES</a> &rsaquo; SURVIVAL HORROR TIPS
+        </div>
+        <div class="article-tag">Survival Strategy</div>
+        <h1 class="article-title">RESIDENT EVIL REQUIEM SURVIVAL HORROR TIPS: WHEN TO FIGHT, RUN &amp; MANAGE RESOURCES</h1>
+        <div class="article-meta">JULY 10, 2026 &nbsp;&bull;&nbsp; 20 MIN READ</div>
+    </div>
+
+    <!-- Share Bar -->
+    <div class="share-bar">
+        <span class="share-label">SHARE</span>
+        <a href="#" class="share-btn share-twitter" title="Share on Twitter">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="share-btn share-facebook" title="Share on Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" class="share-btn share-reddit" title="Share on Reddit">
+            <svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+        </a>
+        <a href="#" class="share-btn share-whatsapp" title="Share on WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <button class="share-btn share-copy" title="Copy Link">
+            <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        </button>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <p><strong>Resident Evil Requiem</strong> is a true survival horror experience, and that means every bullet, every herb, and every decision matters. Unlike action-focused entries in the series, Requiem demands that you think before you shoot. Knowing <strong>when to fight, when to run, and how to manage your limited resources</strong> is the difference between scraping through on your last health item and rage-quitting at a save room with empty pockets.</p>
+
+        <p>This guide breaks down the core survival strategies that separate veteran players from frustrated newcomers. Whether you're tackling your first Standard playthrough or grinding through Professional difficulty, these tips will teach you to read the game's resource economy, make smarter combat decisions, and never waste a bullet again.</p>
+
+        <div class="highlight-box">
+            <p><strong>Core Principle:</strong> Survival horror is about <em>scarcity</em>. The game is designed to make you uncomfortable. Embrace the tension — that's where the horror lives.</p>
+        </div>
+
+        <h2>THE SURVIVAL MINDSET: THINK LIKE A SURVIVOR</h2>
+
+        <p>The biggest mistake new players make in Resident Evil Requiem is treating it like an action game. You'll instinctively want to shoot every enemy you see, pick up every item, and explore every corner. That instinct will drain your resources and leave you defenseless by Chapter 6.</p>
+
+        <p>Instead, adopt the <strong>survival horror mindset</strong>: your goal isn't to kill everything — it's to <em>survive</em>. Every encounter is a cost-benefit analysis. Does this enemy drop anything valuable? Is this corridor worth clearing, or can I dodge past? Will I need these bullets for the boss two rooms ahead?</p>
+
+        <h3>The Three Questions</h3>
+        <p>Before engaging any enemy, ask yourself:</p>
+        <ol>
+            <li><strong>Can I avoid this?</strong> — If you can run past, dodge around, or take an alternate route, do it. Conserved ammo is ammo you can use when it actually counts.</li>
+            <li><strong>Can I afford this?</strong> — Check your inventory. If you're low on ammo or healing items, a fight that costs you two herbs and 15 handgun rounds is a losing proposition.</li>
+            <li><strong>What do I gain?</strong> — Some enemies guard valuable loot or block access to key items. Those are worth fighting. Random hallway mobs usually aren't.</li>
+        </ol>
+
+        <h2>RESOURCE MANAGEMENT: THE ECONOMY OF SURVIVAL</h2>
+
+        <p>Requiem's resource economy is tighter than RE4 Remake but more forgiving than RE7's early hours. The key is understanding <em>what</em> you have, <em>where</em> to find more, and <em>when</em> to use it.</p>
+
+        <h3>Ammo Conservation by Weapon Type</h3>
+        <table class="quick-table">
+            <thead>
+                <tr>
+                    <th>Weapon Type</th>
+                    <th>Ammo Scarcity</th>
+                    <th>Best Use Case</th>
+                    <th>Conservation Tip</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Handgun</strong></td>
+                    <td>Common</td>
+                    <td>Regular enemies, weak points</td>
+                    <td>Aim for headshots — 2-3 hits stagger for a melee follow-up</td>
+                </tr>
+                <tr>
+                    <td><strong>Shotgun</strong></td>
+                    <td>Moderate</td>
+                    <td>Crowd control, stagger on tough enemies</td>
+                    <td>Use at point-blank range for maximum damage; never waste at distance</td>
+                </tr>
+                <tr>
+                    <td><strong>Magnum</strong></td>
+                    <td>Scarce</td>
+                    <td>Bosses and mini-bosses only</td>
+                    <td>Save every round — never use on regular enemies</td>
+                </tr>
+                <tr>
+                    <td><strong>Rifle</strong></td>
+                    <td>Moderate</td>
+                    <td>Long-range precision, boss weak points</td>
+                    <td>Use the scope to guarantee weak-point hits</td>
+                </tr>
+                <tr>
+                    <td><strong>SMG</strong></td>
+                    <td>Moderate-Scarce</td>
+                    <td>Fast-moving enemies, burst DPS</td>
+                    <td>Fire in short bursts — full-auto wastes 3x the ammo</td>
+                </tr>
+                <tr>
+                    <td><strong>Explosives</strong></td>
+                    <td>Very Scarce</td>
+                    <td>Emergency crowd clear, boss phase transitions</td>
+                    <td>Use only when overwhelmed or to skip a boss phase</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="info-box">
+            <p><strong>Pro Tip:</strong> The <a href="crafting-guide.html">crafting system</a> is your best friend. Combine gunpowder types to create the ammo you actually need, not what the game gives you. Mixed gunpowder (Large + Large) yields the most valuable ammo type.</p>
+        </div>
+
+        <h3>Healing Item Hierarchy</h3>
+        <p>Not all healing is created equal. Use this priority list to avoid wasting powerful recovery items on minor scratches:</p>
+        <ol>
+            <li><strong>Green Herb alone</strong> — Use for minor damage (under 25% health). Abundant and cheap.</li>
+            <li><strong>Green + Green combo</strong> — Moderate healing for mid-range damage. Good baseline recovery.</li>
+            <li><strong>Green + Red combo</strong> — Full heal. Save these for boss fights or emergencies.</li>
+            <li><strong>First Aid Med</strong> — Instant full recovery. Extremely rare — treat as your panic button.</li>
+            <li><strong>Herb + First Aid Med combo</strong> — Full heal + temporary defense boost. Maximum value for boss encounters.</li>
+        </ol>
+
+        <h2>WHEN TO FIGHT VS. WHEN TO RUN</h2>
+
+        <p>This is the single most important survival skill in Requiem. Here's a chapter-by-chapter breakdown of when to engage and when to save your resources.</p>
+
+        <h3>Always Fight</h3>
+        <ul>
+            <li><strong>Boss encounters</strong> — Non-negotiable. Use your best ammo and healing items.</li>
+            <li><strong>Enemies guarding key items</strong> — If you need the item, you need the kill.</li>
+            <li><strong>Narrow corridors with no escape</strong> — If running isn't an option, fight efficiently.</li>
+            <li><strong>Enemies that drop rare crafting materials</strong> — Some drops are worth the ammo investment.</li>
+        </ul>
+
+        <h3>Usually Run</h3>
+        <ul>
+            <li><strong>Open areas with clear escape routes</strong> — Most overworld sections can be sprinted through.</li>
+            <li><strong>Enemies you've already looted past</strong> — No reason to fight the same mob twice.</li>
+            <li><strong>Late-chapter encounters when low on supplies</strong> — The boss is coming; save everything.</li>
+            <li><strong>Optional enemies in side areas</strong> — If the loot isn't essential, skip the fight.</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>The 60% Rule:</strong> If an enemy encounter costs more than 60% of your current ammo reserves for a weapon type, run. You're spending too much on one fight.</p>
+        </div>
+
+        <h3>Running Techniques</h3>
+        <p>Running isn't just about holding the sprint button. Master these techniques to escape efficiently:</p>
+        <ul>
+            <li><strong>Knife-dodge combo</strong> — Quick knife swipe to stagger, then sprint past. Costs zero ammo.</li>
+            <li><strong>Door juke</strong> — Bait enemies to a door, go through, and sprint while they're in the animation.</li>
+            <li><strong>Flashbang escape</strong> — Carry one flashbang specifically for emergency escapes. It stuns everything in a room.</li>
+            <li><strong>Environmental awareness</strong> — Learn which rooms have two exits. Loop around enemies instead of fighting through them.</li>
+        </ul>
+
+        <h2>ADVANCED SURVIVAL STRATEGIES</h2>
+
+        <h3>Safe Room Management</h3>
+        <p>Safe rooms are your planning hubs. Before leaving a safe room, always:</p>
+        <ol>
+            <li><strong>Check the map</strong> — Identify your destination and plan the safest route.</li>
+            <li><strong>Organize your inventory</strong> — Bring only what you need. Leave excess ammo and herbs in the storage box.</li>
+            <li><strong>Craft what you can</strong> — Convert gunpowder into the ammo type you'll need for the next section.</li>
+            <li><strong>Save your game</strong> — Create a new save slot. Rotate between 3-4 save files so you can backtrack if needed.</li>
+        </ol>
+
+        <h3>The Inventory Tetris Strategy</h3>
+        <p>Your inventory space is limited. Carry these essentials and nothing more:</p>
+        <table class="quick-table">
+            <thead>
+                <tr>
+                    <th>Slot</th>
+                    <th>Item</th>
+                    <th>Why</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1-2</td>
+                    <td>Primary weapon + ammo</td>
+                    <td>Your main damage dealer</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Secondary weapon</td>
+                    <td>Backup for specific enemy types</td>
+                </tr>
+                <tr>
+                    <td>4-5</td>
+                    <td>Healing items</td>
+                    <td>2 healing items minimum for exploration</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Knife</td>
+                    <td>Defensive counter + crate breaking</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Key item / puzzle piece</td>
+                    <td>Rotate as needed</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Flex slot</td>
+                    <td>Flashbang, grenade, or extra ammo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Difficulty-Specific Strategies</h3>
+
+        <h3>Standard Difficulty</h3>
+        <p>Standard is forgiving. Enemies deal moderate damage, ammo drops are plentiful, and you can afford to fight most encounters. Use Standard to learn enemy patterns, map layouts, and item locations. Don't hoard — experiment with weapons and find your preferred loadout.</p>
+
+        <h3>Hardcore Difficulty</h3>
+        <p>Hardcore is where the survival horror truly begins. Enemy health increases by ~40%, ammo drops decrease by ~30%, and healing items are noticeably scarcer. On Hardcore:</p>
+        <ul>
+            <li>Prioritize <a href="perfect-dodge-guide.html">Perfect Dodge</a> — the knife counter is your best friend for zero-ammo damage.</li>
+            <li>Avoid fights that don't yield key items or rare drops.</li>
+            <li>Craft aggressively — convert all gunpowder to your primary ammo type.</li>
+            <li>Use the <a href="farming-guide.html">farming spots</a> in Chapters 3 and 7 to stock up before difficult sections.</li>
+        </ul>
+
+        <h3>Professional Difficulty</h3>
+        <p>Professional is survival horror at its most brutal. Resources are extremely limited, enemies are aggressive, and saves are restricted. Professional demands mastery of every system:</p>
+        <ul>
+            <li><strong>Perfect Dodge is mandatory.</strong> You cannot afford to take hits — learn every enemy's attack timing.</li>
+            <li><strong>Run from 70% of encounters.</strong> Only fight bosses, key-item guards, and unavoidable sections.</li>
+            <li><strong>Knife is your primary weapon.</strong> Use it for staggered enemies, downed enemies, and crate breaking.</li>
+            <li><strong>Plan your route before leaving the safe room.</strong> Know exactly where you're going and what you need.</li>
+            <li><strong>Save magnum ammo for the final boss.</strong> You'll need approximately 12 rounds to clear the last phase cleanly.</li>
+        </ul>
+
+        <h2>COMMON SURVIVAL MISTAKES</h2>
+
+        <div class="tip-card">
+            <div class="tip-number">MISTAKE #1</div>
+            <h3>Shooting Enemies in the Legs Instead of the Head</h3>
+            <p>Leg shots deal less damage and don't trigger stagger as reliably. Always aim for the head. A headshot stagger followed by a melee attack is the most ammo-efficient kill method in the game.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-number">MISTAKE #2</div>
+            <h3>Using Magnum Ammo on Regular Enemies</h3>
+            <p>Magnum rounds are the rarest ammo in the game. Using them on basic enemies is a critical waste. Save every round for boss encounters — you'll thank yourself later.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-number">MISTAKE #3</div>
+            <h3>Ignoring the Crafting System</h3>
+            <p>Many players never touch crafting until they're desperate. Start crafting from Chapter 1. Convert gunpowder to your preferred ammo type and combine herbs strategically. The crafting system is designed to keep you alive — use it.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-number">MISTAKE #4</div>
+            <h3>Carrying Too Many Weapons</h3>
+            <p>Three weapons maximum. Every extra weapon takes inventory space that should hold ammo, herbs, or key items. Pick a primary, a secondary, and your knife. That's all you need.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-number">MISTAKE #5</div>
+            <h3>Not Using the Storage Box</h3>
+            <p>The storage box is accessible from every safe room. Store excess ammo, backup herbs, and rarely-used weapons. A lean inventory means more room for loot and key items during exploration.</p>
+        </div>
+
+        <h2>CHAPTER-BY-CHAPTER RESOURCE TIPS</h2>
+
+        <table class="quick-table">
+            <thead>
+                <tr>
+                    <th>Chapter</th>
+                    <th>Resource Status</th>
+                    <th>Key Tip</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Ch 1-2</strong></td>
+                    <td>Generous</td>
+                    <td>Fight freely to learn mechanics. Stock up — difficulty spikes in Ch 3.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ch 3-4</strong></td>
+                    <td>Moderate</td>
+                    <td>Start conserving. Use knife on staggered enemies. Farm the cellar area.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ch 5-6</strong></td>
+                    <td>Tight</td>
+                    <td>Run from most encounters. Save shotgun ammo for the boss. Use herbs sparingly.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ch 7-8</strong></td>
+                    <td>Sparse</td>
+                    <td>Resources are at their lowest. Craft everything. Avoid optional fights entirely.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ch 9-10</strong></td>
+                    <td>Moderate (resupply)</td>
+                    <td>The game gives you a resupply. Restock crafting materials and save for Ch 11 boss.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ch 11-12</strong></td>
+                    <td>Endgame</td>
+                    <td>Use everything. No reason to hoard — spend your magnum rounds and First Aid meds.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>FAQ: SURVIVAL HORROR IN RE REQUIEM</h2>
+
+        <h3>What is the best difficulty for first-time survival horror players?</h3>
+        <p>Start with Standard. It teaches you resource management without punishing mistakes too harshly. Once you've completed the game, Hardcore is the true survival horror experience — and the recommended difficulty for returning RE fans.</p>
+
+        <h3>How much ammo should I save for boss fights?</h3>
+        <p>A general rule: reserve at least 30 handgun rounds, 10 shotgun shells, and 4 magnum rounds for each major boss encounter. The <a href="boss-guide.html">boss guide</a> has exact ammo recommendations for every boss.</p>
+
+        <h3>Is it possible to beat the game with only the knife?</h3>
+        <p>Technically yes, but it's an extreme challenge run. The knife is powerful when used correctly — Perfect Dodge into knife counter deals significant damage — but some boss phases require ranged weapons. It's not recommended for normal play.</p>
+
+        <h3>Should I kill or run past the enemies in the hospital section?</h3>
+        <p>Run. The hospital (Chapters 5-6) is a resource drain. The enemies respawn in some areas, and the loot doesn't justify the ammo cost. Sprint to key objectives and only fight when cornered.</p>
+
+        <h3>What's the most ammo-efficient weapon in the game?</h3>
+        <p>The handgun with the upgrade that increases critical hit rate. Headshots from the upgraded handgun can one-shot basic enemies on Standard and two-shot on Hardcore, making it the best bullet-for-bullet value in the game.</p>
+
+        <h3>How do I know when I'm about to hit a boss fight?</h3>
+        <p>Watch for these signals: a large room with no enemies (boss arena), a typewriter save point with extra ink ribbons nearby, or a conspicuous ammo/health drop before a door. The game telegraphs boss encounters — learn to read the signs.</p>
+
+        <h2>FINAL THOUGHTS</h2>
+
+        <p>Survival horror in Resident Evil Requiem is about <strong>respecting the game's scarcity</strong>. Every bullet you fire, every herb you consume, and every fight you choose has a cost. The best players aren't the ones with the best aim — they're the ones who know when <em>not</em> to shoot.</p>
+
+        <p>Master these survival strategies, and you'll not only survive Requiem — you'll thrive in it. For more advanced combat techniques, check out our <a href="perfect-dodge-guide.html">Perfect Dodge Guide</a> and <a href="weapons-guide.html">Weapons Guide</a>. Good luck out there.</p>
+
+        <a href="index.html" class="back-link">&larr; Back to All Guides</a>
+    </article>
+
+    <!-- Related Guides -->
+    <div class="related">
+        <div class="related-title">RELATED GUIDES</div>
+        <div class="related-links">
+            <a href="crafting-guide.html">CRAFTING GUIDE</a>
+            <a href="difficulty-guide.html">DIFFICULTY GUIDE</a>
+            <a href="perfect-dodge-guide.html">PERFECT DODGE GUIDE</a>
+            <a href="farming-guide.html">FARMING GUIDE</a>
+            <a href="boss-guide.html">BOSS GUIDE</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">RE REQUIEM GUIDE</div>
+        <p class="footer-text">FAN-MADE STRATEGY GUIDE &bull; NOT AFFILIATED WITH CAPCOM</p>
+        <p class="footer-text">RESIDENT EVIL&trade; IS A REGISTERED TRADEMARK OF CAPCOM CO., LTD.</p>
+    </footer>
+
+    <!-- Share Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            document.querySelector('.share-twitter').href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + title;
+            document.querySelector('.share-facebook').href = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+            document.querySelector('.share-reddit').href = 'https://reddit.com/submit?url=' + url + '&title=' + title;
+            document.querySelector('.share-whatsapp').href = 'https://wa.me/?text=' + title + '%20' + url;
+            document.querySelector('.share-copy').addEventListener('click', function() {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    this.classList.add('copied');
+                    setTimeout(() => this.classList.remove('copied'), 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
