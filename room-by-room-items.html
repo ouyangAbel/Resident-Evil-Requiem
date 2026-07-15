@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-GF9BYLZ5F7");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil Requiem Room-by-Room Item Locations Guide - Every Item in Every Room (2026)</title>
+    <meta name="description" content="Complete RE Requiem room-by-room item locations guide. Find every herb, ammo, treasure, key item, and document in all 12 chapters with detailed maps.">
+    <meta name="keywords" content="resident evil requiem item locations, re requiem room by room, resident evil requiem all items, re requiem item map, resident evil requiem herb locations, re requiem ammo locations, resident evil requiem treasure locations">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rerequiemguide.com/room-by-room-items.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Resident Evil Requiem Room-by-Room Item Locations Guide">
+    <meta property="og:description" content="Find every item in every room of RE Requiem. Complete per-chapter item maps with herbs, ammo, treasures, keys, and documents.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rerequiemguide.com/room-by-room-items.html">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Resident Evil Requiem Room-by-Room Item Locations Guide",
+        "description": "Complete room-by-room item locations for every chapter in Resident Evil Requiem",
+        "author": { "@type": "Organization", "name": "RE Requiem Guide" },
+        "publisher": { "@type": "Organization", "name": "RE Requiem Guide" },
+        "datePublished": "2026-07-16",
+        "dateModified": "2026-07-16",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://rerequiemguide.com/room-by-room-items.html" }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139,0,0,.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+            --warning: #8b6914;
+            --info: #2a4a6b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(139,0,0,.08) 0%, transparent 60%);
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            padding: .4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: .05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: .5rem;
+            white-space: nowrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+        .share-btn.copy-link.copied { border-color: #4caf50; color: #4caf50; }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: .8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s;
+        }
+        .article-content a:hover { border-bottom-color: var(--accent-light); }
+        .article-content strong { color: var(--text-primary); }
+        .highlight-box {
+            background: rgba(139,0,0,.08);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .info-box {
+            background: rgba(42,74,107,.12);
+            border-left: 3px solid var(--info);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p { margin-bottom: 0; }
+        .success-box {
+            background: rgba(45,90,39,.1);
+            border-left: 3px solid var(--success);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .success-box p { margin-bottom: 0; }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: .95rem;
+        }
+        .quick-table thead { border-bottom: 2px solid var(--accent); }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: .8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table tr:hover td { color: var(--text-primary); }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+            margin: 1.5rem 0;
+        }
+        .tip-number {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .8rem;
+        }
+        .tip-card h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 .8rem;
+        }
+        .tip-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: .2rem;
+            transition: all .3s;
+        }
+        .back-link:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent-light);
+        }
+        .related {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .related-links a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: .6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all .3s;
+        }
+        .related-links a:hover {
+            color: var(--accent-light);
+            border-color: var(--accent);
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem 4rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .5rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .header-inner { padding: 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .article-header { padding: 6rem 1.5rem 3rem; }
+            .article-content { padding: 1.5rem; }
+            .quick-table { font-size: .85rem; }
+            .quick-table th, .quick-table td { padding: .5rem .6rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE:REQUIEM</a>
+            <nav class="nav">
+                <a href="walkthrough.html">Walkthrough</a>
+                <a href="beginner-guide.html">Beginner</a>
+                <a href="chapters.html">Chapters</a>
+                <a href="endings.html">Endings</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Header -->
+    <div class="article-header">
+        <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Room-by-Room Item Locations</div>
+        <div class="article-tag">COLLECTIBLES &amp; SECRETS</div>
+        <h1 class="article-title">RESIDENT EVIL REQUIEM ROOM-BY-ROOM ITEM LOCATIONS: COMPLETE ITEM MAP GUIDE</h1>
+        <div class="article-meta">UPDATED JULY 16, 2026 &bull; 22 MIN READ</div>
+    </div>
+
+    <!-- Share Bar -->
+    <div class="share-bar">
+        <span class="share-label">SHARE THIS</span>
+        <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+        <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+
+        <p>Finding every item in <strong>Resident Evil Requiem</strong> can mean the difference between surviving Professional difficulty and running dry before the final boss. Whether you are hunting for the <strong>68 collectibles</strong>, scouring rooms for hidden herbs, or trying to maximize your Lei income, a room-by-room item guide eliminates the guesswork. This comprehensive map covers <strong>every pickupable item in all 12 chapters</strong>, organized by room so you never miss a single herb, ammo box, treasure, or key item.</p>
+
+        <p>If you have already read our <a href="collectibles-guide.html">Collectibles Guide</a> for the full 100% completion checklist, this guide goes deeper — cataloging <em>everything</em> in each room, not just the named collectibles. Think of it as the companion volume to the <a href="farming-guide.html">Farming Guide</a>, focused on one-time pickups and fixed spawn locations rather than repeatable routes.</p>
+
+        <div class="highlight-box">
+            <p><strong>How to use this guide:</strong> Each chapter section lists rooms in the order you encounter them naturally during gameplay. Items in <strong>bold</strong> are key items or rare pickups. Items marked with ★ are easily missed — they require backtracking or hidden interactions.</p>
+        </div>
+
+        <!-- Chapter 1 -->
+        <h2>CHAPTER 1: THE AWAKENING — ROOM-BY-ROOM ITEMS</h2>
+
+        <p>The opening chapter at Rookwood Estate is generous with supplies to ease you into the game. However, several items are tucked inside drawers and cabinets that players sprint past.</p>
+
+        <h3>Rookwood Estate — Grand Foyer</h3>
+        <ul>
+            <li><strong>First Aid Spray</strong> — on the reception desk, impossible to miss</li>
+            <li>Handgun Ammo x8 — inside the left drawer of the reception desk</li>
+            <li><strong>Estate Key (Upper Floor)</strong> — dropped by the first Lycan encounter</li>
+            <li>Herb (Green) — potted plant to the right of the staircase</li>
+            <li>Gunpowder — shelf behind the staircase ★</li>
+        </ul>
+
+        <h3>Rookwood Estate — East Sitting Room</h3>
+        <ul>
+            <li>Handgun Ammo x6 — coffee table near the fireplace</li>
+            <li><strong>Rookwood Family Portrait</strong> (Document) — examine the painting above the mantle</li>
+            <li>Gunpowder x2 — inside the cabinet by the window</li>
+            <li>Herb (Green) — windowsill planter box</li>
+        </ul>
+
+        <h3>Rookwood Estate — West Library</h3>
+        <ul>
+            <li><strong>Library Safe Code Memo</strong> (Document) — desk near the bookshelf</li>
+            <li>Handgun Ammo x10 — inside the safe (code: 0423) ★</li>
+            <li>Herb (Red) — hidden behind the large globe, interact from the back ★</li>
+            <li>Shotgun Shells x4 — drawer in the reading nook</li>
+        </ul>
+
+        <h3>Rookwood Estate — Upper Hallway</h3>
+        <ul>
+            <li>Knife — wall-mounted display case (becomes your backup melee weapon)</li>
+            <li>Gunpowder — end table near the window</li>
+            <li><strong>Handmade Necklace</strong> (Treasure, 4,000 Lei) — inside the locked bedroom ★</li>
+        </ul>
+
+        <table class="quick-table">
+            <thead>
+                <tr>
+                    <th>Room</th>
+                    <th>Key Items</th>
+                    <th>Ammo/Supplies</th>
+                    <th>Treasure Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Grand Foyer</td>
+                    <td>Estate Key</td>
+                    <td>Handgun x8, Gunpowder</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>East Sitting Room</td>
+                    <td>Portrait Document</td>
+                    <td>Handgun x6, Gunpowder x2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>West Library</td>
+                    <td>Safe Code Memo</td>
+                    <td>Handgun x10, Shells x4</td>
+                    <td>4,000 Lei</td>
+                </tr>
+                <tr>
+                    <td>Upper Hallway</td>
+                    <td>—</td>
+                    <td>Knife, Gunpowder</td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Chapter 2 -->
+        <h2>CHAPTER 2: ECHOES OF THE ESTATE — ROOM-BY-ROOM ITEMS</h2>
+
+        <p>Chapter 2 expands the explorable area significantly. This is where the game introduces <strong>treasure hunting</strong> in earnest — many rooms contain valuables that can be sold to the Merchant for significant Lei.</p>
+
+        <h3>Basement Corridor</h3>
+        <ul>
+            <li>Shotgun Shells x4 — crate at the base of the stairs</li>
+            <li>Herb (Green) — wall shelf near the boiler</li>
+            <li><strong>Rusted Key</strong> — on the corpse near the locked door</li>
+            <li>Gunpowder — workbench shelf</li>
+        </ul>
+
+        <h3>Basement — Wine Cellar</h3>
+        <ul>
+            <li><strong>Silver Chalice</strong> (Treasure, 6,500 Lei) — inside the locked cabinet, requires Rusted Key ★</li>
+            <li>Handgun Ammo x6 — wine barrel shelf</li>
+            <li>Herb (Green+Green) — combine from two separate planters</li>
+            <li><strong>Cellar Worker's Diary</strong> (Document) — on the wooden crate</li>
+        </ul>
+
+        <h3>Estate — Kitchen</h3>
+        <ul>
+            <li>Knife x2 — knife block on the counter</li>
+            <li>Handgun Ammo x4 — pantry shelf</li>
+            <li>First Aid Med (Herb combo: G+G) — craft at the counter if you have herbs</li>
+            <li><strong>Pendant with Ruby</strong> (Treasure, 8,000 Lei) — inside the chimney, shoot the nest down first ★</li>
+        </ul>
+
+        <div class="info-box">
+            <p><strong>Pro Tip:</strong> The Pendant with Ruby in the Kitchen chimney is one of the most commonly missed treasures in the entire game. You must shoot the bird's nest visible in the chimney flue — it drops the pendant on the floor. Return to the Merchant immediately to sell it before the chapter autosave locks you out.</p>
+        </div>
+
+        <h3>Estate — Study Room</h3>
+        <ul>
+            <li><strong>Rookwood Family Tree</strong> (Document) — open book on the desk</li>
+            <li>Handgun Ammo x8 — desk drawer</li>
+            <li>Gunpowder x2 — shelf behind the desk chair</li>
+            <li>Herb (Green) — bookshelf gap (interact prompt is subtle) ★</li>
+        </ul>
+
+        <!-- Chapter 3 -->
+        <h2>CHAPTER 3: BELOW THE SURFACE — ROOM-BY-ROOM ITEMS</h2>
+
+        <p>The catacombs beneath the estate are dark and dangerous, but they hide some of the game's best treasures. Bring a <strong>Flash Grenade</strong> for the Shadow Stalker ambush in the lower tunnels.</p>
+
+        <h3>Catacombs — Entrance Chamber</h3>
+        <ul>
+            <li>Shotgun Shells x6 — stone altar</li>
+            <li>Herb (Green+Red) — two separate alcoves, combine for healing + damage boost</li>
+            <li><strong>Ancient Medallion</strong> (Treasure, 12,000 Lei) — behind the crumbling wall, shoot the weak point ★</li>
+            <li>Handgun Ammo x4 — sarcophagus lid</li>
+        </ul>
+
+        <h3>Catacombs — Burial Chamber</h3>
+        <ul>
+            <li><strong>Catacomb Inscription</strong> (Document) — carved into the north wall</li>
+            <li>Flash Grenade — pedestal near the exit</li>
+            <li>Gunpowder x3 — scattered across three stone ledges</li>
+            <li>Herb (Green) — mossy alcove on the east wall</li>
+        </ul>
+
+        <h3>Catacombs — Flooded Tunnel</h3>
+        <ul>
+            <li>Handgun Ammo x10 — submerged crate (wade into knee-deep water) ★</li>
+            <li><strong>Old Watch</strong> (Treasure, 3,500 Lei) — inside the broken barrel</li>
+            <li>Shotgun Shells x4 — ledge above the water line</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>Missable Warning:</strong> The Flooded Tunnel becomes inaccessible after the Chapter 3 boss fight. Make sure you collect everything before pulling the lever that triggers the collapse sequence.</p>
+        </div>
+
+        <!-- Chapter 4-6 condensed -->
+        <h2>CHAPTERS 4–6: THE CRIMSON WING & GRACE'S HOSPITAL</h2>
+
+        <p>Chapters 4 through 6 take you through the Crimson Wing district and into Grace's Hospital. These chapters are more linear, but they pack rooms with supplies to compensate for the increased enemy density.</p>
+
+        <h3>Chapter 4 — Crimson Wing Safe House</h3>
+        <ul>
+            <li>First Aid Spray — medical table</li>
+            <li>Handgun Ammo x12 — ammo crate in the corner</li>
+            <li><strong>Resistance Radio Log</strong> (Document) — on the communications desk</li>
+            <li>Gunpowder x2 — supply shelf</li>
+            <li><strong>Brass Pocketwatch</strong> (Treasure, 5,500 Lei) — inside the locked drawer ★</li>
+        </ul>
+
+        <h3>Chapter 5 — Grace's Hospital: Reception</h3>
+        <ul>
+            <li>Herb (Green+Green+Red) — triple planter near the entrance, combine all three</li>
+            <li>Handgun Ammo x6 — reception desk drawer</li>
+            <li><strong>Hospital Patient File #1</strong> (Document) — clipboard on the counter</li>
+            <li>Knife — surgical tray near the elevator</li>
+        </ul>
+
+        <h3>Chapter 5 — Hospital: Room 302</h3>
+        <ul>
+            <li><strong>Room 302 Key</strong> — found in the morgue, bring it back here</li>
+            <li>Shotgun Shells x8 — inside the locked cabinet</li>
+            <li><strong>Gold Bangle</strong> (Treasure, 7,200 Lei) — under the mattress ★</li>
+            <li>First Aid Med — bedside table</li>
+            <li><strong>Nurse's Last Note</strong> (Document) — pinned to the wall behind the door ★</li>
+        </ul>
+
+        <h3>Chapter 6 — Leon's Dirt Bike Chase: Gas Station</h3>
+        <ul>
+            <li>Handgun Ammo x20 — ammo cache behind the counter (generous supply for the chase)</li>
+            <li>Shotgun Shells x6 — garage shelf</li>
+            <li>First Aid Spray — first aid cabinet on the wall</li>
+            <li><strong>Gas Station Receipt</strong> (Document) — register tape, lore item ★</li>
+        </ul>
+
+        <!-- Chapter 7-9 -->
+        <h2>CHAPTERS 7–9: THE LABORATORY & DIMENSIONAL RIFT</h2>
+
+        <p>The mid-game laboratory chapters are item-dense but enemy-dense too. Resources are tighter here — every bullet counts. Prioritize <strong>combining herbs</strong> for maximum efficiency.</p>
+
+        <h3>Chapter 7 — Laboratory: Specimen Storage</h3>
+        <ul>
+            <li><strong>Lab Keycard (Level 2)</strong> — on the scientist's body near Tank 4</li>
+            <li>Handgun Ammo x10 — supply locker</li>
+            <li>Shotgun Shells x8 — weapons cabinet (requires shooting the lock) ★</li>
+            <li>Herb (Green+Red) — planter in the observation room</li>
+            <li><strong>Specimen Analysis Report</strong> (Document) — terminal near the central tank</li>
+        </ul>
+
+        <h3>Chapter 7 — Laboratory: Operating Theater</h3>
+        <ul>
+            <li>First Aid Spray — medical supply cart</li>
+            <li><strong>Surgical Saw</strong> (Key Item) — required for the Chapter 7 boss puzzle</li>
+            <li>Magnum Ammo x3 — hidden compartment under the operating table ★</li>
+            <li>Gunpowder x3 — shelf behind the curtain</li>
+        </ul>
+
+        <div class="success-box">
+            <p><strong>High-Value Find:</strong> The Magnum Ammo in the Operating Theater is extremely rare — only 12 rounds exist in the entire game across all chapters. This room gives you 3 of them. Do not skip it.</p>
+        </div>
+
+        <h3>Chapter 8 — Dimensional Rift: Anchor Room</h3>
+        <ul>
+            <li><strong>Dimensional Anchor Fragment</strong> (Key Item) — central pedestal</li>
+            <li>Handgun Ammo x8 — rubble pile near the entrance</li>
+            <li>Herb (Green) — glowing plant near the rift edge</li>
+            <li><strong>Rift Traveler's Journal</strong> (Document) — embedded in the crystalline wall ★</li>
+        </ul>
+
+        <h3>Chapter 9 — Forgotten City: Market Square</h3>
+        <ul>
+            <li>Shotgun Shells x10 — overturned merchant stall</li>
+            <li><strong>City Currency (Obsidian Coin)</strong> (Treasure, 9,000 Lei) — inside the fountain ★</li>
+            <li>Handgun Ammo x6 — two crates in the alley</li>
+            <li>First Aid Med — herbalist cart</li>
+            <li><strong>Forgotten King's Proclamation</strong> (Document) — stone tablet near the statue</li>
+        </ul>
+
+        <!-- Chapter 10-12 -->
+        <h2>CHAPTERS 10–12: CONVERGENCE & THE FINAL DESCENT</h2>
+
+        <p>The final chapters are brutal on Professional difficulty. Every item you collected earlier pays off here. These rooms offer the last pickups before the point of no return.</p>
+
+        <h3>Chapter 10 — Convergence: Safe Room</h3>
+        <ul>
+            <li>First Aid Spray x2 — medical supply cache (last generous healing in the game)</li>
+            <li>Handgun Ammo x15 — ammo crate</li>
+            <li>Shotgun Shells x10 — weapons locker</li>
+            <li>Magnum Ammo x3 — hidden under the desk ★</li>
+            <li><strong>Final Merchant Note</strong> (Document) — on the table, final lore piece</li>
+        </ul>
+
+        <h3>Chapter 11 — The Final Descent: Catacomb Depths</h3>
+        <ul>
+            <li>Herb (Green+Green+Red) — triple planter, the last herb combination opportunity</li>
+            <li>Handgun Ammo x8 — scattered crates</li>
+            <li>Flash Grenade x2 — altar pedestals</li>
+            <li><strong>Ancient Requiem Tablet</strong> (Key Item) — required for the final door puzzle</li>
+        </ul>
+
+        <h3>Chapter 12 — Requiem: The Final Chamber</h3>
+        <ul>
+            <li>First Aid Spray — pedestal near the entrance (last healing item)</li>
+            <li>Magnum Ammo x6 — hidden alcove behind the throne ★</li>
+            <li><strong>Requiem Inscription</strong> (Document) — final lore document, triggers secret ending if all 68 collectibles are gathered</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>Secret Ending Trigger:</strong> Having all 68 collectibles in your inventory when you read the Requiem Inscription in Chapter 12 unlocks the secret "True Requiem" ending. See our <a href="endings.html">All Endings Explained Guide</a> for the full breakdown.</p>
+        </div>
+
+        <!-- Complete Item Count Table -->
+        <h2>COMPLETE ITEM COUNT BY CHAPTER</h2>
+
+        <table class="quick-table">
+            <thead>
+                <tr>
+                    <th>Chapter</th>
+                    <th>Herbs</th>
+                    <th>Ammo (Rounds)</th>
+                    <th>Key Items</th>
+                    <th>Treasures (Lei)</th>
+                    <th>Documents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ch.1: The Awakening</td>
+                    <td>5</td>
+                    <td>28</td>
+                    <td>2</td>
+                    <td>4,000</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Ch.2: Echoes of the Estate</td>
+                    <td>7</td>
+                    <td>22</td>
+                    <td>1</td>
+                    <td>18,500</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Ch.3: Below the Surface</td>
+                    <td>5</td>
+                    <td>24</td>
+                    <td>0</td>
+                    <td>15,500</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ch.4: The Crimson Wing</td>
+                    <td>3</td>
+                    <td>16</td>
+                    <td>0</td>
+                    <td>5,500</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ch.5: Grace's Hospital Escape</td>
+                    <td>6</td>
+                    <td>20</td>
+                    <td>1</td>
+                    <td>7,200</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Ch.6: Leon's Dirt Bike Pursuit</td>
+                    <td>0</td>
+                    <td>26</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ch.7: Abomination Laboratory</td>
+                    <td>4</td>
+                    <td>24</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ch.8: The Dimensional Rift</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ch.9: Forgotten City</td>
+                    <td>3</td>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>9,000</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ch.10: Convergence</td>
+                    <td>0</td>
+                    <td>31</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ch.11: The Final Descent</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Ch.12: Requiem</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><strong>TOTAL</strong></td>
+                    <td><strong>38</strong></td>
+                    <td><strong>237</strong></td>
+                    <td><strong>8</strong></td>
+                    <td><strong>59,700</strong></td>
+                    <td><strong>15</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Tips -->
+        <h2>ROOM-BY-ROOM ITEM HUNTING TIPS</h2>
+
+        <div class="tip-card">
+            <div class="tip-number">TIP 01</div>
+            <h3>Always Check Drawers and Cabinets</h3>
+            <p>Over 40% of all ammo pickups in RE Requiem are inside interactable furniture — drawers, cabinets, lockers, and crates. The game does not highlight these with a glow or prompt; you must physically approach and press interact. On Professional difficulty, these hidden stashes are essential for survival.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-number">TIP 02</div>
+            <h3>Shoot Environmental Objects</h3>
+            <p>Bird nests, hanging crates, and weak wall sections can be shot to reveal hidden items. The Pendant with Ruby in Chapter 2 and the Ancient Medallion in Chapter 3 both require shooting environmental objects before they become collectible. If a room looks empty, fire a round at suspicious objects.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-number">TIP 03</div>
+            <h3>Combine Herbs Immediately</h3>
+            <p>RE Requiem's inventory is limited. Picking up individual Green Herbs wastes space. Combine them as you go: Green+Green for stronger healing, Green+Red for healing + damage boost, or Green+Yellow for defense. See our <a href="crafting-guide.html">Crafting Guide</a> for all herb combination recipes.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-number">TIP 04</div>
+            <h3>Backtrack Before Point of No Return</h3>
+            <p>Several chapters have a point-of-no-return moment (usually a cutscene or door collapse). The Flooded Tunnel in Chapter 3 and the Laboratory in Chapter 7 both become inaccessible after their boss fights. Always clear rooms thoroughly before triggering major story events.</p>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-number">TIP 05</div>
+            <h3>Use the Merchant Between Chapters</h3>
+            <p>After each chapter, the Merchant's inventory refreshes. Sell treasures immediately for Lei, then buy the ammo type you are lowest on. The 59,700 Lei from treasures across the game is enough to fully upgrade one weapon to max level — prioritize your primary damage dealer.</p>
+        </div>
+
+        <!-- FAQ -->
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+        <h3>How many total items are in Resident Evil Requiem?</h3>
+        <p>Across all 12 chapters, there are approximately 237 ammo pickups, 38 herb spawns, 8 key items, 15 documents, and treasures worth 59,700 Lei. Combined with the 68 named collectibles (covered in our <a href="collectibles-guide.html">Collectibles Guide</a>), the game contains over 360 individual item pickups.</p>
+
+        <h3>Do items respawn in Resident Evil Requiem?</h3>
+        <p>No. Items in RE Requiem are fixed, one-time pickups. Once collected, they do not respawn. The only exception is the Merchant's shop, which restocks between chapters. If you miss an item and the room becomes inaccessible, you cannot go back for it in the same playthrough.</p>
+
+        <h3>What happens if I miss a key item?</h3>
+        <p>Key items (keys, keycards, quest items) are mandatory for progression — the game typically prevents you from moving forward without them. However, optional key items like the Rusted Key in Chapter 2 (which opens the Silver Chalice cabinet) can be missed permanently if you leave the area.</p>
+
+        <h3>Where are the Magnum Ammo locations in RE Requiem?</h3>
+        <p>Magnum Ammo is the rarest ammo type in the game, with only 12 rounds total across all chapters: 3 in Chapter 7 (Operating Theater), 3 in Chapter 10 (Safe Room), and 6 in Chapter 12 (Final Chamber, hidden alcove). Save these for boss encounters on Professional difficulty.</p>
+
+        <h3>Can I get all items on Professional difficulty?</h3>
+        <p>Yes. Item locations are the same across all difficulty levels — the difference is enemy damage and resource scarcity. Professional difficulty reduces ammo drops from defeated enemies, making the fixed room pickups even more critical. Use this guide to ensure you never miss a room.</p>
+
+        <h3>Is there a way to track which rooms I have cleared?</h3>
+        <p>RE Requiem does not have a built-in room checklist. However, the pause menu's map shows room names with a checkmark icon once all items have been collected. If a room shows no checkmark, there is still an item you have not picked up — return and search drawers, cabinets, and environmental objects.</p>
+
+        <a href="index.html" class="back-link">&larr; Back to All Guides</a>
+    </article>
+
+    <!-- Related Guides -->
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="collectibles-guide.html">Collectibles Guide</a>
+            <a href="farming-guide.html">Farming Guide</a>
+            <a href="crafting-guide.html">Crafting Guide</a>
+            <a href="walkthrough.html">Walkthrough</a>
+            <a href="endings.html">Endings Guide</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated July 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+
+    <!-- Share Script -->
+    <script>
+        (function(){
+            var u=encodeURIComponent(window.location.href);
+            var t=encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+            document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+            document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+            document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b=document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title="Copied!";
+                setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+            });
+        }
+    </script>
+</body>
+</html>
