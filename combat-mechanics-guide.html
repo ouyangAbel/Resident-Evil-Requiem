@@ -1,0 +1,834 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-GF9BYLZ5F7");</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Resident Evil Requiem Combat Mechanics Guide - Perfect Dodge, Parry, Melee &amp; Advanced Techniques (2026)</title><meta name="description" content="Master RE Requiem combat: perfect dodge timing, parry mechanics, melee combos, enemy weakpoints, and advanced fighting techniques for every encounter."><meta name="keywords" content="resident evil requiem combat, re requiem perfect dodge, resident evil requiem parry, re requiem melee combat, resident evil requiem combat tips, re requiem enemy weakpoints, resident evil requiem fighting guide"><meta name="robots" content="index, follow"><link rel="canonical" href="https://rerequiemguide.com/combat-mechanics-guide.html"><meta property="og:title" content="Resident Evil Requiem Combat Mechanics Guide - Perfect Dodge, Parry &amp; Advanced Techniques"><meta property="og:description" content="Master every combat system in RE Requiem: perfect dodge, parry, melee combos, enemy weakpoints, and advanced fighting techniques."><meta property="og:type" content="article"><meta property="og:url" content="https://rerequiemguide.com/combat-mechanics-guide.html"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Resident Evil Requiem Combat Mechanics Guide - Perfect Dodge, Parry, Melee & Advanced Techniques","description":"Master every combat system in RE Requiem: perfect dodge, parry, melee combos, enemy weakpoints, and advanced fighting techniques.","datePublished":"2026-07-18","dateModified":"2026-07-18","author":{"@type":"Organization","name":"RE Requiem Guide"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rerequiemguide.com/combat-mechanics-guide.html"}}</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:wght@400;500;600&display=swap" rel="stylesheet"><style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139,0,0,.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+            --warning: #8b6914;
+            --info: #2a4a6b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(139,0,0,.08) 0%, transparent 60%);
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            padding: .4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: .05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: .5rem;
+            white-space: nowrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+        .share-btn.copy-link.copied { border-color: #4caf50; color: #4caf50; }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: .8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s;
+        }
+        .article-content a:hover { border-bottom-color: var(--accent-light); }
+        .article-content strong { color: var(--text-primary); }
+        .highlight-box {
+            background: rgba(139,0,0,.08);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .info-box {
+            background: rgba(42,74,107,.12);
+            border-left: 3px solid var(--info);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p { margin-bottom: 0; }
+        .success-box {
+            background: rgba(45,90,39,.1);
+            border-left: 3px solid var(--success);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .success-box p { margin-bottom: 0; }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: .95rem;
+        }
+        .quick-table thead { border-bottom: 2px solid var(--accent); }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: .8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table tr:hover td { color: var(--text-primary); }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+            margin: 1.5rem 0;
+        }
+        .tip-number {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .8rem;
+        }
+        .tip-card h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 .8rem;
+        }
+        .tip-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .character-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+        .character-card:hover { border-color: var(--accent-glow); }
+        .character-info { flex: 1; }
+        .character-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin-bottom: .3rem;
+        }
+        .character-role {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            text-transform: uppercase;
+            margin-bottom: .8rem;
+        }
+        .character-desc {
+            font-size: .95rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: .2rem;
+            transition: all .3s;
+        }
+        .back-link:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent-light);
+        }
+        .related {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .related-links a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: .6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all .3s;
+        }
+        .related-links a:hover {
+            color: var(--accent-light);
+            border-color: var(--accent);
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem 4rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .5rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .header-inner { padding: 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .article-header { padding: 6rem 1.5rem 3rem; }
+            .article-content { padding: 1.5rem; }
+            .tip-card { padding: 1.2rem; }
+            .character-card { flex-direction: column; }
+        }
+    </style></head><body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE:REQUIEM GUIDE</a>
+            <nav class="nav">
+                <a href="walkthrough.html">WALKTHROUGH</a>
+                <a href="weapons-guide.html">WEAPONS</a>
+                <a href="boss-guide.html">BOSSES</a>
+                <a href="chapters.html">CHAPTERS</a>
+                <a href="endings.html">ENDINGS</a>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <div class="article-header">
+            <div class="breadcrumb"><a href="index.html">HOME</a> &rsaquo; <a href="index.html">GUIDES</a> &rsaquo; COMBAT MECHANICS</div>
+            <div class="article-tag">COMBAT MECHANICS</div>
+            <h1 class="article-title">RESIDENT EVIL REQUIEM COMBAT MECHANICS GUIDE: PERFECT DODGE, PARRY, MELEE &amp; ADVANCED TECHNIQUES</h1>
+            <div class="article-meta">JULY 18, 2026 &nbsp;&bull;&nbsp; 20 MIN READ</div>
+        </div>
+        <div class="article-content">
+            <div class="share-bar">
+                <span class="share-label">SHARE</span>
+                <a href="#" id="share-twitter" class="share-btn" title="Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="#" id="share-facebook" class="share-btn" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="#" id="share-reddit" class="share-btn" title="Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+                <a href="#" id="share-whatsapp" class="share-btn" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                <button class="share-btn copy-link" id="share-copy" onclick="copyLink()" title="Copy link"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+            </div>
+
+            <p>Resident Evil Requiem introduces the most refined combat system in the entire franchise. Whether you are dodging a Lycan's lunging claw, parrying a cultist's blade, or lining up a precision headshot on a mutated abomination, understanding the underlying mechanics is the difference between survival and a grisly death screen. This comprehensive <strong>RE Requiem combat mechanics guide</strong> breaks down every fighting system in the game — from the frame-perfect dodge window to advanced melee combos, enemy weakpoint exploitation, and resource-efficient combat strategies that will carry you through Professional difficulty.</p>
+
+            <p>If you are new to the series, start with our <a href="beginner-guide.html">Beginner Guide</a> for foundational tips. For weapon-specific data, see the <a href="weapons-guide.html">Weapons Guide</a>. And for the toughest encounters, our <a href="boss-guide.html">Boss Guide</a> has phase-by-phase breakdowns.</p>
+
+            <h2 id="dodge-system">THE DODGE SYSTEM: PERFECT DODGE, TIMED DODGE &amp; EVADE</h2>
+
+            <p>RE Requiem features a three-tier dodge system that rewards precise timing with escalating advantages. Mastering this system is arguably the single most important combat skill in the game — a player who can consistently land perfect dodges can clear Professional difficulty with minimal resource expenditure.</p>
+
+            <h3>Standard Dodge (Quick Step)</h3>
+            <p>The basic dodge is performed by pressing the dodge button (Circle/B/R1 depending on your control scheme) with a directional input. The quick step covers roughly 2 meters of distance and grants approximately 8 frames of invincibility (at 60fps). Use this to reposition away from wide sweeping attacks or to create distance for a reload. The standard dodge has a recovery window of about 20 frames during which you cannot act — so spamming it will get you caught mid-animation.</p>
+
+            <h3>Timed Dodge</h3>
+            <p>A timed dodge occurs when you press the dodge button within 6–10 frames of an attack connecting. The character performs a more dramatic sidestep with extended invincibility (roughly 15 frames) and a shorter recovery window. The screen briefly flashes and a distinct audio cue plays. Timed dodges also restore a small amount of the Perfect Dodge gauge (more on that below).</p>
+
+            <h3>Perfect Dodge</h3>
+            <p>The perfect dodge is the crown jewel of RE Requiem's combat. Press dodge within <strong>3 frames</strong> of an attack hitting you and the game enters a brief slow-motion state (approximately 1 second of real time). During this window:</p>
+
+            <ul>
+                <li><strong>Time slows</strong> for everything except your character</li>
+                <li><strong>A reticle appears</strong> over the enemy's weakpoint</li>
+                <li><strong>Your next shot deals 3x damage</strong> if fired during the slow-motion window</li>
+                <li><strong>Melee follow-ups</strong> gain guaranteed stagger and bonus damage</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Frame Data:</strong> At 60fps, the perfect dodge window is approximately 3 frames (50ms). At 30fps, this becomes a 2-frame window. The input is read on the frame the attack's hitbox first overlaps your character's hurtbox — not when the animation starts. This means faster attacks have tighter windows relative to their telegraph.</p>
+            </div>
+
+            <p>For a deep dive into perfect dodge timing, training methods, and every enemy's attack patterns, see our dedicated <a href="perfect-dodge-guide.html">Perfect Dodge Guide</a>.</p>
+
+            <h2 id="parry-system">THE PARRY SYSTEM: DEFLECT, COUNTER &amp; RIPOSTE</h2>
+
+            <p>RE Requiem introduces a brand-new parry mechanic that was not present in RE4 Remake or Village. By pressing the block/parry button (L1/LB) with precise timing, you can deflect incoming melee attacks and projectiles, opening enemies up for devastating counter-attacks.</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr>
+                        <th>Parry Type</th>
+                        <th>Timing Window</th>
+                        <th>Result</th>
+                        <th>Damage Multiplier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Block</strong></td>
+                        <td>Hold L1 (any time)</td>
+                        <td>Reduces damage by 60%, drains stamina</td>
+                        <td>0.4x</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Deflect</strong></td>
+                        <td>L1 within 8 frames</td>
+                        <td>Nullifies damage, minor stagger</td>
+                        <td>1.0x follow-up</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Perfect Parry</strong></td>
+                        <td>L1 within 3 frames</td>
+                        <td>Full counter window, guaranteed stagger</td>
+                        <td>2.5x follow-up</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Riposte</strong></td>
+                        <td>Attack during perfect parry stun</td>
+                        <td>Unique animation, massive damage</td>
+                        <td>4.0x</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>What Can and Cannot Be Parried</h3>
+            <p>Not every attack in the game can be parried. Here is the general rule: <strong>if the attack has a physical component (claw, blade, tentacle, thrown object), it can be parried.</strong> Projectile attacks from firearms cannot be parried — you must dodge or take cover. Some boss attacks have a red visual trail indicating they are <strong>unparriable</strong> — these must be dodged. Yellow-trail attacks can be parried but have tighter windows.</p>
+
+            <div class="info-box">
+                <p><strong>Pro Tip:</strong> The Combat Knife has the largest parry window of any weapon (roughly +2 frames) but deals less riposte damage. The <a href="secrets-guide.html">Primal Knife</a> (infinite durability) is the best parry tool in the game since it never breaks — making it ideal for extended boss fights where knife durability would otherwise be a concern.</p>
+            </div>
+
+            <h2 id="melee-combat">MELEE COMBAT: COMBOS, STAGGERS &amp; CONTEXTUAL ATTACKS</h2>
+
+            <p>Melee in RE Requiem is far more developed than in any previous Resident Evil game. Beyond the standard knife slash, the game features a full combo system, contextual melee attacks triggered by enemy states, and weapon-specific melee movesets.</p>
+
+            <h3>Basic Melee Combo</h3>
+            <p>The standard melee combo (R2/RT with a melee weapon equipped) is a 3-hit string: slash, slash, kick. The third hit always causes a short stagger. The combo can be cancelled into a dodge at any point, which is essential for maintaining offensive pressure without overcommitting.</p>
+
+            <h3>Contextual Melee Attacks</h3>
+            <p>When an enemy is in a specific state, pressing the melee button triggers a unique high-damage attack:</p>
+            <ul>
+                <li><strong>Staggered enemy</strong> → Roundhouse kick (massive damage, AoE knockback)</li>
+                <li><strong>Knocked-down enemy</strong> → Ground stab (3x melee damage, guaranteed)</li>
+                <li><strong>Enemy at wall</strong> → Wall slam (pins enemy, free follow-up)</li>
+                <li><strong>Perfect dodge → melee</strong> → Counter-slash (2.5x damage, brief invincibility)</li>
+                <li><strong>Perfect parry → melee</strong> → Riposte (4.0x damage, unique animation per enemy)</li>
+                <li><strong>Enemy grabbed you → escape</strong> → Shove kick (creates distance, minor damage)</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Stagger Threshold:</strong> Every enemy has a hidden stagger value. Dealing enough damage to a specific body part (usually the head or legs) fills this threshold and triggers a stagger state. Staggered enemies are vulnerable to contextual melee attacks, which deal significantly more damage than standard attacks and cost no ammo.</p>
+            </div>
+
+            <h3>Knife Durability</h3>
+            <p>The Combat Knife has limited durability in RE Requiem. Each parry, each melee hit, and each defensive use consumes durability. When it breaks, you lose the ability to parry and your melee damage drops to a bare-fist punch (minimal damage). Always carry a backup knife or, better yet, unlock the <a href="infinite-ammo-guide.html">Primal Knife</a> from the Mr. Raccoon collectible quest for infinite durability.</p>
+
+            <h2 id="ranged-combat">RANGED COMBAT: AIMING, WEAPON SWAY &amp; PRECISION</h2>
+
+            <p>Ranged combat is the backbone of RE Requiem's gameplay loop. Understanding the aiming mechanics, weapon handling stats, and how to maximize damage per shot is critical for conserving resources on higher difficulties.</p>
+
+            <h3>Aiming Fundamentals</h3>
+            <p>When you aim (L2/LT), the camera shifts to an over-the-shoulder view. Your character's <strong>weapon handling stat</strong> determines how quickly the reticle stabilizes. Higher handling = less sway = more accurate shots. The sway pattern is not random — it follows a figure-eight motion that can be learned and compensated for.</p>
+
+            <h3>Critical Hit Zones</h3>
+            <p>Every enemy has designated critical hit zones that deal bonus damage and have increased stagger chance:</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr>
+                        <th>Enemy Type</th>
+                        <th>Primary Weakpoint</th>
+                        <th>Bonus Damage</th>
+                        <th>Stagger Chance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lycans</td>
+                        <td>Head (exposed face)</td>
+                        <td>2.5x</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Cultists (armored)</td>
+                        <td>Legs (unarmored)</td>
+                        <td>1.8x</td>
+                        <td>Very High</td>
+                    </tr>
+                    <tr>
+                        <td>Moroi (bat enemies)</td>
+                        <td>Wing membranes</td>
+                        <td>2.0x</td>
+                        <td>Guaranteed ground</td>
+                    </tr>
+                    <tr>
+                        <td>Revenants</td>
+                        <td>Parasite node (back)</td>
+                        <td>3.0x</td>
+                        <td>Instant kill (node)</td>
+                    </tr>
+                    <tr>
+                        <td>Bosses (general)</td>
+                        <td>Glowing mutation point</td>
+                        <td>2.0–3.0x</td>
+                        <td>Phase-dependent</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Weapon Sway Reduction</h3>
+            <p>Several factors reduce weapon sway and improve accuracy:</p>
+            <ul>
+                <li><strong>Weapon handling upgrades</strong> at the Merchant reduce sway by up to 40%</li>
+                <li><strong>Standing still</strong> for 1 second before firing reduces sway by 25%</li>
+                <li><strong>Crouching</strong> reduces sway by an additional 15%</li>
+                <li><strong>Focus Ring</strong> accessory (unlockable) reduces sway by 20% when HP is above 75%</li>
+                <li><strong>Adrenaline</strong> (crafted item) eliminates all sway for 30 seconds</li>
+            </ul>
+
+            <h2 id="enemy-weakpoints">ENEMY WEAKPOINTS &amp; EXPLOITATION</h2>
+
+            <p>RE Requiem features 14 distinct enemy types, each with unique behaviors, resistances, and weakpoints. Knowing which ammo type to use and where to aim saves enormous amounts of resources over a full playthrough. For a complete enemy breakdown with stats and strategies, see our <a href="enemies-guide.html">Enemies Guide</a>.</p>
+
+            <h3>Ammo Effectiveness Matrix</h3>
+            <table class="quick-table">
+                <thead>
+                    <tr>
+                        <th>Ammo Type</th>
+                        <th>Best Against</th>
+                        <th>Worst Against</th>
+                        <th>Special Property</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Handgun</strong></td>
+                        <td>Lycans, Cultists</td>
+                        <td>Armored enemies</td>
+                        <td>High crit chance on headshots</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Shotgun</strong></td>
+                        <td>Close-range groups, Moroi</td>
+                        <td>Distant targets</td>
+                        <td>Guaranteed stagger at close range</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rifle</strong></td>
+                        <td>Revenants, weakpoints</td>
+                        <td>Fast-moving enemies</td>
+                        <td>Penetrates armor, high precision</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Magnum</strong></td>
+                        <td>Bosses, heavy enemies</td>
+                        <td>Nothing (universal)</td>
+                        <td>Massive damage, scarce ammo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SMG</strong></td>
+                        <td>Weak enemies, suppress</td>
+                        <td>Armored targets</td>
+                        <td>High rate of fire, low per-shot</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bolt Rifle</strong></td>
+                        <td>Silent takedowns</td>
+                        <td>Multiple enemies</td>
+                        <td>Retrievable bolts, stealth bonus</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <p><strong>Ammo Conservation Rule:</strong> On Hardcore and Professional difficulty, never use Magnum rounds on standard enemies. Save them for bosses and the 3–4 heavy enemy encounters per chapter. A single Magnum round can deal more damage than an entire Handgun magazine — but you will only find 2–4 Magnum rounds per chapter.</p>
+            </div>
+
+            <h2 id="combat-resource-management">COMBAT RESOURCE MANAGEMENT</h2>
+
+            <p>RE Requiem is a survival horror game at its core, and resource management is a combat mechanic in itself. Every bullet you fire, every herb you consume, and every knife parry that costs durability is a decision with consequences. Here are the key principles:</p>
+
+            <h3>The Combat Cost Hierarchy</h3>
+            <p>Not all combat actions cost the same resources. Understanding the hierarchy helps you choose the most efficient approach for each encounter:</p>
+            <ol>
+                <li><strong>Free actions (zero cost):</strong> Perfect dodge follow-up melee, contextual melee on staggered enemies, environmental kills (explosive barrels, traps)</li>
+                <li><strong>Knife actions (low cost):</strong> Parries, knife slashes, stealth takedowns — cost only durability</li>
+                <li><strong>Handgun ammo (moderate cost):</strong> Common but not infinite, especially on Professional</li>
+                <li><strong>Shotgun/Rifle ammo (high cost):</strong> Scarcer, should be reserved for specific threats</li>
+                <li><strong>Magnum ammo (premium cost):</strong> Extremely rare, boss-only resource</li>
+                <li><strong>Health items (critical cost):</strong> Herbs and first aid sprays are the most valuable resource in the game</li>
+            </ol>
+
+            <div class="highlight-box">
+                <p><strong>The 3-Shot Rule:</strong> On Standard difficulty, most standard enemies can be defeated with 3 headshots from an upgraded handgun + 1 contextual melee attack. If you are spending more than 5 shots per standard enemy, you are missing headshots or not following up on staggers. Practice your aim.</p>
+            </div>
+
+            <h3>When to Fight vs. When to Run</h3>
+            <p>Not every encounter needs to be a fight. RE Requiem's level design often provides routes to bypass enemies entirely. The general rule: <strong>if an area has no loot you need and you can run through without taking damage, run.</strong> Every enemy you skip is ammo saved for a fight that matters. This is especially true in Chapter 7 and Chapter 10, where resource scarcity peaks. For more survival strategies, see our <a href="survival-horror-tips.html">Survival Horror Tips</a> guide.</p>
+
+            <h2 id="advanced-techniques">ADVANCED COMBAT TECHNIQUES</h2>
+
+            <p>Once you have mastered the fundamentals, these advanced techniques will elevate your combat to Professional-level efficiency.</p>
+
+            <h3>Dodge-Cancel Animation Recovery</h3>
+            <p>Every attack animation in RE Requiem can be cancelled into a dodge after the damage frame has been applied. This means you can fire a shotgun blast and immediately dodge-cancel the pump animation, saving roughly 15 frames per shot. This technique is essential for maintaining DPS on aggressive bosses while staying safe.</p>
+
+            <h3>Stagger Chaining</h3>
+            <p>When you stagger an enemy with a headshot, you have a 3-second window to land a contextual melee attack. But here is the advanced technique: if you shoot the enemy's legs <em>while they are recovering from the melee attack</em>, you can trigger a second stagger. This "stagger chain" lets you lock down a single enemy indefinitely with precise timing — no ammo wasted on missed shots, no damage taken.</p>
+
+            <h3>Ammo Switching for Damage Stacking</h3>
+            <p>Different ammo types apply different stagger values independently. Switching from Handgun to Shotgun mid-combo can trigger a stagger faster than using either weapon alone. The optimal combo for a Lycan is: Handgun headshot → Handgun headshot → switch to Shotgun → close-range blast → contextual melee. This defeats a standard Lycan in 5 shots total on Hardcore difficulty.</p>
+
+            <h3>Environmental Combat</h3>
+            <p>RE Requiem's environments are full of exploitable hazards:</p>
+            <ul>
+                <li><strong>Explosive barrels</strong> deal 500 damage in a wide radius — enough to kill most standard enemies instantly</li>
+                <li><strong>Trap wires</strong> can be shot to trigger them on passing enemies</li>
+                <li><strong>Electrical panels</strong> can be shot to create temporary shock zones</li>
+                <li><strong>Red barrels</strong> (distinct from explosive) create fire zones that deal damage over time</li>
+                <li><strong>Chandeliers</strong> in the Estate can be dropped on groups below</li>
+            </ul>
+
+            <h2 id="difficulty-combat-differences">HOW COMBAT CHANGES BY DIFFICULTY</h2>
+
+            <p>Each difficulty level in RE Requiem doesn't just change enemy HP — it fundamentally alters combat mechanics. For a full difficulty comparison, see our <a href="difficulty-guide.html">Difficulty Guide</a>.</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr>
+                        <th>Mechanic</th>
+                        <th>Standard</th>
+                        <th>Hardcore</th>
+                        <th>Professional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Perfect dodge window</td>
+                        <td>5 frames</td>
+                        <td>4 frames</td>
+                        <td>3 frames</td>
+                    </tr>
+                    <tr>
+                        <td>Parry window</td>
+                        <td>10 frames</td>
+                        <td>7 frames</td>
+                        <td>5 frames</td>
+                    </tr>
+                    <tr>
+                        <td>Enemy stagger threshold</td>
+                        <td>Base value</td>
+                        <td>+40%</td>
+                        <td>+80%</td>
+                    </tr>
+                    <tr>
+                        <td>Ammo drop rate</td>
+                        <td>100%</td>
+                        <td>65%</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>Knife durability loss</td>
+                        <td>Base value</td>
+                        <td>+50%</td>
+                        <td>+100%</td>
+                    </tr>
+                    <tr>
+                        <td>Enemy attack speed</td>
+                        <td>Base value</td>
+                        <td>+15%</td>
+                        <td>+30%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <p><strong>Professional Difficulty Note:</strong> On Professional, the perfect dodge window shrinks to 3 frames (50ms at 60fps). This is the same timing window as a Street Fighter 6 Just Frame. If you are struggling, practice on the Lycan enemies in Chapter 1 — their lunging claw attack has a clear telegraph and is the easiest attack to learn perfect dodge timing on.</p>
+            </div>
+
+            <h2 id="training">TRAINING YOUR COMBAT SKILLS</h2>
+
+            <p>RE Requiem includes a Combat Training mode accessible from the main menu after completing Chapter 3. This mode lets you practice against any enemy type you have encountered, with unlimited ammo and health. Here is the recommended training progression:</p>
+
+            <ol>
+                <li><strong>Phase 1 — Dodge Training:</strong> Practice standard dodges and timed dodges against Lycans for 15 minutes. Focus on the timing of the audio cue, not the visual animation.</li>
+                <li><strong>Phase 2 — Perfect Dodge:</strong> Same enemies, but now aim for the perfect dodge window. Listen for the distinct "whoosh" sound that signals a perfect dodge. Once you can land 3 in a row, move on.</li>
+                <li><strong>Phase 3 — Parry Training:</strong> Practice against Cultist swordsmen. Their 3-hit combo is the best attack pattern for learning parry timing. Start with blocks, then deflects, then perfect parries.</li>
+                <li><strong>Phase 4 — Combo Integration:</strong> Practice the full combat loop: dodge → counter-shot → stagger → contextual melee → reposition. This is the bread-and-butter flow of RE Requiem combat.</li>
+                <li><strong>Phase 5 — Boss Application:</strong> Apply everything against the boss training dummy. Practice reading attack telegraphs, managing distance, and knowing when to heal vs. when to push damage.</li>
+            </ol>
+
+            <h2 id="faq">FREQUENTLY ASKED QUESTIONS</h2>
+
+            <div class="tip-card">
+                <div class="tip-number">Q1</div>
+                <h3>Can you parry boss attacks in RE Requiem?</h3>
+                <p>Most boss melee attacks can be parried, but with tighter timing windows than standard enemies. Attacks with a <strong>red visual trail</strong> are unparriable and must be dodged. Attacks with a <strong>yellow trail</strong> can be parried but have a 2-frame tighter window. Every boss has at least one parriable attack pattern — learning which attacks to parry and which to dodge is the key to efficient boss combat.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q2</div>
+                <h3>Is melee-only viable in RE Requiem?</h3>
+                <p>On Standard difficulty, a melee-only run is possible but extremely challenging. The Primal Knife (infinite durability) makes it more feasible, but several enemies and bosses are designed to be fought at range. On Hardcore and Professional, melee-only is essentially impossible due to increased enemy aggression, tighter parry windows, and enemies that specifically punish close-range play.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q3</div>
+                <h3>What is the best weapon for combat in RE Requiem?</h3>
+                <p>The <strong>SG-09R Handgun</strong> fully upgraded is the best all-around combat weapon due to its high critical hit rate, fast handling, and abundant ammo. For raw damage, the <strong>Broken Butterfly Magnum</strong> is unmatched. For crowd control, the <strong>Striker Shotgun</strong> excels. The "best" weapon depends on the encounter — see our <a href="weapons-guide.html">Weapons Guide</a> for detailed comparisons.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q4</div>
+                <h3>How do I deal with enemies that grab me?</h3>
+                <p>When grabbed, rapidly tap the prompted button to escape. Escaping costs roughly 15% of your max HP on Standard. The key is prevention: enemies have a distinct audio and visual telegraph before grabs. Most grab attacks can be interrupted with a well-timed shot or parried if the enemy uses a melee grab. Wearing the <strong>Grab Guard</strong> accessory reduces grab damage by 50%.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q5</div>
+                <h3>Does difficulty affect combat mechanics or just enemy stats?</h3>
+                <p>Both. Higher difficulties reduce perfect dodge and parry windows (frame-level changes), increase enemy attack speed and aggression, reduce ammo drops, and increase enemy stagger thresholds. It is not simply "enemies have more HP" — the game genuinely becomes a faster, tighter action game on Professional. See the <a href="difficulty-guide.html">Difficulty Guide</a> for a full breakdown.</p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Looking for more?</strong> Check our <a href="perfect-dodge-guide.html">Perfect Dodge Guide</a> for frame-perfect timing drills, our <a href="boss-guide.html">Boss Guide</a> for encounter-specific combat strategies, and our <a href="survival-horror-tips.html">Survival Horror Tips</a> for resource-efficient play strategies across all difficulty levels.</p>
+            </div>
+
+            <h2 id="conclusion">FINAL THOUGHTS</h2>
+            <p>Resident Evil Requiem's combat system is the deepest and most rewarding in the franchise's history. The interplay between perfect dodges, parries, contextual melee, and resource management creates a combat loop that is simultaneously accessible on Standard and brutally demanding on Professional. The key takeaway is this: <strong>combat efficiency is not about dealing the most damage — it's about dealing the most damage per resource spent.</strong> A player who lands perfect dodges and follows up with free contextual melee attacks will conserve far more ammo than a player who unloads entire magazines at center mass.</p>
+            <p>Practice the fundamentals in Combat Training, learn each enemy's weakpoint and stagger threshold, and always ask yourself before firing: "Is there a cheaper way to handle this?" The answer is almost always yes. For the complete RE Requiem experience, pair this guide with our <a href="walkthrough.html">Complete Walkthrough</a>, <a href="crafting-guide.html">Crafting Guide</a>, and <a href="weapons-guide.html">Weapons Guide</a>.</p>
+
+            <a href="index.html" class="back-link">&larr; BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="perfect-dodge-guide.html">Perfect Dodge Guide</a>
+            <a href="weapons-guide.html">Weapons Guide</a>
+            <a href="boss-guide.html">Boss Guide</a>
+            <a href="enemies-guide.html">Enemies Guide</a>
+            <a href="survival-horror-tips.html">Survival Tips</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated July 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+    <script>
+        (function(){
+            var u=encodeURIComponent(window.location.href);
+            var t=encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+            document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+            document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+            document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b=document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title="Copied!";
+                setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+            });
+        }
+    </script>
+</body>
+</html>
