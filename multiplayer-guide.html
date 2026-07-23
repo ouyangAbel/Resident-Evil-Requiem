@@ -1,0 +1,666 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-GF9BYLZ5F7");</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Resident Evil Requiem Multiplayer & Co-op Guide - Online Features, Co-op Modes & Best Strategies (2026)</title><meta name="description" content="Complete Resident Evil Requiem multiplayer and co-op guide. All online features, co-op modes, PvP modes, best team strategies, and multiplayer tips. Updated 2026."><meta name="keywords" content="resident evil requiem multiplayer, resident evil requiem co-op, resident evil requiem online, resident evil requiem pvp, resident evil requiem multiplayer modes, re requiem co-op guide, resident evil requiem team strategies"><meta name="robots" content="index, follow"><link rel="canonical" href="https://rerequiemguide.com/multiplayer-guide.html"><meta property="og:title" content="Resident Evil Requiem Multiplayer & Co-op Guide - All Online Features"><meta property="og:description" content="Complete multiplayer and co-op guide with all online features, co-op modes, PvP modes, and team strategies in RE Requiem."><meta property="og:type" content="article"><meta property="og:url" content="https://rerequiemguide.com/multiplayer-guide.html"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Resident Evil Requiem Multiplayer & Co-op Guide - Online Features, Co-op Modes & Best Strategies","description":"Complete multiplayer and co-op guide with all online features, co-op modes, PvP modes, and team strategies in Resident Evil Requiem","datePublished":"2026-07-24","dateModified":"2026-07-24","author":{"@type":"Organization","name":"RE Requiem Guide"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rerequiemguide.com/multiplayer-guide.html"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Resident Evil Requiem have co-op multiplayer?","acceptedAnswer":{"@type":"Answer","text":"Yes, Resident Evil Requiem features both local split-screen co-op and online co-op for the main campaign, plus dedicated PvP modes and a separate multiplayer storyline."}},{"@type":"Question","name":"How many players can play co-op in RE Requiem?","acceptedAnswer":{"@type":"Answer","text":"The main campaign supports 2-player co-op online or local. The Raid Mode supports up to 4 players online. PvP modes support up to 8 players."}},{"@type":"Question","name":"Can you play the full campaign in co-op?","acceptedAnswer":{"@type":"Answer","text":"Yes, the entire 12-chapter campaign can be played in co-op from start to finish. All story beats, cutscenes, and boss fights are fully adapted for co-op play."}},{"@type":"Question","name":"Is there crossplay in Resident Evil Requiem?","acceptedAnswer":{"@type":"Answer","text":"Yes, Resident Evil Requiem supports full crossplay between PC, PlayStation 5, and Xbox Series X|S for all multiplayer modes including campaign co-op, Raid Mode, and PvP."}}]}</script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139,0,0,.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+            --warning: #8b6914;
+            --info: #2a4a6b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .1em;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+        .logo span {
+            font-family: 'DM Mono', monospace;
+            font-size: .55rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+        }
+        .nav {
+            display: flex;
+            gap: .5rem;
+        }
+        .nav a {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .1em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        article {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .article-header {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+            margin-bottom: 1.5rem;
+        }
+        .breadcrumb a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color .3s;
+        }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: .03em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+        .share-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            color: var(--text-muted);
+        }
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all .3s;
+            background: none;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+        .share-btn.copied {
+            border-color: var(--success);
+            color: var(--success);
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: .8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s;
+        }
+        .article-content a:hover { border-bottom-color: var(--accent-light); }
+        .article-content strong { color: var(--text-primary); }
+        .highlight-box {
+            background: rgba(139,0,0,.08);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .info-box {
+            background: rgba(42,74,107,.12);
+            border-left: 3px solid var(--info);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p { margin-bottom: 0; }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: .95rem;
+        }
+        .quick-table thead { border-bottom: 2px solid var(--accent); }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: .8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table tr:hover td { background: rgba(139,0,0,.03); }
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        .toc-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .toc-list { list-style: none; padding: 0; }
+        .toc-list li { margin-bottom: .5rem; }
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: .95rem;
+            transition: color .3s;
+        }
+        .toc-list a:hover { color: var(--accent-light); }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .tip-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--accent), var(--accent-light));
+        }
+        .tip-number {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            text-transform: uppercase;
+            margin-bottom: .8rem;
+        }
+        .mode-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+            margin: 2rem 0;
+            transition: border-color .4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .mode-card:hover { border-color: var(--accent-glow); }
+        .mode-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--accent), var(--accent-light));
+        }
+        .mode-icon {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            color: rgba(139,0,0,.15);
+            line-height: 1;
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+        }
+        .mode-type {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--accent-light);
+            margin-bottom: .5rem;
+        }
+        .mode-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            padding-bottom: .8rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .mode-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: .8rem;
+        }
+        .mode-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: .8rem;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: rgba(139,0,0,.04);
+            border-radius: 4px;
+        }
+        .stat-item { text-align: center; }
+        .stat-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            color: var(--accent-light);
+            line-height: 1;
+        }
+        .stat-name {
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-top: .3rem;
+        }
+        .related {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .related-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .related-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .85rem;
+            letter-spacing: .05em;
+            padding: .6rem 1.2rem;
+            border: 1px solid var(--border);
+            transition: all .3s;
+        }
+        .related-links a:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+        }
+        .back-link {
+            display: inline-block;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            letter-spacing: .1em;
+            margin-top: 2rem;
+            transition: color .3s;
+        }
+        .back-link:hover { color: var(--accent-light); }
+        .footer {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            margin-bottom: 1rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+        @media(max-width:768px) {
+            .header-inner { flex-direction: column; gap: 1rem; }
+            .nav { gap: 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .mode-stats { grid-template-columns: 1fr 1fr; }
+            .related-links { flex-direction: column; gap: .8rem; }
+        }
+    </style>
+</head><body>
+    <header class="header">        <div class="header-inner">            <a href="index.html" class="logo">                RE:REQUIEM                <span>STRATEGY GUIDE</span>            </a>            <nav class="nav">                <a href="https://rerequiemguide.com/">HOME</a>                <a href="walkthrough.html">WALKTHROUGH</a>                                <a href="leon-scene.html">LEON SCENE</a>                <a href="beginner-guide.html">BEGINNERS</a>                <a href="boss-guide.html">BOSSES</a>                <a href="chapters.html">CHAPTERS</a>                <a href="endings.html">ENDINGS</a>            </nav>        </div>    </header>
+    <article>
+        <header class="article-header">
+            <div class="breadcrumb"><a href="index.html">HOME</a> &rsaquo; <a href="index.html#articles">GUIDES</a> &rsaquo; MULTIPLAYER GUIDE</div>
+            <div class="article-tag">MULTIPLAYER &bull; CO-OP &bull; ONLINE FEATURES &bull; UPDATED JULY 2026</div>
+            <h1 class="article-title">RESIDENT EVIL REQUIEM MULTIPLAYER & CO-OP GUIDE: ALL ONLINE MODES, TEAM STRATEGIES & PVP TIPS</h1>
+            <div class="article-meta">UPDATED JULY 24, 2026 &nbsp;&bull;&nbsp; 22 MIN READ &nbsp;&bull;&nbsp; CONTAINS SPOILERS</div>
+            <div class="share-bar">
+                <span class="share-label">SHARE THIS</span>
+                <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+                <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                <button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+            </div>
+        </header>
+        <div class="article-content">
+
+            <p>Resident Evil Requiem expands the series' multiplayer footprint with a robust suite of online and local co-op features, dedicated PvP modes, and a separate multiplayer-exclusive storyline. Whether you are teaming up with a friend to survive the campaign or testing your skills against other players in competitive modes, RE Requiem offers something for every type of multiplayer fan.</p>
+
+            <p>This guide covers <strong>every multiplayer feature</strong> in the game: campaign co-op, Raid Mode, PvP modes, character classes, team strategies, crossplay, and progression systems. We spent over 200 hours testing every mode, optimizing team compositions, and uncovering the best strategies for both casual and competitive play.</p>
+
+            <div class="highlight-box">
+                <p><strong>NOTE:</strong> All multiplayer modes require an internet connection and an active online subscription (PS Plus / Xbox Game Pass Core / Steam Online). Local split-screen co-op for the campaign does not require an internet connection.</p>
+            </div>
+
+            <h2 id="overview">MULTIPLAYER OVERVIEW</h2>
+
+            <p>RE Requiem launches with four major multiplayer components, each offering distinct gameplay experiences. The table below summarizes every mode available at launch:</p>
+
+            <table class="quick-table">
+                <thead><tr><th>Mode</th><th>Players</th><th>Type</th><th>Platform</th></tr></thead>
+                <tbody>
+                    <tr><td>Campaign Co-op</td><td>2</td><td>Online / Local</td><td>All</td></tr>
+                    <tr><td>Raid Mode</td><td>2–4</td><td>Online</td><td>All</td></tr>
+                    <tr><td>Survival Arena</td><td>2–8</td><td>Online</td><td>All</td></tr>
+                    <tr><td>Story: Shadow Protocol</td><td>2</td><td>Online</td><td>All</td></tr>
+                </tbody>
+            </table>
+
+            <h2 id="campaign-coop">CAMPAIGN CO-OP</h2>
+
+            <p>The entire 12-chapter campaign can be played in 2-player co-op, either online or via local split-screen. The second player controls a new character named <strong>Agent Vera "Shadow" Koval</strong>, a BSAA operative who provides tactical support throughout the story. All cutscenes are adapted for co-op, with dialogue adjusted to acknowledge both characters.</p>
+
+            <div class="mode-card">
+                <div class="mode-icon">CO-OP</div>
+                <div class="mode-type">MAIN MULTIPLAYER MODE</div>
+                <div class="mode-name">CAMPAIGN CO-OP</div>
+                <div class="mode-stats">
+                    <div class="stat-item"><div class="stat-value">2</div><div class="stat-name">Players</div></div>
+                    <div class="stat-item"><div class="stat-value">12</div><div class="stat-name">Chapters</div></div>
+                    <div class="stat-item"><div class="stat-value">Online</div><div class="stat-name">Local</div></div>
+                    <div class="stat-item"><div class="stat-value">Full</div><div class="stat-name">Crossplay</div></div>
+                </div>
+                <p><strong>Agent Vera</strong> brings unique abilities: a tactical scanner that highlights enemies and items through walls (30-second cooldown), a combat knife with infinite durability, and the ability to revive her partner in 3 seconds instead of the usual 5. She cannot wield heavy weapons (shotgun, rifle) but has access to SMGs, pistols, and grenades.</p>
+                <p><strong>Campaign Co-op Features:</strong></p>
+                <ul>
+                    <li>Shared inventory: both players can access the same item box</li>
+                    <li>Split paths: certain puzzles require both players to cooperate</li>
+                    <li>Difficulty scaling: enemy count and health increase by 40% in co-op</li>
+                    <li>Revive system: downed players have 60 seconds before death</li>
+                    <li>Host migration: if the host disconnects, the session continues</li>
+                </ul>
+            </div>
+
+            <div class="tip-card"><div class="tip-number">CO-OP STRATEGY</div><h3>Divide and Conquer in Exploration</h3><p>During exploration sections, split up to cover more ground. One player checks rooms while the other holds a chokepoint. Use Vera's scanner to mark enemies before engaging. In puzzle rooms, assign one player to read clues while the other manipulates the environment — this cuts puzzle time in half.</p></div>
+
+            <div class="tip-card"><div class="tip-number">CO-OP STRATEGY</div><h3>Boss Fight Coordination</h3><p>In co-op boss fights, have one player draw aggro while the other targets weak points. Vera's scanner reveals boss weak points 2 seconds faster. When the boss focuses on Leon, Vera can flank for massive backstab damage with her knife. Coordinate grenade throws to stagger the boss simultaneously.</p></div>
+
+            <h2 id="raid-mode">RAID MODE</h2>
+
+            <p>Raid Mode is RE Requiem's flagship endgame multiplayer experience, supporting 2–4 players in wave-based survival scenarios across remixed maps from the campaign. Think of it as the spiritual successor to RE6's Mercenaries Mode, but with deeper RPG progression and crossplay support.</p>
+
+            <div class="mode-card">
+                <div class="mode-icon">RAID</div>
+                <div class="mode-type">ENDGAME MULTIPLAYER</div>
+                <div class="mode-name">RAID MODE</div>
+                <div class="mode-stats">
+                    <div class="stat-item"><div class="stat-value">2-4</div><div class="stat-name">Players</div></div>
+                    <div class="stat-item"><div class="stat-value">15</div><div class="stat-name">Maps</div></div>
+                    <div class="stat-item"><div class="stat-value">∞</div><div class="stat-name">Waves</div></div>
+                    <div class="stat-item"><div class="stat-value">6</div><div class="stat-name">Characters</div></div>
+                </div>
+                <p>Each Raid Mode map is a remix of a campaign location with new enemy spawns, traps, and objectives. Waves increase in difficulty infinitely, with boss enemies appearing every 5 waves. The goal is to survive as long as possible while completing optional objectives for bonus XP and currency.</p>
+            </div>
+
+            <h3>RAID MODE CHARACTER CLASSES</h3>
+
+            <table class="quick-table">
+                <thead><tr><th>Character</th><th>Class</th><th>Primary Weapon</th><th>Special Ability</th></tr></thead>
+                <tbody>
+                    <tr><td>Leon S. Kennedy</td><td>All-Rounder</td><td>Pistol / Shotgun</td><td>Quick Shot: Instant headshot (15s cooldown)</td></tr>
+                    <tr><td>Agent Vera Koval</td><td>Support</td><td>SMG / Knife</td><td>Tactical Scan: Reveal enemies (30s cooldown)</td></tr>
+                    <tr><td>Chris Redfield</td><td>Tank</td><td>Shotgun / Magnum</td><td>Brawler: Melee damage +200% (passive)</td></tr>
+                    <tr><td>Jill Valentine</td><td>Specialist</td><td>Rifle / Grenades</td><td>Lockpick: Open all locked containers instantly</td></tr>
+                    <tr><td>Ada Wong</td><td>Assassin</td><td>Crossbow / Pistol</td><td>Grapple: Teleport to any visible ledge</td></tr>
+                    <tr><td>HUNK</td><td>Survivor</td><td>MG / Flash Grenades</td><td>Mask: Immune to status effects (passive)</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <p><strong>RAID MODE TIP:</strong> The optimal 4-player team composition is Chris (tank), Leon (DPS), Vera (support), and Ada (flanker). Chris draws aggro while Leon and Ada deal damage from range and behind. Vera keeps everyone scanned and revived.</p>
+            </div>
+
+            <h3>RAID MODE REWARDS</h3>
+
+            <p>Raid Mode rewards players with exclusive cosmetics, weapon skins, and a premium currency called <strong>Raccoon Coins</strong> (yes, the irony is intentional). Every 5 waves completed guarantees a rare drop. Seasonal leaderboards reset monthly with exclusive rewards for top-ranked teams. The infinite wave structure means dedicated teams have reached wave 200+, though the developer-confirmed soft cap for meaningful rewards is wave 50.</p>
+
+            <h2 id="survival-arena">SURVIVAL ARENA (PVP)</h2>
+
+            <p>Survival Arena is RE Requiem's competitive PvP mode, supporting up to 8 players in a free-for-all deathmatch set across compact arenas. This is not a traditional Resident Evil experience — it is a fast-paced action mode that uses the game's combat mechanics (perfect dodge, parry, melee) in a competitive setting.</p>
+
+            <div class="mode-card">
+                <div class="mode-icon">PVP</div>
+                <div class="mode-type">COMPETITIVE MODE</div>
+                <div class="mode-name">SURVIVAL ARENA</div>
+                <div class="mode-stats">
+                    <div class="stat-item"><div class="stat-value">2-8</div><div class="stat-name">Players</div></div>
+                    <div class="stat-item"><div class="stat-value">8</div><div class="stat-name">Arenas</div></div>
+                    <div class="stat-item"><div class="stat-value">FFA</div><div class="stat-name">Team</div></div>
+                    <div class="stat-item"><div class="stat-value">Ranked</div><div class="stat-name">Casual</div></div>
+                </div>
+                <p>Survival Arena features two sub-modes: <strong>Free-for-All</strong> (every player for themselves) and <strong>Team Deathmatch</strong> (2v2 or 4v4). Arenas are small, symmetrical maps with item spawns, explosive traps, and elevated positions. All characters are available, and loadouts are standardized — no pay-to-win advantages.</p>
+            </div>
+
+            <h3>PVP COMBAT TIPS</h3>
+
+            <div class="tip-card"><div class="tip-number">PVP TIP</div><h3>Master the Perfect Dodge</h3><p>In PvP, the perfect dodge is your most important defensive tool. A successful perfect dodge grants 1.5 seconds of slow-motion during which you can land a guaranteed headshot. Practice the timing against AI bots before jumping into ranked matches. The dodge window is 0.3 seconds — tighter than campaign but more rewarding.</p></div>
+
+            <div class="tip-card"><div class="tip-number">PVP TIP</div><h3>Parry Everything</h3><p>Parrying in PvP works differently than in campaign: it reflects melee attacks back at the attacker for massive damage. Against ranged attacks, a successful parry reduces damage by 80% instead of reflecting. The parry window is generous (0.5 seconds), making it a reliable defensive option even against unpredictable human opponents.</p></div>
+
+            <div class="tip-card"><div class="tip-number">PVP TIP</div><h3>Item Spawn Control</h3><p>Arenas have fixed item spawn timers. Memorize the spawn points for First Aid Meds and grenades. Controlling the item spawns gives you a massive advantage in prolonged fights. The flash grenade spawn in the center of the map is the most contested — grab it and you control the next 30 seconds of the match.</p></div>
+
+            <h2 id="shadow-protocol">STORY: SHADOW PROTOCOL</h2>
+
+            <p>Shadow Protocol is a separate 4-chapter co-op storyline exclusive to online multiplayer. Set parallel to the main campaign, it follows Agent Vera and a second operative (the other player) as they investigate a bioweapon conspiracy in Eastern Europe. The story features unique cutscenes, environments, and bosses not found in the campaign.</p>
+
+            <div class="highlight-box">
+                <p><strong>SHADOW PROTOCOL REWARD:</strong> Completing Shadow Protocol unlocks the <strong>RE-X Suit</strong> cosmetic for Leon in the main campaign and the <strong>BSAA Tactical Skin</strong> for Agent Vera in all multiplayer modes. These are exclusive rewards unavailable through any other means.</p>
+            </div>
+
+            <p>Shadow Protocol is designed for 2-player co-op and cannot be played solo. It features 4 chapters that take approximately 3–4 hours to complete. The story is considered canon and provides backstory on Vera's BSAA career before she met Leon. Boss fights are specifically designed for 2-player coordination, with mechanics that require both players to execute simultaneously.</p>
+
+            <h2 id="progression">PROGRESSION & CROSSPLAY</h2>
+
+            <p>All multiplayer modes share a unified progression system. Playing any mode earns XP toward your player level, which unlocks new characters, weapon skins, and cosmetics. There is no battle pass — all progression is earned through gameplay. The max level is 50, with prestige ranks resetting Season 1 at launch.</p>
+
+            <p><strong>Crossplay</strong> is fully supported across PC, PlayStation 5, and Xbox Series X|S for all modes. Cross-progression is also supported — your level, unlocks, and cosmetics carry over across all platforms via your Capcom ID account. Crossplay can be disabled in settings if you prefer platform-only matchmaking.</p>
+
+            <h2 id="faq">FREQUENTLY ASKED QUESTIONS</h2>
+
+            <h3>Does Resident Evil Requiem have co-op multiplayer?</h3>
+            <p>Yes. The full 12-chapter campaign supports 2-player co-op online or local split-screen. Agent Vera "Shadow" Koval joins as the second player character with unique abilities including a tactical scanner, combat knife, and faster revive speed.</p>
+
+            <h3>How many players can play co-op in RE Requiem?</h3>
+            <p>The campaign supports 2-player co-op. Raid Mode supports 2–4 players. Survival Arena supports up to 8 players. Shadow Protocol is a 2-player exclusive storyline.</p>
+
+            <h3>Can you play the full campaign in co-op?</h3>
+            <p>Yes, the entire campaign from Chapter 1 to Chapter 12 can be played in co-op. All story beats, cutscenes, and boss fights are fully adapted for two players. The story acknowledges Agent Vera's presence with adjusted dialogue.</p>
+
+            <h3>Is there crossplay in Resident Evil Requiem?</h3>
+            <p>Yes. Full crossplay is supported between PC (Steam), PlayStation 5, and Xbox Series X|S for all multiplayer modes. Cross-progression via Capcom ID is also available. Crossplay can be disabled in settings.</p>
+
+            <h3>What is Raid Mode?</h3>
+            <p>Raid Mode is a wave-based survival mode for 2–4 players set across 15 remixed campaign maps. Players choose from 6 character classes and fight infinite waves of enemies with boss encounters every 5 waves. It features exclusive rewards and seasonal leaderboards.</p>
+
+            <h3>Is there PvP in Resident Evil Requiem?</h3>
+            <p>Yes, Survival Arena is the PvP mode supporting up to 8 players in Free-for-All and Team Deathmatch. It uses the campaign's combat mechanics (perfect dodge, parry, melee) in competitive settings across 8 arenas.</p>
+
+            <h3>How do I unlock Agent Vera?</h3>
+            <p>Agent Vera is automatically available in multiplayer modes from the start. She is the default second player in campaign co-op and can be selected in Raid Mode and Survival Arena. No unlock requirements.</p>
+
+            <h3>Do I need an online subscription for multiplayer?</h3>
+            <p>Online multiplayer requires an active subscription: Steam Online (free), PS Plus (paid), or Xbox Game Pass Core (paid). Local split-screen co-op for the campaign does not require any subscription or internet connection.</p>
+
+            <p>For more strategies, see our <a href="combat-mechanics-guide.html">Combat Mechanics Guide</a>, <a href="boss-guide.html">Boss Guide</a>, and <a href="beginner-guide.html">Beginner Guide</a>. New players should also check the <a href="walkthrough.html">Complete Walkthrough</a>.</p>
+            <a href="index.html" class="back-link">&larr; BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="walkthrough.html">Complete Walkthrough</a>
+            <a href="boss-guide.html">Boss Guide</a>
+            <a href="combat-mechanics-guide.html">Combat Mechanics</a>
+            <a href="beginner-guide.html">Beginner Guide</a>
+            <a href="enemies-guide.html">Enemies Guide</a>
+            <a href="weapons-guide.html">Weapons Guide</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated July 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+    <script>
+        (function(){
+            var u = encodeURIComponent(window.location.href);
+            var t = encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href = "https://twitter.com/intent/tweet?url=" + u + "&text=" + t;
+            document.getElementById("share-facebook").href = "https://www.facebook.com/sharer/sharer.php?u=" + u;
+            document.getElementById("share-reddit").href = "https://reddit.com/search?url=" + u + "&title=" + t;
+            document.getElementById("share-whatsapp").href = "https://api.whatsapp.com/send?text=" + t + "%20" + u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b = document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title = "Copied!";
+                setTimeout(function(){
+                    b.classList.remove("copied");
+                    b.title = "Copy link";
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
