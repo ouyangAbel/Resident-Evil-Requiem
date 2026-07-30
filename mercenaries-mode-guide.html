@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){data.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GF9BYLZ5F7');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil Requiem Mercenaries Mode Guide: Characters, Stages, Scoring & Rewards (2026)</title>
+    <meta name="description" content="Master RE Requiem's Mercenaries mode with complete character guides, stage walkthroughs, scoring strategies, combo tips, and all unlock rewards. Updated 2026.">
+    <meta name="keywords" content="resident evil requiem mercenaries, re requiem mercenaries guide, resident evil requiem mercenaries characters, resident evil requiem mercenaries stages, resident evil requiem mercenaries scoring, re requiem mercenaries unlock">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rerequiemguide.com/mercenaries-mode-guide.html">
+    <meta property="og:title" content="RE Requiem Mercenaries Mode Guide: Characters, Stages, Scoring & Rewards">
+    <meta property="og:description" content="Complete Mercenaries mode guide for RE Requiem. Character abilities, stage strategies, scoring tips, and all unlock rewards.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rerequiemguide.com/mercenaries-mode-guide.html">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Resident Evil Requiem Mercenaries Mode Guide: Characters, Stages, Scoring & Rewards (2026)",
+        "description": "Complete Mercenaries mode guide for RE Requiem covering all characters, stages, scoring strategies, and unlock rewards",
+        "datePublished": "2026-07-31",
+        "dateModified": "2026-07-31",
+        "author": {
+            "@type": "Organization",
+            "name": "RE Requiem Guide"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "How do you unlock Mercenaries mode in Resident Evil Requiem?", "acceptedAnswer": {"@type": "Answer", "text": "Mercenaries mode unlocks after completing the main story on any difficulty. A new 'MERCENARIES' option appears on the main menu once you finish your first playthrough."}},
+            {"@type": "Question", "name": "How many characters are in RE Requiem Mercenaries mode?", "acceptedAnswer": {"@type": "Answer", "text": "There are 6 playable characters in Mercenaries mode, each with unique weapons, abilities, and playstyles. Additional characters can be unlocked through high-score achievements."}},
+            {"@type": "Question", "name": "What is the best character for high scores in Mercenaries?", "acceptedAnswer": {"@type": "Answer", "text": "Ada Wong is generally considered the best for high scores due to her grapple ability that extends combo windows and her high-damage crossbow. However, beginners may find Leon easier to learn with."}},
+            {"@type": "Question", "name": "How many stages are in Mercenaries mode?", "acceptedAnswer": {"@type": "Answer", "text": "Mercenaries mode features 8 unique stages, each based on locations from the main game but modified with new enemy placements and time-based challenges."}},
+            {"@type": "Question", "name": "What rewards do you get for high Mercenaries scores?", "acceptedAnswer": {"@type": "Answer", "text": "High scores unlock bonus costumes, weapon skins, concept art, a model viewer, and the exclusive 'Mercenary King' title displayed in online leaderboards."}}
+        ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139, 0, 0, 0.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(139, 0, 0, 0.1) 0%, transparent 60%);
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.2em;
+            padding: 0.4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: 0.05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: 0.8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+        .article-content a:hover {
+            border-bottom-color: var(--accent-light);
+        }
+        .article-content strong {
+            color: var(--text-primary);
+        }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .tip-number {
+            position: absolute;
+            top: -1rem;
+            left: 2rem;
+            background: var(--accent);
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            padding: 0.3rem 1rem;
+        }
+        .tip-card h3 {
+            margin-top: 0.5rem;
+        }
+        .highlight-box {
+            background: var(--bg-card);
+            border-left: 3px solid var(--accent);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+        }
+        .highlight-box p { margin-bottom: 0; font-style: italic; }
+        .info-box {
+            background: rgba(42, 74, 107, 0.12);
+            border-left: 3px solid #2a4a6b;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+        }
+        .info-box p { margin-bottom: 0; }
+        .character-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .character-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .character-role {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            color: var(--accent-light);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .character-desc {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        .quick-table thead {
+            border-bottom: 2px solid var(--accent);
+        }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 0.8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table tr:hover td {
+            color: var(--text-primary);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-light);
+            text-decoration: none;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            transition: gap 0.3s ease;
+        }
+        .back-link:hover { gap: 1rem; }
+        .related {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .related-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+        .related-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .related-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .related-links a:hover { color: var(--accent-light); }
+        .footer {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.15em;
+            color: var(--accent-light);
+            margin-bottom: 1rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+        .header-decoration { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+        .header-decoration + * { position: relative; z-index: 1; }
+        /* Social Share */
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: 0.5rem;
+            white-space: nowrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+        .share-btn.copy-link.copied {
+            border-color: #4caf50;
+            color: #4caf50;
+        }
+        @media (max-width: 768px) {
+            .related-links { flex-direction: column; gap: 1rem; }
+            .share-bar { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE:REQUIEM <span>STRATEGY GUIDE</span></a>
+            <nav class="nav">
+                <a href="walkthrough.html">WALKTHROUGH</a>
+                <a href="beginner-guide.html">BEGINNER</a>
+                <a href="chapters.html">CHAPTERS</a>
+                <a href="endings.html">ENDINGS</a>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <div class="article-header">
+            <div class="header-decoration">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60%;height:60%;opacity:0.03;">
+                    <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="0.5"/>
+                    <circle cx="50" cy="50" r="30" stroke="currentColor" stroke-width="0.3"/>
+                </svg>
+            </div>
+            <div class="breadcrumb"><a href="index.html">HOME</a> / RESIDENT EVIL REQUIEM / MERCENARIES GUIDE</div>
+            <div class="article-tag">BONUS MODE &bull; UPDATED 2026</div>
+            <h1 class="article-title">RESIDENT EVIL REQUIEM MERCENARIES MODE GUIDE: CHARACTERS, STAGES, SCORING &amp; REWARDS</h1>
+            <div class="article-meta">JULY 31, 2026 &bull; 22 MIN READ</div>
+            <div class="share-bar">
+                <span class="share-label">SHARE THIS</span>
+                <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+                <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                <button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+            </div>
+        </div>
+        <div class="article-content">
+
+            <p>Resident Evil Requiem's <strong>Mercenaries mode</strong> is one of the most addictive bonus modes in the entire franchise — a score-attack arcade experience that strips away the survival horror tension and replaces it with pure, adrenaline-fueled combat. Originally introduced in Resident Evil 3 and refined through RE4, RE5, and RE6, the Mercenaries concept returns in RE Requiem with its most ambitious iteration yet.</p>
+
+            <p>Whether you're chasing high scores, unlocking bonus content, or simply want to sharpen your combat skills, this guide covers everything you need to know. We break down all <strong>6 playable characters</strong>, analyze every <strong>8 stages</strong>, explain the <strong>combo scoring system</strong>, and share expert strategies to push your scores into the S-rank territory.</p>
+
+            <h2 id="what-is-mercenaries">WHAT IS MERCENARIES MODE?</h2>
+            <p>Mercenaries mode is a standalone score-attack mode separate from the main campaign. You select a character and stage, then fight through waves of enemies within a time limit. The goal is simple: <strong>kill enemies, build combos, and rack up the highest score possible</strong> before time runs out.</p>
+
+            <p>Unlike the main game's resource management focus, Mercenaries gives you generous ammo drops and encourages aggressive, stylish play. Chaining kills without taking damage builds a <strong>combo multiplier</strong> that dramatically increases your score. The mode is pure arcade fun — but mastering it requires deep knowledge of enemy patterns, stage layouts, and character abilities.</p>
+
+            <div class="info-box">
+                <p><strong>Unlock Requirement:</strong> Mercenaries mode becomes available after completing the main story on any difficulty. Once unlocked, it persists across all save files and New Game Plus runs.</p>
+            </div>
+
+            <h2 id="character-roster">CHARACTER ROSTER &amp; ABILITIES</h2>
+            <p>RE Requiem launches with <strong>6 playable characters</strong> in Mercenaries mode, each with unique weapons, special abilities, and combat roles. Understanding each character's strengths is essential for maximizing your score potential on different stages.</p>
+
+            <div class="character-card fade-in">
+                <div class="character-name">LEON S. KENNEDY</div>
+                <div class="character-role">BALANCED / STARTER CHARACTER</div>
+                <p class="character-desc">Leon is the most versatile character and the easiest for newcomers. His loadout includes a pistol, shotgun, and knife combo. His special ability <strong>"Combat Instinct"</strong> briefly slows time after a perfect dodge, giving you free hits on nearby enemies. Leon excels in sustained combos and has forgiving stats across the board.</p>
+            </div>
+
+            <div class="character-card fade-in">
+                <div class="character-name">ADA WONG</div>
+                <div class="character-role">HIGH SCORING / GRAPPLE SPECIALIST</div>
+                <p class="character-desc">Ada is the top-tier choice for score chasers. Her grapple gun lets her zip across the map and <strong>extend combo windows</strong> by pulling enemies together. Her crossbow deals massive damage per shot. Ada's low health is offset by her mobility — she can evade almost any attack and reposition instantly.</p>
+            </div>
+
+            <div class="character-card fade-in">
+                <div class="character-name">HUNK</div>
+                <div class="character-role">TANK / MELEE SPECIALIST</div>
+                <p class="character-desc">Unlocked by achieving S+ rank on Professional difficulty, HUNK is a melee powerhouse. His <strong>"Reaper"</strong> ability instakills standard enemies with his knife and grants temporary invincibility on kill. HUNK has the highest health pool but limited ranged options, making him challenging but devastating in skilled hands.</p>
+            </div>
+
+            <div class="character-card fade-in">
+                <div class="character-name">JILL VALENTINE</div>
+                <div class="character-role">CROWD CONTROL / TACTICAL</div>
+                <p class="character-desc">Jill brings gadgets to the fight. Her <strong>"Lockdown Mine"</strong> deploys an area-of-effect explosive that stuns groups of enemies, creating combo opportunities. Her utility pistol and grenade launcher provide solid ranged damage. Jill is ideal for players who prefer controlled, tactical engagements over aggressive rushing.</p>
+            </div>
+
+            <div class="character-card fade-in">
+                <div class="character-name">CHRIS REDFIELD</div>
+                <div class="character-role">POWER / SHOTGUN SPECIALIST</div>
+                <p class="character-desc">Chris is the brute-force option. His <strong>"Magnum Cannon"</strong> ability fires a devastating single shot that pierces through multiple enemies. His high stagger power lets him interrupt enemy attacks easily. Chris has slow movement but dominates close-quarters combat with his upgraded shotgun.</p>
+            </div>
+
+            <div class="character-card fade-in">
+                <div class="character-name">CLAIRE REDFIELD</div>
+                <div class="character-role">VERSATILE / SUBMACHINE GUN</div>
+                <p class="character-desc">Claire bridges the gap between Leon and Chris. Her submachine gun provides rapid fire for crowd control, while her <strong>"Adrenaline Rush"</strong> ability temporarily boosts fire rate and reload speed. She's a solid all-rounder who performs well on every stage type.</p>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>Pro Tip:</strong> Start with Leon to learn stage layouts and enemy spawns. Once comfortable, switch to Ada for score records — her grapple combo potential is unmatched for high-score runs.</p>
+            </div>
+
+            <h2 id="scoring-system">SCORING SYSTEM &amp; COMBO MECHANICS</h2>
+            <p>Understanding the scoring system is crucial for Mercenaries success. Your final score is calculated from three components: <strong>kill points</strong>, <strong>combo multiplier</strong>, and <strong>time bonus</strong>.</p>
+
+            <h3>Kill Points</h3>
+            <p>Each enemy type awards a base score on kill. Standard enemies give 100 points, elite variants award 500, and boss-type enemies grant 2,000. Headshots add a 50% bonus, and environmental kills (explosive barrels, electrical traps) add 100% bonus.</p>
+
+            <h3>Combo Multiplier</h3>
+            <p>The combo system is the heart of Mercenaries scoring. Every kill within 3 seconds of the previous one increases your combo counter. The multiplier scales as follows:</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr>
+                        <th>Combo Count</th>
+                        <th>Multiplier</th>
+                        <th>Strategy Tip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0-9 kills</td><td>1x</td><td>Focus on survival, not combos</td></tr>
+                    <tr><td>10-24 kills</td><td>1.5x</td><td>Start chaining consistently</td></tr>
+                    <tr><td>25-49 kills</td><td>2x</td><td>Use environmental kills to maintain chain</td></tr>
+                    <tr><td>50-74 kills</td><td>3x</td><td>Activate character abilities for crowd clear</td></tr>
+                    <tr><td>75+ kills</td><td>5x</td><td>Maximum score potential — don't get hit!</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Time Bonus</h3>
+            <p>Completing a stage awards time bonus points based on remaining seconds. Each remaining second adds 100 points to your total. Fast clears with high combos are the key to S-rank scores.</p>
+
+            <div class="tip-card">
+                <div class="tip-number">SCORING TIP</div>
+                <h3>NEVER BREAK YOUR COMBO</h3>
+                <p>A 50-kill combo at 3x multiplier earns 15,000 points from kills alone. The same kills without combo earn only 5,000. If your combo is high, prioritize safety over aggression — a dead mercenary scores zero. Use defensive items and evasion to preserve your chain.</p>
+            </div>
+
+            <h2 id="stage-guide">STAGE GUIDES</h2>
+            <p>Mercenaries mode features 8 unique stages, each adapted from campaign locations with modified enemy placements and time limits. Here is a breakdown of each stage and strategies for high scores.</p>
+
+            <div class="tip-card">
+                <div class="tip-number">STAGE 01</div>
+                <h3>ROOKWOOD ESTATE GROUNDS</h3>
+                <p><strong>Time Limit:</strong> 3:00 | <strong>Enemy Count:</strong> 45 | <strong>Best Character:</strong> Leon or Jill</p>
+                <p>An open outdoor area with multiple enemy spawn points. The key is to patrol the perimeter and use explosive barrels scattered around the mansion. Central fountain area is a death trap — avoid being surrounded. Jill's mines work wonders here for crowd control.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">STAGE 02</div>
+                <h3>GRACE HOSPITAL CORRIDORS</h3>
+                <p><strong>Time Limit:</strong> 2:30 | <strong>Enemy Count:</strong> 35 | <strong>Best Character:</strong> Chris or Claire</p>
+                <p>Tight corridors favor shotguns and SMGs. Enemies burst through walls and doors — listen for audio cues. Chris dominates here with his cannon ability clearing entire hallways. Save your special ability for the elite Molded spawn at 1:30.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">STAGE 03</div>
+                <h3>ABOMINATION LABORATORY</h3>
+                <p><strong>Time Limit:</strong> 4:00 | <strong>Enemy Count:</strong> 60 | <strong>Best Character:</strong> Ada or HUNK</p>
+                <p>The largest stage with vertical elements. Ada's grapple lets her traverse quickly between floors. The lab equipment explodes when shot — chain these for combo preservation. Boss-type Amalgam spawns at 2:00 — focus fire immediately.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">STAGE 04</div>
+                <h3>FORGOTTEN CITY RUINS</h3>
+                <p><strong>Time Limit:</strong> 3:30 | <strong>Enemy Count:</strong> 50 | <strong>Best Character:</strong> Leon or Ada</p>
+                <p>Urban ruins with multiple levels and sniping positions. Enemies drop from above — watch the rooftops. Use narrow alleys to funnel enemies into single-file, then chain headshots. Time your special ability for the 2:00 swarm event.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">STAGE 05</div>
+                <h3>CELLAR CATACOMBS</h3>
+                <p><strong>Time Limit:</strong> 2:45 | <strong>Enemy Count:</strong> 40 | <strong>Best Character:</strong> Chris</p>
+                <p>Underground tunnels with very limited visibility. Enemies lurk in alcoves — clear methodically. Chris's high stagger and cannon ability dominate these tight spaces. Bring a flashlight for hidden item caches that grant score boosts.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">STAGE 06</div>
+                <h3>DIMENSIONAL RIFT ARENA</h3>
+                <p><strong>Time Limit:</strong> 3:00 | <strong>Enemy Count:</strong> 55 | <strong>Best Character:</strong> HUNK or Ada</p>
+                <p>A surreal arena that shifts gravity periodically. Enemies teleport in — there's no predictable spawn pattern. HUNK's instakill ability is perfect here since enemies materialize at close range. Save your ultimate for the elite wave at 1:45.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">STAGE 07</div>
+                <h3>MERCHANT'S HIDEOUT</h3>
+                <p><strong>Time Limit:</strong> 3:15 | <strong>Enemy Count:</strong> 48 | <strong>Best Character:</strong> Claire or Jill</p>
+                <p>A shop-like environment with crates and counters. Treasures scattered around grant score multipliers when collected. Jill's area denial excels here — place mines at chokepoints. The Merchant himself occasionally appears and drops bonus items.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">STAGE 08</div>
+                <h3>THE FINAL DESCENT</h3>
+                <p><strong>Time Limit:</strong> 5:00 | <strong>Enemy Count:</strong> 75 | <strong>Best Character:</strong> Ada</p>
+                <p>The ultimate test. A gauntlet combining elements from all previous stages with escalating difficulty. Ada's combo-extending grapple is essential for maintaining multiplier through the final swarm. Every ability cooldown matters — time them for elite waves at 2:00 and 4:00.</p>
+            </div>
+
+            <h2 id="advanced-tips">ADVANCED STRATEGIES FOR HIGH SCORES</h2>
+
+            <h3>1. Environmental Kill Chains</h3>
+            <p>Explosive barrels and electrical hazards don't just deal damage — they <strong>extend your combo timer</strong>. When your combo is at risk of breaking, shoot a barrel near enemies to refresh the chain. Each environmental kill resets the 3-second combo window.</p>
+
+            <h3>2. Defensive Item Timing</h3>
+            <p>Grace items and flash grenades aren't just defensive tools — they're combo preservatives. When surrounded, a flash round stuns all nearby enemies, giving you free kills without breaking your chain. Always carry at least 2 defensive items.</p>
+
+            <h3>3. Ability Cooldown Management</h3>
+            <p>Each character's special ability has a cooldown. Use abilities strategically for elite waves rather than wasting them on single enemies. Ada's grapple, for example, can pull 5+ enemies together for a massive combo spike.</p>
+
+            <h3>4. Audio Cue Mastery</h3>
+            <p>Enemy spawn sounds are directional and distinct. Elite enemies have a unique audio tell — a deep growl before they appear. Learn these sounds to prepare for tough encounters and maintain your combo through awareness rather than reaction.</p>
+
+            <h3>5. The "No Damage" Bonus</h3>
+            <p>Completing a stage without taking damage awards a <strong>2x score bonus</strong> to your final total. This is the single biggest score multiplier in the game. Practice defensively — perfect dodges and positioning are more valuable than aggressive play for record scores.</p>
+
+            <div class="highlight-box">
+                <p><strong>Score Record Tip:</strong> The world record scores always combine a 50+ kill combo (3x multiplier) with a no-damage clear (2x multiplier) and maximum time bonus. That's a 6x total multiplier on your base kill points — the difference between A-rank and S-rank.</p>
+            </div>
+
+            <h2 id="rewards">UNLOCK REWARDS</h2>
+            <p>High scores in Mercenaries mode unlock exclusive cosmetic and gameplay bonuses. Here is the complete reward list:</p>
+
+            <table class="quick-table">
+                <thead>
+                    <tr>
+                        <th>Reward</th>
+                        <th>Requirement</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Samurai Edge Piano White</td><td>Clear any stage</td><td>Weapon Skin</td></tr>
+                    <tr><td>Mercenary Leather Jacket</td><td>Achieve A-rank on any stage</td><td>Leon Costume</td></tr>
+                    <tr><td>Cat Ears Headwear</td><td>Achieve A-rank on 4 stages</td><td>Universal Accessory</td></tr>
+                    <tr><td>Noir Filter Pack</td><td>Achieve S-rank on any stage</td><td>Photo Mode Filter</td></tr>
+                    <tr><td>Concept Art Gallery (Vol. 1)</td><td>Achieve S-rank on 4 stages</td><td>Gallery Unlock</td></tr>
+                    <tr><td>HUNK Unlock</td><td>S+ rank on Professional Campaign</td><td>Playable Character</td></tr>
+                    <tr><td>Plague Doctor Costume</td><td>Achieve S-rank on all 8 stages</td><td>Ada Costume</td></tr>
+                    <tr><td>Concept Art Gallery (Vol. 2)</td><td>Achieve S-rank on all 8 stages</td><td>Gallery Unlock</td></tr>
+                    <tr><td>Mercenary King Title</td><td>Top 100 Online Leaderboard</td><td>Online Title</td></tr>
+                    <tr><td>Model Viewer</td><td>Achieve S-rank on The Final Descent</td><td>Gallery Unlock</td></tr>
+                    <tr><td>Golden Egg Launcher</td><td>1 Million Total Score</td><td>Weapon Unlock (Campaign)</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <p><strong>Note:</strong> Rewards marked "Campaign" unlock items that carry over to the main game and New Game Plus runs. The Golden Egg Launcher is one of the most powerful weapons in campaign mode — definitely worth the grind.</p>
+            </div>
+
+            <h2 id="faq">FREQUENTLY ASKED QUESTIONS</h2>
+
+            <div class="tip-card">
+                <div class="tip-number">Q1</div>
+                <h3>How do I unlock HUNK for Mercenaries mode?</h3>
+                <p>HUNK unlocks by achieving S+ rank on Professional difficulty in the main campaign. This requires a sub-3-hour clear, fewer than 5 Ink Ribbons used, and keeping your partner alive. Once unlocked, HUNK is available in Mercenaries immediately.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q2</div>
+                <h3>Do Mercenaries scores carry over between characters?</h3>
+                <p><strong>No.</strong> Each character has separate stage scores and records. However, cumulative rewards (like total score unlocks) count across all characters.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q3</div>
+                <h3>What is the best stage for farming high scores?</h3>
+                <p><strong>Abomination Laboratory (Stage 3)</strong> is generally considered the best for score farming due to its high enemy count and environmental hazards. With Ada, you can easily score 150,000+ points here.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q4</div>
+                <h3>Can I play Mercenaries co-op with a friend?</h3>
+                <p><strong>Yes!</strong> Mercenaries mode supports 2-player online co-op. Combo counters are shared between players, making coordinated play extremely rewarding. Use the in-game lobby system or direct invite to play together.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q5</div>
+                <h3>Does difficulty affect Mercenaries mode?</h3>
+                <p><strong>No.</strong> Mercenaries has its own fixed difficulty scaling based on stage selection. However, your character unlocks and abilities from the main campaign do carry over — so progressing through harder campaign difficulties indirectly improves your Mercenaries performance.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-number">Q6</div>
+                <h3>What is the Golden Egg Launcher?</h3>
+                <p>The Golden Egg Launcher is a secret weapon unlocked by reaching 1 million cumulative Mercenaries score. It fires explosive golden eggs and is one of the strongest weapons in campaign mode — essentially a reward for Mercenaries mastery.</p>
+            </div>
+
+            <h2 id="conclusion">FINAL THOUGHTS</h2>
+            <p>Resident Evil Requiem's Mercenaries mode is a fantastic bonus that adds dozens of hours of replayability beyond the main campaign. Whether you're chasing S-rank scores, unlocking bonus content, or just want to unleash pure combat chaos, there is something here for everyone.</p>
+
+            <p>The mode also serves as excellent combat training. Skills you develop in Mercenaries — perfect dodges, combo timing, ability management — directly translate to campaign performance. Many players report that practicing in Mercenaries made their Professional difficulty runs significantly smoother.</p>
+
+            <p>For more RE Requiem content, explore our <a href="combat-mechanics-guide.html">Combat Mechanics Guide</a> for advanced fighting techniques, <a href="best-loadout-build-guide.html">Loadout Guide</a> for equipment optimization, and <a href="walkthrough.html">Complete Walkthrough</a> for campaign coverage. Good luck out there, mercenary.</p>
+
+            <a href="index.html" class="back-link">&larr; BACK TO ALL GUIDES</a>
+        </div>
+    </article>
+    <section class="related">
+        <h3 class="related-title">MORE GUIDES</h3>
+        <div class="related-links">
+            <a href="combat-mechanics-guide.html">Combat Mechanics</a>
+            <a href="best-loadout-build-guide.html">Loadout Guide</a>
+            <a href="difficulty-guide.html">Difficulty Guide</a>
+            <a href="walkthrough.html">Walkthrough</a>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">RE:REQUIEM GUIDE</div>
+        <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated July 2026</p>
+        <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+    </footer>
+    <script>
+        (function(){
+            var u=encodeURIComponent(window.location.href);
+            var t=encodeURIComponent(document.title);
+            document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+            document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+            document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+            document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+        })();
+        function copyLink(){
+            navigator.clipboard.writeText(window.location.href).then(function(){
+                var b=document.getElementById("share-copy");
+                b.classList.add("copied");
+                b.title="Copied!";
+                setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+            });
+        }
+    </script>
+</body>
+</html>
