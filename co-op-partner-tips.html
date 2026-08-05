@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF9BYLZ5F7"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-GF9BYLZ5F7");</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Resident Evil Requiem Co-op Partner Tips - Best Duo Strategies, Revive Mechanics & Team Play (2026)</title><meta name="description" content="Master Resident Evil Requiem co-op with proven duo strategies, revive mechanics, shared resource management, role specialization, and boss coordination tips. Updated 2026."><meta name="keywords" content="resident evil requiem co-op, resident evil requiem multiplayer tips, resident evil requiem duo strategies, resident evil requiem revive mechanics, resident evil requiem partner tips, re requiem co-op guide, resident evil requiem team play"><meta name="robots" content="index, follow"><link rel="canonical" href="https://rerequiemguide.com/co-op-partner-tips.html"><meta property="og:title" content="Resident Evil Requiem Co-op Partner Tips - Best Duo Strategies"><meta property="og:description" content="Master RE Requiem co-op with proven duo strategies, revive mechanics, shared resource management, and boss coordination tips."><meta property="og:type" content="article"><meta property="og:url" content="https://rerequiemguide.com/co-op-partner-tips.html"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Resident Evil Requiem Co-op Partner Tips - Best Duo Strategies, Revive Mechanics & Team Play","description":"Master Resident Evil Requiem co-op with proven duo strategies, revive mechanics, shared resource management, role specialization, and boss coordination tips.","datePublished":"2026-08-06","dateModified":"2026-08-06","author":{"@type":"Organization","name":"RE Requiem Guide"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rerequiemguide.com/co-op-partner-tips.html"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does the revive mechanic work in RE Requiem co-op?","acceptedAnswer":{"@type":"Answer","text":"When a partner goes down, you have 45 seconds to revive them. Use a First Aid Spray to instantly revive from range, or perform a manual revive (hold interact for 3 seconds) to restore 50% HP. Each player can be revived 3 times per chapter before permanent elimination."}},{"@type":"Question","name":"Do shared resources carry over between co-op sessions?","acceptedAnswer":{"@type":"Answer","text":"Ammo and items picked up by either player are pooled into a shared inventory accessible at any typewriter. However, key story items and progression triggers require both players to be in the same area to activate. Lei and upgrade materials are earned individually and do not merge."}},{"@type":"Question","name":"What is the best duo composition for co-op?","acceptedAnswer":{"@type":"Answer","text":"The optimal pairing is a Tank + DPS composition: one player uses heavy armor, shield skills, and crowd-control weapons (shotgun/flash grenade) to draw aggro, while the other runs a sniper or magnum build for burst damage on bosses and elites."}},{"@type":"Question","name":"Can partners split up in co-op?","acceptedAnswer":{"@type":"Answer","text":"Yes, but with a tether limit of approximately 50 meters. Splitting up is useful for solving dual puzzles simultaneously or flanking enemies in combat, but exceeding the tether distance triggers a 10-second countdown to teleport back to your partner."}},{"@type":"Question","name":"How does difficulty scaling work in co-op?","acceptedAnswer":{"@type":"Answer","text":"Enemy health increases by 60% per additional player, and spawn rates rise by 40%. However, boss HP only scales by 35% per player, making co-op slightly more efficient for boss-heavy chapters. Item drop rates are shared, so coordinate who picks up what."}}]}</script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Inter+Tight:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --accent: #8b0000;
+            --accent-light: #c41e1e;
+            --accent-glow: rgba(139,0,0,.3);
+            --text-primary: #e8e4e0;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --border: #2a2520;
+            --success: #2d5a27;
+            --warning: #8b6914;
+            --info: #2a4a6b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .15em;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            transition: color .3s;
+        }
+        .nav a:hover { color: var(--accent-light); }
+        .article-header {
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 80%, rgba(139,0,0,.08) 0%, transparent 60%);
+        }
+        .breadcrumb {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            color: var(--text-muted);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent-light); }
+        .article-tag {
+            display: inline-block;
+            background: var(--info);
+            color: white;
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            padding: .4rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .article-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: .05em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            color: var(--text-muted);
+            letter-spacing: .1em;
+        }
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            padding: 1.5rem 0;
+            margin: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+        .share-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-right: .5rem;
+            white-space: nowrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+        .share-btn.copy-link.copied { border-color: #4caf50; color: #4caf50; }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        .article-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: .8rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        .article-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s;
+        }
+        .article-content a:hover { border-bottom-color: var(--accent-light); }
+        .article-content strong { color: var(--text-primary); }
+        .highlight-box {
+            background: rgba(139,0,0,.08);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .info-box {
+            background: rgba(42,74,107,.12);
+            border-left: 3px solid var(--info);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p { margin-bottom: 0; }
+        .success-box {
+            background: rgba(45,90,39,.1);
+            border-left: 3px solid var(--success);
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .success-box p { margin-bottom: 0; }
+        .craft-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.8rem 2rem;
+            margin: 1.5rem 0;
+            transition: border-color .4s ease;
+        }
+        .craft-card:hover { border-color: var(--accent-glow); }
+        .craft-label {
+            font-family: 'DM Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: .6rem;
+        }
+        .craft-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: .05em;
+            color: var(--text-primary);
+            margin-bottom: .8rem;
+        }
+        .craft-recipe {
+            font-family: 'DM Mono', monospace;
+            font-size: .85rem;
+            color: var(--accent-light);
+            background: rgba(139,0,0,.08);
+            padding: .4rem .8rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: .8rem;
+        }
+        .craft-effect {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: .95rem;
+        }
+        .quick-table thead { border-bottom: 2px solid var(--accent); }
+        .quick-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: .8rem 1rem;
+            text-align: left;
+        }
+        .quick-table td {
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .quick-table tr:hover td { color: var(--text-primary); }
+        .tip-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+            margin: 1.5rem 0;
+        }
+        .tip-number {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .8rem;
+        }
+        .tip-card h3 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 .8rem;
+        }
+        .tip-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-family: 'DM Mono', monospace;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: .2rem;
+            transition: all .3s;
+        }
+        .back-link:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent-light);
+        }
+        .related {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .related-title {
+            font-family: 'DM Mono', monospace;
+            font-size: .7rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .related-links a {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: .8rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: .6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all .3s;
+        }
+        .related-links a:hover {
+            color: var(--accent-light);
+            border-color: var(--accent);
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem 4rem;
+            border-top: 1px solid var(--border);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: .2em;
+            color: var(--accent-light);
+            margin-bottom: .5rem;
+        }
+        .footer-text {
+            font-family: 'DM Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .header-inner { padding: 1rem; }
+            .nav a { margin-left: 1rem; font-size: .7rem; }
+            .article-header { padding: 6rem 1.5rem 3rem; }
+            .article-content { padding: 1.5rem; }
+            .craft-card { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">RE:REQUIEM</a>
+            <nav class="nav">
+                <a href="walkthrough.html">Walkthrough</a>
+                <a href="beginner-guide.html">Beginner</a>
+                <a href="multiplayer-guide.html">Multiplayer</a>
+                <a href="boss-guide.html">Bosses</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="article-header">
+        <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Co-op Partner Tips</div>
+        <div class="article-tag">CO-OP STRATEGY</div>
+        <h1 class="article-title">RESIDENT EVIL REQUIEM CO-OP PARTNER TIPS: BEST DUO STRATEGIES, REVIVE MECHANICS & TEAM PLAY</h1>
+        <div class="article-meta">UPDATED AUGUST 6, 2026 &bull; 18 MIN READ</div>
+    </div>
+    <div class="share-bar">
+        <span class="share-label">SHARE THIS</span>
+        <a class="share-btn" id="share-twitter" href="#" target="_blank" rel="noopener" title="Share on X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a class="share-btn" id="share-facebook" href="#" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a class="share-btn" id="share-reddit" href="#" target="_blank" rel="noopener" title="Share on Reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+        <a class="share-btn" id="share-whatsapp" href="#" target="_blank" rel="noopener" title="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <button class="share-btn copy-link" id="share-copy" title="Copy link" onclick="copyLink()"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+    </div>
+    <div class="article-content">
+
+<p>Resident Evil Requiem's co-op mode transforms the survival horror experience from a solitary nightmare into a tactical two-player operation. But make no mistake — simply pairing up with a friend does not guarantee success. Without coordination, role clarity, and a shared understanding of the game's systems, co-op becomes a frantic scramble where one player carries while the other drains shared resources. This guide delivers <strong>proven co-op partner tips</strong> that will turn your duo into a well-oiled survival machine.</p>
+
+<p>Whether you are running the campaign with a friend, tackling Raid Mode, or pushing through the Survival Arena, the strategies below apply across every mode. We will cover <strong>role specialization, revive mechanics, shared resource management, communication protocols</strong>, and advanced tactics for boss fights. Two players who communicate and complement each other can clear content significantly faster and more efficiently than a solo player — but only if both partners know what they are doing.</p>
+
+<div class="highlight-box">
+    <p><strong>BEFORE YOU DROP IN:</strong> This guide assumes both players have completed the game at least once solo. If you are brand new, start with our <a href="beginner-guide.html">Beginner Guide</a> first, then review the <a href="multiplayer-guide.html">Multiplayer Overview</a> for mode-specific details before reading these advanced partner tips.</p>
+</div>
+
+<h2 id="role-specialization">ROLE SPECIALIZATION: TANK + DPS</h2>
+
+<p>The single most impactful decision you will make as a duo is <strong>choosing complementary roles</strong>. RE Requiem's co-op mode scales enemy health by 60% per additional player, but boss HP only increases by 35% — meaning a coordinated team with defined roles handles bosses far more efficiently than two generalists running the same loadout.</p>
+
+<div class="craft-card">
+    <div class="craft-label">ROLE 1</div>
+    <div class="craft-title">THE TANK / CROWD CONTROL</div>
+    <div class="craft-recipe">SHOTGUN + FLASH GRENADES + HEAVY ARMOR</div>
+    <p class="craft-effect">Draw enemy aggro with wide shotgun sprays, stagger groups with flash grenades, and absorb hits with upgraded body armor. The Tank's job is to keep attention off the DPS partner and control space in crowded rooms.</p>
+</div>
+
+<div class="craft-card">
+    <div class="craft-label">ROLE 2</div>
+    <div class="craft-title">THE DPS / SNIPER</div>
+    <div class="craft-recipe">RIFLE / MAGNUM + INCENDIARY GRENADES + LIGHT ARMOR</div>
+    <p class="craft-effect">Focus fire on high-value targets: elites, bosses, and enemies staggered by the Tank. The DPS partner maximizes damage-per-second from safe distance while avoiding aggro through light armor and mobility perks.</p>
+</div>
+
+<p>Alternative compositions work for specific scenarios — <strong>Medic + DPS</strong> for long Raid Mode runs where healing becomes essential, or <strong>Scout + Demolitions</strong> for speedrun-focused teams prioritizing exploration and trap clearance. However, the Tank + DPS split remains the most versatile composition across all content types.</p>
+
+<div class="info-box">
+    <p><strong>KEY INSIGHT:</strong> Avoid running identical loadouts. Two sniper players will struggle against fast-moving swarms, and two shotgunners will waste DPS on armored elites. Complementary roles multiply your effectiveness — overlapping roles divide it.</p>
+</div>
+
+<h2 id="revive-mechanics">REVIVE MECHANICS AND DOWNED STATES</h2>
+
+<p>Understanding the downed state is critical for co-op survival. When a partner's HP reaches zero, they enter a <strong>45-second bleed-out timer</strong>. During this window, you have three options to bring them back:</p>
+
+<table class="quick-table">
+    <thead>
+        <th>REVIVE METHOD</th><th>TIME</th><th>HP RESTORED</th><th>REQUIREMENT</th>
+    </thead>
+    <tbody>
+        <tr><td><strong>Manual Revive</strong></td><td>3 seconds</td><td>50% HP</td><td>Hold interact near downed partner</td></tr>
+        <tr><td><strong>First Aid Spray</strong></td><td>Instant (range)</td><td>100% HP</td><td>Consume 1 First Aid Spray</td></tr>
+        <tr><td><strong>Defibrillator Pickup</strong></td><td>1 second</td><td>100% HP</td><td>Rare pickup, chapter-specific</td></tr>
+    </tbody>
+</table>
+
+<p>Each player can be revived <strong>3 times per chapter</strong> before permanent elimination (they remain downed until the next checkpoint or chapter clear). This means reckless reviving burns through your limited lifeline fast. Prioritize safe revives — clear the room first, then revive — rather than panic-reviving in the middle of a swarm.</p>
+
+<div class="tip-card">
+    <div class="tip-number">TIP 01</div>
+    <h3>Safe Revive Protocol</h3>
+    <p>When your partner goes down, announce "reviving" over voice chat, throw a flash grenade to stagger nearby enemies, then perform the manual revive. Never revive while taking active fire — you will both go down.</p>
+</div>
+
+<div class="tip-card">
+    <div class="tip-number">TIP 02</div>
+    <h3>First Aid Spray Conservation</h3>
+    <p>Save your First Aid Sprays for boss fights and mandatory combat encounters. Manual revives are sufficient for exploration phases. Stockpile at least 2 sprays before Chapter 5's Betrayal encounter.</p>
+</div>
+
+<h2 id="shared-resources">SHARED RESOURCE MANAGEMENT</h2>
+
+<p>RE Requiem's co-op uses a <strong>shared inventory pool</strong> accessible at any typewriter. Ammo, crafting materials, herbs, and grenades picked up by either player merge into a common stockpile. Key story items and progression triggers require both players to be present in the activation area.</p>
+
+<p>This shared system creates both opportunities and friction points:</p>
+
+<ul>
+    <li><strong>Ammo Efficiency:</strong> Coordinate weapon types so you are not both draining the same ammo pool. A pistol player and a shotgun player share no ammo conflict; two magnum players compete for the rarest rounds in the game.</li>
+    <li><strong>Herb Stacking:</strong> There is no need for both players to carry herbs. Designate one partner (usually the Tank, who takes more hits) as the designated healer, and transfer all herb pickups to them.</li>
+    <li><strong>Grenade Distribution:</strong> Split grenade types by role. The Tank carries flash and fragmentation for crowd control; the DPS carries incendiary and flash for boss DPS phases.</li>
+    <li><strong>Key Items:</strong> When a key item drops, announce it over voice chat and confirm both players have seen the pickup notification before proceeding.</li>
+</ul>
+
+<div class="highlight-box">
+    <p><strong>GOLDEN RULE:</strong> Never pick up ammo for a weapon you are not currently running. That magnum ammo on the ground might be your partner's lifeline during the next boss encounter. Call out pickups before grabbing them.</p>
+</div>
+
+<h2 id="communication">COMMUNICATION PROTOCOLS</h2>
+
+<p>Clear, concise communication separates elite co-op teams from random matchmaking chaos. Establish these callouts before starting your session:</p>
+
+<div class="craft-card">
+    <div class="craft-label">ESSENTIAL CALLOUTS</div>
+    <div class="craft-title">STANDARD VOICE CHAT PROTOCOLS</div>
+    <p class="craft-effect"><strong>"Contact left/right/back"</strong> — Enemy direction<br>
+<strong>"Reloading"</strong> — Vulnerability warning<br>
+<strong>"Reviving"</strong> — Downed partner rescue in progress<br>
+<strong>"Push/hold"</strong> — Advance or maintain position<br>
+<strong>"Flank left/right"</strong> — Coordinated pincer movement<br>
+<strong>"Save it"</strong> — Conserve ammo/items for upcoming fight</p>
+</div>
+
+<p>For players without voice chat, RE Requiem provides a <strong>ping system</strong> (middle mouse button / D-pad up) that marks enemies, items, and danger zones. Use it liberally — a ping is worth ten seconds of vague gesturing. Ping enemies before engaging, ping healing items when your partner is low, and ping puzzle solutions when you figure them out first.</p>
+
+<h2 id="tether-and-movement">TETHER MECHANICS AND SPLITTING UP</h2>
+
+<p>Co-op partners are bound by a <strong>50-meter tether</strong>. Exceeding this distance triggers a 10-second countdown, after which the distant player teleports back to their partner. This mechanic encourages coordinated movement but allows tactical splitting in specific scenarios.</p>
+
+<p><strong>When to split up:</strong></p>
+<ul>
+    <li><strong>Dual puzzles:</strong> Many chapters feature simultaneous switches that require activation within a 5-second window. Splitting up lets you trigger both at once.</li>
+    <li><strong>Flanking maneuvers:</strong> In large arenas, splitting left and right creates crossfire that confuses enemy AI and reduces incoming damage.</li>
+    <li><strong>Scavenging runs:</strong> In safe rooms, one player can search for missed items while the other organizes inventory at the typewriter.</li>
+</ul>
+
+<p><strong>When to stay together:</strong></p>
+<ul>
+    <li>Boss fights — both players need to be in range for DPS checks and shared revive access.</li>
+    <li>Ambush chapters — enemies spawn from multiple directions, and isolated players get flanked.</li>
+    <li>Low health states — a lone player with no healing is a dead player.</li>
+</ul>
+
+<div class="tip-card">
+    <div class="tip-number">TIP 03</div>
+    <h3>Tether Exploit for Solo Grinding</h3>
+    <p>If one player needs to farm Lei from a vending machine while the other holds a safe position, the farming player can walk to the tether limit, interact with the machine, and return — all without triggering the teleport countdown. This works because the countdown only triggers when the tether is exceeded for more than 10 seconds.</p>
+</div>
+
+<h2 id="boss-coordination">BOSS FIGHT COORDINATION</h2>
+
+<p>Boss encounters in co-op demand precise role execution. Here is how the Tank + DPS composition handles each phase:</p>
+
+<h3>Tank Responsibilities</h3>
+<ul>
+    <li>Maintain aggro by dealing the first hit and staying in the boss's line of sight.</li>
+    <li>Interrupt charge attacks with shotgun blasts to the head.</li>
+    <li>Block grab attacks with well-timed perfect dodges to trigger boss stagger windows.</li>
+    <li>Position the boss facing away from the DPS partner at all times.</li>
+</ul>
+
+<h3>DPS Responsibilities</h3>
+<ul>
+    <li>Focus fire on weak points during stagger windows (glowing cores, exposed organs).</li>
+    <li>Throw incendiary grenades during boss enrage phases for bonus fire damage.</li>
+    <li>Track boss attack patterns and call out incoming abilities ("Tail swipe!", "Charge incoming!").</li>
+    <li>Maintain maximum distance while staying within tether range.</li>
+</ul>
+
+<div class="info-box">
+    <p><strong>BOSS HP SCALING:</strong> Boss health increases by only 35% per player, while two coordinated DPS players deal approximately 180% of a single player's damage. This means co-op bosses die faster than solo bosses when both players execute their roles correctly.</p>
+</div>
+
+<h2 id="difficulty-scaling">DIFFICULTY SCALING AND EFFICIENCY</h2>
+
+<p>Understanding how the game scales helps you decide when to run co-op versus solo:</p>
+
+<table class="quick-table">
+    <thead>
+        <th>SCALING FACTOR</th><th>INCREASE PER PLAYER</th><th>STRATEGIC IMPACT</th>
+    </thead>
+    <tbody>
+        <tr><td><strong>Enemy Health</strong></td><td>+60%</td><td>Manageable with coordinated focus fire</td></tr>
+        <tr><td><strong>Enemy Spawn Rate</strong></td><td>+40%</td><td>Prioritize crowd control over single-target DPS</td></tr>
+        <tr><td><strong>Boss Health</strong></td><td>+35%</td><td>Co-op is MORE efficient for bosses than solo</td></tr>
+        <tr><td><strong>Item Drop Rate</strong></td><td>No change</td><td>Shared drops mean less total loot per player</td></tr>
+        <tr><td><strong>Lei Earned</strong></td><td>+25% per player</td><td>Co-op is more efficient for currency farming</td></tr>
+    </tbody>
+</table>
+
+<p>The takeaway: co-op excels at <strong>boss fights, Lei farming, and chapter speedruns</strong>, but struggles with <strong>resource-starved survival runs</strong> where shared inventories create scarcity. Match your mode to your goal.</p>
+
+<h2 id="advanced-tactics">ADVANCED DUO TACTICS</h2>
+
+<p>Master these high-level techniques to dominate co-op content:</p>
+
+<div class="tip-card">
+    <div class="tip-number">ADVANCED 01</div>
+    <h3>Revive Bait Technique</h3>
+    <p>The Tank intentionally goes down near a group of enemies, forcing them to cluster around the body. The DPS partner then tosses an incendiary grenade into the cluster for massive AoE damage, followed by a manual revive once the area clears.</p>
+</div>
+
+<div class="tip-card">
+    <div class="tip-number">ADVANCED 02</div>
+    <h3>Weapon Swap Chain</h3>
+    <p>During boss stagger windows, the Tank swaps from shotgun to magnum for burst DPS, then back to shotgun once the boss recovers. Pre-configure the weapon wheel so the swap takes under 1 second. Practice the swap until it is muscle memory.</p>
+</div>
+
+<div class="tip-card">
+    <div class="tip-number">ADVANCED 03</div>
+    <h3>Ping Bait for Enemy AI</h3>
+    <p>Ping an enemy that is blocking a doorway, then have your partner sneak around the flank path. The pinged enemy faces the ping source, exposing its back to the flanking partner for a guaranteed critical hit.</p>
+</div>
+
+<h2 id="faq">FAQ: RE REQUIEM CO-OP PARTNER TIPS</h2>
+
+<div class="tip-card">
+    <div class="tip-number">QUESTION</div>
+    <h3>Does difficulty affect co-op scaling?</h3>
+    <p>Yes. On Hardcore difficulty, the 60% enemy health increase per player applies AFTER the base difficulty multiplier, making co-op Hardcore significantly more punishing than solo Hardcore. Stick to Standard for casual co-op sessions.</p>
+</div>
+
+<div class="tip-card">
+    <div class="tip-number">QUESTION</div>
+    <h3>Can we play co-op from the beginning of the game?</h3>
+    <p>Campaign co-op unlocks after completing Chapter 1 solo (approximately 45 minutes of gameplay). Raid Mode and Survival Arena support co-op from the start with no unlock requirements.</p>
+</div>
+
+<div class="tip-card">
+    <div class="tip-number">QUESTION</div>
+    <h3>What happens if both players go down simultaneously?</h3>
+    <p>Both players enter a shared 30-second bleed-out. If neither revives within the window, the chapter restarts from the last checkpoint. There is no game over screen in co-op — you can attempt encounters infinitely.</p>
+</div>
+
+<div class="tip-card">
+    <div class="tip-number">QUESTION</div>
+    <h3>Is there friendly fire in co-op?</h3>
+    <p>No. Shotgun blasts, grenades, and melee attacks pass through your partner without dealing damage. However, knockback effects still apply — a shotgun blast can stagger your partner if they are in the blast radius.</p>
+</div>
+
+<h2 id="final-thoughts">FINAL THOUGHTS</h2>
+
+<p>Co-op in Resident Evil Requiem is not simply two people playing the same game side by side — it is a distinct experience that rewards communication, role discipline, and mutual trust. The best co-op teams develop shorthand callouts, anticipate each other's movements, and recover from mistakes without blame.</p>
+
+<p>Start with the Tank + DPS composition, master the revive protocols, and gradually layer in the advanced tactics as your chemistry improves. Two coordinated players will outperform two skilled solo players every time — that is the magic of co-op done right.</p>
+
+<p>For more on specific modes and character builds, check out the related guides below. Good luck out there, partners.</p>
+
+<a href="multiplayer-guide.html" class="back-link">&larr; BACK TO MULTIPLAYER GUIDE</a>
+
+</div>
+<section class="related">
+    <h3 class="related-title">MORE GUIDES</h3>
+    <div class="related-links">
+        <a href="multiplayer-guide.html">Multiplayer Guide</a>
+        <a href="beginner-guide.html">Beginner Guide</a>
+        <a href="boss-guide.html">Boss Guide</a>
+        <a href="combat-mechanics-guide.html">Combat Mechanics</a>
+        <a href="walkthrough.html">Walkthrough</a>
+        <a href="index.html">Home</a>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-logo">RE:REQUIEM GUIDE</div>
+    <p class="footer-text">Fan-made strategy guide &bull; Not affiliated with Capcom &bull; Updated August 2026</p>
+    <p class="footer-text"><a href="/sitemap.xml" style="color:#888;text-decoration:none;font-size:0.65rem;">Sitemap</a></p>
+</footer>
+<script>
+    (function(){
+        var u=encodeURIComponent(window.location.href);
+        var t=encodeURIComponent(document.title);
+        document.getElementById("share-twitter").href="https://twitter.com/intent/tweet?url="+u+"&text="+t;
+        document.getElementById("share-facebook").href="https://www.facebook.com/sharer/sharer.php?u="+u;
+        document.getElementById("share-reddit").href="https://reddit.com/submit?url="+u+"&title="+t;
+        document.getElementById("share-whatsapp").href="https://api.whatsapp.com/send?text="+t+"%20"+u;
+    })();
+    function copyLink(){
+        navigator.clipboard.writeText(window.location.href).then(function(){
+            var b=document.getElementById("share-copy");
+            b.classList.add("copied");
+            b.title="Copied!";
+            setTimeout(function(){b.classList.remove("copied");b.title="Copy link"},2000);
+        });
+    }
+</script>
+</body>
+</html>
